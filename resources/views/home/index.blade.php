@@ -401,7 +401,7 @@
    @push('script')
       <script>
          // custom script here
-
+         
          // slider
          const sliderClient = new Swiper('.slider-client', {
             autoplay: {
@@ -546,7 +546,6 @@
             currentActive.className = currentActive.className.replace(`${activeClass} ${paddingClass}`, '')
             this.className += ` ${activeClass} ${paddingClass}`
          }))
-
       </script>
    @endpush
 @endsection
