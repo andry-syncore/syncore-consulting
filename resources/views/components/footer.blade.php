@@ -3,7 +3,7 @@
       <img src="{{ asset('assets/img/logo-footer.svg') }}" alt="logo footer" class="img-fluid">
 
       <div class="row my-5">
-         <div class="col-12 col-lg-5 mb-lg-0 mb-5 me-5">
+         <div class="col-12 col-lg-4 col-xl-5 mb-lg-0 mb-5 me-5">
             <h4 class="fw-500 text-light">Office</h4>
             <p class="text-light">Jl. Nogotirto No. 15B, Gamping, Sleman, Daerah Istimewa Yogyakarta 55282</p>
 
@@ -23,13 +23,13 @@
                <button class="btn btn-orange" type="submit">Subscribe</button>
             </form>
          </div>
-         <div class="col-6 col-md-3 col-lg ps-lg-5 mb-md-0 mb-4">
+         <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">PROGRAM</p>
             <a href="" class="text-light nav-link small mb-2">Convert</a>
             <a href="" class="text-light nav-link small mb-2">Engage</a>
             <a href="" class="text-light nav-link small mb-2">Retain</a>
          </div>
-         <div class="col-6 col-md-3 col-lg ps-lg-5 mb-md-0 mb-4">
+         <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">RESOURCES</p>
             <a href="" class="text-light nav-link small mb-2">Mitra</a>
             <a href="" class="text-light nav-link small mb-2">Blog</a>
@@ -37,12 +37,12 @@
             <a href="" class="text-light nav-link small mb-2">Digital Events</a>
             <a href="" class="text-light nav-link small mb-2">Testimonials</a>
          </div>
-         <div class="col-6 col-md-3 col-lg ps-lg-5 mb-md-0 mb-4">
+         <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">SUPPORT</p>
             <a href="" class="text-light nav-link small mb-2">Contact Us</a>
             <a href="" class="text-light nav-link small mb-2">Help Center</a>
          </div>
-         <div class="col-6 col-md-3 col-lg ps-lg-5 mb-md-0 mb-4">
+         <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">COMPANY</p>
             <a href="" class="text-light nav-link small mb-2">About Us</a>
          </div>
