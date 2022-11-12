@@ -19,3 +19,15 @@ Route::get('/', function () {
       'title' => 'Beranda'
    ]);
 })->name('home');
+
+Route::get('about', function() {
+   return view('home.about.index', [
+      'title' => 'Tentang Kami'
+   ]);
+})->name('about');
+
+Route::get('faq', function() {
+   return view('home.faq.index', [
+      'title' => 'Tentang Kami'
+   ]);
+})->name('faq');

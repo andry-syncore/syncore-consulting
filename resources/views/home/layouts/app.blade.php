@@ -17,6 +17,9 @@
    <!-- swiper js -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+   <!-- leaflet map css -->
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
+
    <!-- style css -->
    <link rel="stylesheet" href="{{ asset('assets/css/home/style.css') }}">
 
@@ -49,6 +52,12 @@
 
    <!-- swiper js -->
    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+   <!-- leaflet map js -->
+   <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
+
+   <!-- custom js -->
+   <script src="{{ asset('assets/js/home/custom.js') }}"></script>
 
    <!-- for custom script in page -->
    @stack('script')
