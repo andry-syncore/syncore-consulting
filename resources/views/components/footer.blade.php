@@ -25,26 +25,26 @@
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">PROGRAM</p>
-            <a href="" class="text-light nav-link small mb-2">Convert</a>
-            <a href="" class="text-light nav-link small mb-2">Engage</a>
-            <a href="" class="text-light nav-link small mb-2">Retain</a>
+            <a href="" class="nav-link small mb-2">Convert</a>
+            <a href="" class="nav-link small mb-2">Engage</a>
+            <a href="" class="nav-link small mb-2">Retain</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">RESOURCES</p>
-            <a href="" class="text-light nav-link small mb-2">Mitra</a>
-            <a href="" class="text-light nav-link small mb-2">Blog</a>
-            <a href="" class="text-light nav-link small mb-2">FAQs</a>
-            <a href="" class="text-light nav-link small mb-2">Digital Events</a>
-            <a href="" class="text-light nav-link small mb-2">Testimonials</a>
+            <a href="" class="nav-link small mb-2">Mitra</a>
+            <a href="" class="nav-link small mb-2">Blog</a>
+            <a href="" class="nav-link small mb-2">FAQs</a>
+            <a href="" class="nav-link small mb-2">Digital Events</a>
+            <a href="" class="nav-link small mb-2">Testimonials</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">SUPPORT</p>
-            <a href="" class="text-light nav-link small mb-2">Contact Us</a>
-            <a href="" class="text-light nav-link small mb-2">Help Center</a>
+            <a href="" class="nav-link small mb-2">Contact Us</a>
+            <a href="" class="nav-link small mb-2">Help Center</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">COMPANY</p>
-            <a href="" class="text-light nav-link small mb-2">About Us</a>
+            <a href="" class="nav-link small mb-2">About Us</a>
          </div>
       </div>
    </div>
