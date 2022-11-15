@@ -103,6 +103,7 @@
    font-weight: 600;
 }
 
+
 /* dropdwown navbar */
 .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
    color: #f46a35;
@@ -138,6 +139,15 @@
 
 .menu-item-program.active .card {
    background-color: #F4F4F4;
+}
+
+/* footer style */
+footer .nav-link {
+   color: #fff;
+}
+
+footer .nav-link:hover {
+   color: #f46a35;
 }
 
 /* background hero homepage */
