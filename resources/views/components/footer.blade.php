@@ -1,6 +1,6 @@
 <footer class="bg-dark pb-3">
    <div class="container pt-5">
-      <img src="{{ asset('assets/img/logo-footer.svg') }}" alt="logo footer" class="img-fluid">
+      <img loading="lazy" src="{{ asset('assets/img/logo-footer.svg') }}" alt="logo footer" class="img-fluid">
 
       <div class="row my-5">
          <div class="col-12 col-lg-4 col-xl-5 mb-lg-0 mb-5 me-5">
@@ -52,9 +52,9 @@
    <div class="container">
       <div class="row justify-content-between align-items-center">
          <div class="col-md-5 mb-3 mb-md-0 text-center text-md-start">
-            <a class="me-2" href="" target="_blank"><img src="{{ asset('assets/img/instagram.svg') }}" alt="instagram"></a>
-            <a class="me-2" href="" target="_blank"><img src="{{ asset('assets/img/facebook.svg') }}" alt="facebook"></a>
-            <a class="me-2" href="" target="_blank"><img src="{{ asset('assets/img/linked in.svg') }}" alt="linked in"></a>
+            <a class="me-2" href="" target="_blank"><img loading="lazy" src="{{ asset('assets/img/instagram.svg') }}" alt="instagram"></a>
+            <a class="me-2" href="" target="_blank"><img loading="lazy" src="{{ asset('assets/img/facebook.svg') }}" alt="facebook"></a>
+            <a class="me-2" href="" target="_blank"><img loading="lazy" src="{{ asset('assets/img/linked in.svg') }}" alt="linked in"></a>
          </div>
          <div class="col-md-7 text-center text-light text-md-end">
             &copy; {{ date('Y') }} Syncore Consulting All rights reserved

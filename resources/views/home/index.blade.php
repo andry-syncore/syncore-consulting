@@ -23,7 +23,7 @@
                   </div>
                </div>
                <div class="col-lg-5">
-                  <img src="{{ asset('assets/img/homepage/image-hero.png') }}" alt="gambar hero" class="img-fluid w-100">
+                  <img loading="lazy" src="{{ asset('assets/img/homepage/image-hero.png') }}" alt="gambar hero" class="img-fluid w-100">
                </div>
             </div>
          </div>
@@ -44,12 +44,12 @@
             <div class="col-12 mt-4">
                <div class="swiper slider-client">
                   <div class="swiper-wrapper">
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-1.svg') }}" alt="logo slider"></div>
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-2.svg') }}" alt="logo slider"></div>
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-3.svg') }}" alt="logo slider"></div>
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-4.svg') }}" alt="logo slider"></div>
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-5.svg') }}" alt="logo slider"></div>
-                     <div class="swiper-slide"><img src="{{ asset('assets/img/homepage/logo-slider-6.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-1.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-2.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-3.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-4.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-5.svg') }}" alt="logo slider"></div>
+                     <div class="swiper-slide"><img loading="lazy" src="{{ asset('assets/img/homepage/logo-slider-6.svg') }}" alt="logo slider"></div>
                   </div>
                </div>
             </div>
@@ -63,7 +63,7 @@
       <div class="container">
          <div class="row justify-content-between align-items-center">
             <div class="col-lg-5">
-               <img src="{{ asset('assets/img/homepage/image-section-reason.png') }}" alt="gambar section teknologi" class="img-fluid w-100">
+               <img loading="lazy" src="{{ asset('assets/img/homepage/image-section-reason.png') }}" alt="gambar section teknologi" class="img-fluid w-100">
             </div>
             <div class="col-lg-6">
                <h1 class="text-orange fw-600">Kenapa Harus Syncore Consulting?</h1>
@@ -74,28 +74,28 @@
                <ul class="text-dark-5" id="list-reason">
                   <div class="row">
                      <div class="col-2 text-lg-end">
-                        <img src="{{ asset('assets/img/calendar-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('assets/img/calendar-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
                         <li>Menjalin kerjasama dan kolaborasi jangka panjang (Long-term partnership & collaboration)</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img src="{{ asset('assets/img/price-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('assets/img/price-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
                         <li>Selalu memberikan nilai lebih kepada client (Always Deliver Values)</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img src="{{ asset('assets/img/puzzle-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('assets/img/puzzle-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
                         <li>Menjunjung tinggi kejujuran, kepercayaan, dan bersikap terbuka (Open & Trustworthy)</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img src="{{ asset('assets/img/rocket-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('assets/img/rocket-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
                         <li>Selalu menyelesaikan tugas yang sudah dimulai (finished what we started)</li>
@@ -122,27 +122,27 @@
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
                            <div class="card rounded-4 overflow-hidden border-0 shadow-sm">
-                              <img src="{{ asset('assets/img/homepage/card-slider-1.png') }}" alt="card slider" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/card-slider-1.png') }}" alt="card slider" class="img-fluid">
                            </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="card rounded-4 overflow-hidden border-0 shadow-sm">
-                              <img src="{{ asset('assets/img/homepage/card-slider-2.png') }}" alt="card slider" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/card-slider-2.png') }}" alt="card slider" class="img-fluid">
                            </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="card rounded-4 overflow-hidden border-0 shadow-sm">
-                              <img src="{{ asset('assets/img/homepage/card-slider-3.png') }}" alt="card slider" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/card-slider-3.png') }}" alt="card slider" class="img-fluid">
                            </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="card rounded-4 overflow-hidden border-0 shadow-sm">
-                              <img src="{{ asset('assets/img/homepage/card-slider-4.png') }}" alt="card slider" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/card-slider-4.png') }}" alt="card slider" class="img-fluid">
                            </div>
                         </div>
                         <div class="swiper-slide">
                            <div class="card rounded-4 overflow-hidden border-0 shadow-sm">
-                              <img src="{{ asset('assets/img/homepage/card-slider-5.png') }}" alt="card slider" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/card-slider-5.png') }}" alt="card slider" class="img-fluid">
                            </div>
                         </div>
                      </div>
@@ -197,7 +197,7 @@
             </div>
             <div class="col-lg-6">
                <div class="rounded-4 overflow-hidden">
-                  <img src="{{ asset('assets/img/homepage/image-portfolio-1.png') }}" alt="" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('assets/img/homepage/image-portfolio-1.png') }}" alt="" class="img-fluid">
                </div>
             </div>
          </div>
@@ -224,7 +224,7 @@
                            <div class="card card-body rounded-3 shadow-sm">
                               <div class="rounded-3 position-relative mb-2 overflow-hidden">
                                  <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
+                                 <img loading="lazy" src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
                               </div>
                               <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
                                  Lingkungan
@@ -233,7 +233,7 @@
                               <div class="card-footer bg-transparent px-0">
                                  <div class="d-flex align-items-center">
                                     <div class="rounded-circle overflow-hidden">
-                                       <img src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
+                                       <img loading="lazy" src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
                                     </div>
                                     <div class="ms-2">
                                        <p class="fw-500 small m-0">Lana Steiner</p>
@@ -248,7 +248,7 @@
                            <div class="card card-body rounded-3 shadow-sm">
                               <div class="rounded-3 position-relative mb-2 overflow-hidden">
                                  <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
+                                 <img loading="lazy" src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
                               </div>
                               <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
                                  Lingkungan
@@ -257,7 +257,7 @@
                               <div class="card-footer bg-transparent px-0">
                                  <div class="d-flex align-items-center">
                                     <div class="rounded-circle overflow-hidden">
-                                       <img src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
+                                       <img loading="lazy" src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
                                     </div>
                                     <div class="ms-2">
                                        <p class="fw-500 small m-0">Lana Steiner</p>
@@ -272,7 +272,7 @@
                            <div class="card card-body rounded-3 shadow-sm">
                               <div class="rounded-3 position-relative mb-2 overflow-hidden">
                                  <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
+                                 <img loading="lazy" src="{{ asset('assets/img/homepage/image-article-1.png') }}" alt="gambar artikel" class="img-fluid w-100">
                               </div>
                               <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
                                  Lingkungan
@@ -281,7 +281,7 @@
                               <div class="card-footer bg-transparent px-0">
                                  <div class="d-flex align-items-center">
                                     <div class="rounded-circle overflow-hidden">
-                                       <img src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
+                                       <img loading="lazy" src="{{ asset('assets/img/homepage/image-user-article.png') }}" alt="gambar user" class="img-fluid">
                                     </div>
                                     <div class="ms-2">
                                        <p class="fw-500 small m-0">Lana Steiner</p>
@@ -324,7 +324,7 @@
                      <div class="swiper-slide">
                         <div class="row align-items-center">
                            <div class="col-md-3 order-1 order-md-0">
-                              <img src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
                            <div class="col-md-7 mb-4 mb-md-0">
                               <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
@@ -337,7 +337,7 @@
                      <div class="swiper-slide">
                         <div class="row align-items-center">
                            <div class="col-md-3 order-1 order-md-0">
-                              <img src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
                            <div class="col-md-7 mb-4 mb-md-0">
                               <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
@@ -350,7 +350,7 @@
                      <div class="swiper-slide">
                         <div class="row align-items-center">
                            <div class="col-md-3 order-1 order-md-0">
-                              <img src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
+                              <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
                            <div class="col-md-7 mb-4 mb-md-0">
                               <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
@@ -389,7 +389,7 @@
                   </div>
                </div>
                <div class="col-md-5">
-                  <img src="{{ asset('assets/img/homepage/image-banner.png') }}" alt="gambar banner" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('assets/img/homepage/image-banner.png') }}" alt="gambar banner" class="img-fluid">
                </div>
             </div>
          </div>

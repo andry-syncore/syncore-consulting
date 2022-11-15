@@ -56,6 +56,9 @@
    <!-- leaflet map js -->
    <script src="https://unpkg.com/leaflet@1.9.2/dist/leaflet.js" integrity="sha256-o9N1jGDZrf5tS+Ft4gbIK7mYMipq9lqpVJ91xHSyKhg=" crossorigin=""></script>
 
+   <!-- lozad js -->
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+
    <!-- custom js -->
    <script src="{{ asset('assets/js/home/custom.js') }}"></script>
 

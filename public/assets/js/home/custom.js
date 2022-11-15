@@ -34,3 +34,8 @@ btnTabs.forEach((tab) => tab.addEventListener('click', function () {
    currentActive.className = currentActive.className.replace(`${activeClass} ${paddingClass}`, '')
    this.className += ` ${activeClass} ${paddingClass}`
 }))
+
+// init lazy loading image
+const elImg = document.querySelectorAll('img')
+const observer = lozad(elImg)
+observer.observe()
