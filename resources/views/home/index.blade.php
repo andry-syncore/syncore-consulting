@@ -38,8 +38,7 @@
             <div class="col-lg-9">
                <div class="px-5 text-center">
                   <h2 class="text-orange fw-600 mb-3">Dicintai oleh lebih dari puluhan Klien</h2>
-                  <h5 class="text-dark-3 fw-400">kami mengakui klien kami adalah ahli di industri mereka dan kami memastikan untuk membuat kinerja terbaik untuk mencapai tujuan
-                     mereka</h5>
+                  <h5 class="text-dark-3 fw-400">kami mengakui klien kami adalah ahli di industri mereka dan kami memastikan untuk membuat kinerja terbaik untuk mencapai tujuan mereka</h5>
                </div>
             </div>
             <div class="col-12 mt-4">
@@ -177,7 +176,7 @@
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio">Goverance</button>
+               <button class="btn py-2 btn-tab-portfolio">Governance</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
@@ -534,18 +533,6 @@
                },
             },
          });
-
-         // button tab portfolio
-         const btnTabs = document.querySelectorAll('.btn-tab-portfolio')
-         btnTabs.forEach((tab, i) => tab.addEventListener('click', function() {
-            // set active button when click
-            const activeClass = 'bg-orange-active'
-            const paddingClass = 'px-md-4 px-lg-5 mb-2 px-3'
-
-            const currentActive = document.querySelector(`.${activeClass}`)
-            currentActive.className = currentActive.className.replace(`${activeClass} ${paddingClass}`, '')
-            this.className += ` ${activeClass} ${paddingClass}`
-         }))
       </script>
    @endpush
 @endsection

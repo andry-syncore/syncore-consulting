@@ -1,5 +1,5 @@
-<div class="position-relative">
-   <nav class="navbar navbar-expand-lg navbar-light sticky-top bg-white shadow-sm">
+<div class="sticky-top">
+   <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
          <a class="navbar-brand" href="{{ route('home') }}">
             <img src="{{ asset('assets/img/logo-navbar.svg') }}" alt="logo syncore consulting">
@@ -30,7 +30,7 @@
                         <li><a class="dropdown-item" href="#">Sustainability</a></li>
                      </ul>
                   </li>
-                  <a class="nav-link px-lg-3" href="#">Portfolio</a>
+                  <a class="nav-link px-lg-3 {{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>
                   <a class="nav-link px-lg-3" href="#">Media</a>
                   <a class="nav-link px-lg-3" href="#">Mitra</a>
                   <a href="#" class="btn btn-orange d-block d-lg-none mt-2 px-4">Hubungi Kami</a>
@@ -49,8 +49,8 @@
          <h5 class="text-dark-3 fw-600">Program</h5>
          <hr>
          <div class="row mt-4">
-            <div class="col-4 mb-5">
-               <a href="" class="text-decoration-none menu-item-program">
+            <div class="col-lg-6 col-xl-4 mb-5">
+               <a href="#" class="text-decoration-none menu-item-program">
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
@@ -67,8 +67,8 @@
                </a>
             </div>
 
-            <div class="col-4 mb-5">
-               <a href="" class="text-decoration-none menu-item-program">
+            <div class="col-lg-6 col-xl-4 mb-5">
+               <a href="#" class="text-decoration-none menu-item-program">
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
@@ -85,15 +85,15 @@
                </a>
             </div>
 
-            <div class="col-4 mb-5">
-               <a href="" class="text-decoration-none menu-item-program">
+            <div class="col-lg-6 col-xl-4 mb-5">
+               <a href="#" class="text-decoration-none menu-item-program">
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
                            <img src="{{ asset('assets/img/icon-menu-governance.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Goverance</p>
+                           <p class="text-dark-3 fw-600 mb-1">Governance</p>
                            <div class="small">
                               <p class="text-dark-5 small my-0">Kami membantu anda untuk membuat pelatihan & pendampingan masyarakat</p>
                            </div>
@@ -103,8 +103,8 @@
                </a>
             </div>
 
-            <div class="col-4 mb-5">
-               <a href="" class="text-decoration-none menu-item-program">
+            <div class="col-lg-6 col-xl-4 mb-5">
+               <a href="#" class="text-decoration-none menu-item-program">
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
@@ -121,8 +121,8 @@
                </a>
             </div>
 
-            <div class="col-4 mb-5">
-               <a href="" class="text-decoration-none menu-item-program">
+            <div class="col-lg-6 col-xl-4 mb-5">
+               <a href="#" class="text-decoration-none menu-item-program">
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">

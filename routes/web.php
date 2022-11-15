@@ -31,3 +31,9 @@ Route::get('faq', function() {
       'title' => 'Tentang Kami'
    ]);
 })->name('faq');
+
+Route::get('portfolio', function() {
+   return view('home.portfolio.index', [
+      'title' => 'Portfolio'
+   ]);
+})->name('portfolio');
