@@ -38,7 +38,8 @@
             <div class="col-lg-9">
                <div class="px-5 text-center">
                   <h2 class="text-orange fw-600 mb-3">Dicintai oleh lebih dari puluhan Klien</h2>
-                  <h5 class="text-dark-3 fw-400">kami mengakui klien kami adalah ahli di industri mereka dan kami memastikan untuk membuat kinerja terbaik untuk mencapai tujuan mereka</h5>
+                  <h5 class="text-dark-3 fw-400">kami mengakui klien kami adalah ahli di industri mereka dan kami memastikan untuk membuat kinerja terbaik untuk mencapai tujuan mereka
+                  </h5>
                </div>
             </div>
             <div class="col-12 mt-4">
@@ -168,27 +169,27 @@
          </div>
          <div class="row justify-content-lg-between mt-5">
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio bg-orange-active px-md-4 px-lg-5 mb-2 px-3">Policy</button>
+               <button class="btn btn-tab-portfolio py-2 bg-orange-active px-lg-5 mb-2 mb-md-0 px-3">Policy</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio">Inovasi</button>
+               <button class="btn btn-tab-portfolio py-2">Inovasi</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio">Governance</button>
+               <button class="btn btn-tab-portfolio py-2">Governance</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio">Akuntability</button>
+               <button class="btn btn-tab-portfolio py-2">Akuntability</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn py-2 btn-tab-portfolio">Sustainability</button>
+               <button class="btn btn-tab-portfolio py-2">Sustainability</button>
                <hr class="d-block d-md-none my-0">
             </div>
          </div>
-         <hr class="my-3 d-none d-md-block">
+         <hr class="d-none d-md-block my-3">
          <div class="row justify-content-between align-items-center my-4">
             <div class="col-lg-6 mb-lg-0 mb-3">
                <h2 class="fw-600 mb-lg-4">Program Pendampingan Pengembangan Website Marketplace Belanja Kalteng</h2>
@@ -323,11 +324,12 @@
 
                      <div class="swiper-slide">
                         <div class="row align-items-center">
-                           <div class="col-md-3 order-1 order-md-0">
+                           <div class="col-md-3 order-md-0 order-1">
                               <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
-                           <div class="col-md-7 mb-4 mb-md-0">
-                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
+                           <div class="col-md-7 mb-md-0 mb-4">
+                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat
+                                 berkembang lebih baik.</p>
                               <p class="fw-600 text-dark-3 mt-4 mb-0">Dyandra cantika</p>
                               <p class="small text-secondary my-0">associate director at PT. sari husada </p>
                            </div>
@@ -336,11 +338,12 @@
 
                      <div class="swiper-slide">
                         <div class="row align-items-center">
-                           <div class="col-md-3 order-1 order-md-0">
+                           <div class="col-md-3 order-md-0 order-1">
                               <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
-                           <div class="col-md-7 mb-4 mb-md-0">
-                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
+                           <div class="col-md-7 mb-md-0 mb-4">
+                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat
+                                 berkembang lebih baik.</p>
                               <p class="fw-600 text-dark-3 mt-4 mb-0">Dyandra cantika</p>
                               <p class="small text-secondary my-0">associate director at PT. sari husada </p>
                            </div>
@@ -349,11 +352,12 @@
 
                      <div class="swiper-slide">
                         <div class="row align-items-center">
-                           <div class="col-md-3 order-1 order-md-0">
+                           <div class="col-md-3 order-md-0 order-1">
                               <img loading="lazy" src="{{ asset('assets/img/homepage/image-testimoni.png') }}" alt="gambar testimoni user" class="img-fluid">
                            </div>
-                           <div class="col-md-7 mb-4 mb-md-0">
-                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat berkembang lebih baik.</p>
+                           <div class="col-md-7 mb-md-0 mb-4">
+                              <p class="fw-400 text-dark-5">syncore consulting sangat membantu perusahaan saya untuk mengembangkan manajemen keuangan sehingga perusahaan saya dapat
+                                 berkembang lebih baik.</p>
                               <p class="fw-600 text-dark-3 mt-4 mb-0">Dyandra cantika</p>
                               <p class="small text-secondary my-0">associate director at PT. sari husada </p>
                            </div>
@@ -400,7 +404,7 @@
    @push('script')
       <script>
          // custom script here
-         
+
          // slider
          const sliderClient = new Swiper('.slider-client', {
             autoplay: {
