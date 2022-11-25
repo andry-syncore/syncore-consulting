@@ -37,3 +37,9 @@ Route::get('portfolio', function() {
       'title' => 'Portfolio'
    ]);
 })->name('portfolio');
+
+Route::get('media', function() {
+   return view('home.media.index', [
+      'title' => 'Media'
+   ]);
+})->name('media');
