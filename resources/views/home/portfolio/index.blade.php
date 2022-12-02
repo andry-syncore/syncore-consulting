@@ -19,7 +19,7 @@
                </div>
                <div class="col-md-7 col-lg-6">
                   <div class="rounded-3 overflow-hidden">
-                     <img loading="lazy" src="{{ asset('storage/img/portfolio/placeholder-image.png') }}" alt="gambar hero" class="img-fluid">
+                     <img loading="lazy" src="{{ asset('storage/img/portfolio/image-hero.png') }}" alt="gambar hero" class="img-fluid">
                   </div>
                </div>
             </div>
