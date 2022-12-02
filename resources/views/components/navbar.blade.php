@@ -2,14 +2,14 @@
    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
          <a class="navbar-brand" href="{{ route('home') }}">
-            <img loading="lazy" src="{{ asset('assets/img/logo-navbar.svg') }}" alt="logo syncore consulting">
+            <img loading="lazy" src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting">
          </a>
          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-collapse">
             <i class="fa-solid fa-bars fa-xl text-orange"></i>
          </button>
          <div class="offcanvas offcanvas-end" id="nav-collapse">
             <div class="offcanvas-header">
-               <img loading="lazy" src="{{ asset('assets/img/logo-navbar.svg') }}" alt="logo syncore consulting">
+               <img loading="lazy" src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting">
                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
@@ -54,7 +54,7 @@
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('assets/img/icon-menu-policy.svg') }}" class="img-fluid">
+                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-policy.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
                            <p class="text-dark-3 fw-600 mb-1">Policy</p>
@@ -72,7 +72,7 @@
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('assets/img/icon-menu-inkubasi.svg') }}" class="img-fluid">
+                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-inkubasi.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
                            <p class="text-dark-3 fw-600 mb-1">Inkubasi</p>
@@ -90,7 +90,7 @@
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('assets/img/icon-menu-governance.svg') }}" class="img-fluid">
+                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-governance.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
                            <p class="text-dark-3 fw-600 mb-1">Governance</p>
@@ -108,7 +108,7 @@
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('assets/img/icon-menu-inovasi.svg') }}" class="img-fluid">
+                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-inovasi.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
                            <p class="text-dark-3 fw-600 mb-1">Inovasi</p>
@@ -126,7 +126,7 @@
                   <div class="card border-0 p-2">
                      <div class="row align-items-center">
                         <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('assets/img/icon-menu-sustainability.svg') }}" class="img-fluid">
+                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-sustainability.svg') }}" class="img-fluid">
                         </div>
                         <div class="col-9">
                            <p class="text-dark-3 fw-600 mb-1">Sustainability</p>

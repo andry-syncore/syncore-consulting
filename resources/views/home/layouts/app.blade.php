@@ -21,7 +21,7 @@
    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.2/dist/leaflet.css" integrity="sha256-sA+zWATbFveLLNqWO2gtiw3HL/lh1giY/Inf1BJ0z14=" crossorigin="" />
 
    <!-- style css -->
-   <link rel="stylesheet" href="{{ secure_asset('assets/css/home/style.css') }}">
+   <link rel="stylesheet" href="{{ asset('assets/css/home/style.css') }}">
 
    <!-- for custom css in page -->
    @stack('style')
@@ -60,7 +60,7 @@
    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 
    <!-- custom js -->
-   <script src="{{ secure_asset('assets/js/home/custom.js') }}"></script>
+   <script src="{{ asset('assets/js/home/custom.js') }}"></script>
 
    <!-- for custom script in page -->
    @stack('script')

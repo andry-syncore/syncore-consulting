@@ -23,7 +23,7 @@
                         <div class="col-md-6 mt-md-5 mt-3">
                            <div class="card card-body rounded-4 h-100 border-0 py-5 shadow-sm">
                               <div class="text-center">
-                                 <img loading="lazy" src="{{ asset('assets/img/whatsapp.svg') }}" alt="icon whatsapp" class="img-fluid mb-4">
+                                 <img loading="lazy" src="{{ asset('storage/img/whatsapp.svg') }}" alt="icon whatsapp" class="img-fluid mb-4">
                                  <p class="fw-800 text-dark-3 mb-0">Chat with Our Team</p>
                                  <p class="mt-0">Have any questions? Ask away!</p>
                                  <a href="" target="_blank" class="btn btn-orange mt-4">Chat on WhatsApp</a>
@@ -33,7 +33,7 @@
                         <div class="col-md-6 mt-md-5 mt-3">
                            <div class="card card-body rounded-4 h-100 border-0 py-5 shadow-sm">
                               <div class="text-center">
-                                 <img loading="lazy" src="{{ asset('assets/img/users.svg') }}" alt="icon users" class="img-fluid mb-4">
+                                 <img loading="lazy" src="{{ asset('storage/img/users.svg') }}" alt="icon users" class="img-fluid mb-4">
                                  <p class="fw-800 text-dark-3 mb-0">1-on-1 Meeting with Our Team</p>
                                  <p class="mt-0">Talk & discuss with our team</p>
                                  <a href="" target="_blank" class="btn btn-orange mt-4">Request 1-on-1 Meeting</a>
@@ -70,7 +70,7 @@
                <div class="col-lg-6">
                   <div class="card ms-lg-5 px-lg-5 border-0 bg-transparent">
                      <p class="text-dark-3 fw-600 mb-1">Komplain & Bantuan Pengguna</p>
-                     <p class="text-dark-5 small mb-4"><img loading="lazy" src="{{ asset('assets/img/customer-service-icon.svg') }}" alt="customer service icon" class="img-fluid">
+                     <p class="text-dark-5 small mb-4"><img loading="lazy" src="{{ asset('storage/img/customer-service-icon.svg') }}" alt="customer service icon" class="img-fluid">
                         Syncorehelpcenter@gmail.com</p>
 
                      <p class="text-dark-3 fw-600 mb-1">Sekretaris Perusahaan</p>
@@ -102,7 +102,7 @@
                   </div>
                </div>
                <div class="col-md-5">
-                  <img loading="lazy" src="{{ asset('assets/img/about/image-banner.png') }}" alt="gambar banner" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('storage/img/about/image-banner.png') }}" alt="gambar banner" class="img-fluid">
                </div>
             </div>
          </div>

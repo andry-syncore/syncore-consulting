@@ -111,7 +111,7 @@
 
 /* dropdown navbar menu program */
 .dropdown-menu-program {
-   background: url("/assets/img/background-menu-program.png");
+   background: url("/storage/img/background-menu-program.png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -152,35 +152,35 @@ footer .nav-link:hover {
 
 /* background hero homepage */
 .background-hero-home {
-   background: url("/assets/img/homepage/background-hero.png");
+   background: url("/storage/img/homepage/background-hero.png");
    background-position: center;
    background-repeat: no-repeat;
 }
 
 /* background help homepage */
 .background-help-home {
-   background: url("/assets/img/homepage/background-help.png");
+   background: url("/storage/img/homepage/background-help.png");
    background-position: center;
    background-repeat: no-repeat;
 }
 
 /* background article homepage */
 .background-article-home {
-   background: url("/assets/img/homepage/background-article.png");
+   background: url("/storage/img/homepage/background-article.png");
    background-position: center;
    background-repeat: no-repeat;
 }
 
 /* background banner homepage */
 .background-banner-home {
-   background: url("/assets/img/homepage/background-banner.png");
+   background: url("/storage/img/homepage/background-banner.png");
    background-position: center;
    background-repeat: no-repeat;
 }
 
 /* background hero about */
 .background-hero-about {
-   background: url("/assets/img/about/background-hero.png");
+   background: url("/storage/img/about/background-hero.png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -188,7 +188,7 @@ footer .nav-link:hover {
 
 /* background contact about */
 .background-contact-about {
-   background: url("/assets/img/about/background-contact.png");
+   background: url("/storage/img/about/background-contact.png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -196,7 +196,7 @@ footer .nav-link:hover {
 
 /* background banner about */
 .background-banner-about {
-   background: url("/assets/img/about/background-banner.png");
+   background: url("/storage/img/about/background-banner.png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
@@ -204,7 +204,7 @@ footer .nav-link:hover {
 
 /* background banner portfolio */
 .background-hero-portfolio {
-   background: url("/assets/img/portfolio/background-hero.png");
+   background: url("/storage/img/portfolio/background-hero.png");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;

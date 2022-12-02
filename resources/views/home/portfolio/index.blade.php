@@ -19,7 +19,7 @@
                </div>
                <div class="col-md-7 col-lg-6">
                   <div class="rounded-3 overflow-hidden">
-                     <img loading="lazy" src="{{ asset('assets/img/portfolio/placeholder-image.png') }}" alt="gambar hero" class="img-fluid">
+                     <img loading="lazy" src="{{ asset('storage/img/portfolio/placeholder-image.png') }}" alt="gambar hero" class="img-fluid">
                   </div>
                </div>
             </div>
@@ -59,7 +59,7 @@
             <p class="text-dark-8 small mt-1">14 Pencarian ditemukan</p>
 
             <div class="d-flex align-items-center justify-content-center">
-               <img loading="lazy" src="{{ asset('assets/img/icon-search-not-found.svg') }}" alt="" class="img-fluid">
+               <img loading="lazy" src="{{ asset('storage/img/icon-search-not-found.svg') }}" alt="" class="img-fluid">
                <div class="mx-3 mt-4">
                   <h5 class="fw-600 mb-0">Oops, Portofolios tidak ditemukan</h5>
                   <p class="small text-dark-8 mt-1">Yuk, Coba kata kunci lain untuk mendapatkan apa yang anda cari</p>
@@ -101,7 +101,7 @@
                <div class="col-md-6 mb-4">
                   <div class="card card-body rounded-3 h-100 shadow-sm">
                      <div class="rounded-3 overflow-hidden">
-                        <img loading="lazy" src="{{ asset('assets/img/portfolio/image-portfolio.png') }}" alt="gambar portfolio" class="img-fluid w-100">
+                        <img loading="lazy" src="{{ asset('storage/img/portfolio/image-portfolio.png') }}" alt="gambar portfolio" class="img-fluid w-100">
                      </div>
                      <div class="alert alert-primary alert-fit-content fw-600 mt-3 border-0 py-2 px-4">Policy</div>
                      <h4 class="card-title fw-600">Program Pendampingan Pengembangan Website Marketplace Belanja Kalteng</h4>
