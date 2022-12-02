@@ -19,7 +19,7 @@
 
                   <div class="d-grid d-md-block my-5 gap-2">
                      <a href="#" class="btn btn-orange border py-2 px-3">Hubungi Kami</a>
-                     <a href="#" class="btn btn-white border py-2 px-3">Daftar Program</a>
+                     <a href="#" class="btn btn-white border py-2 px-3">Daftar Programs</a>
                   </div>
                </div>
                <div class="col-lg-5">
