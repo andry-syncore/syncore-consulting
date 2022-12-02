@@ -210,6 +210,14 @@ footer .nav-link:hover {
    background-repeat: no-repeat;
 }
 
+/* background banner media */
+.background-hero-media {
+   background: url("/storage/img/media/background-hero.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 /* list reason */
 #list-reason {
    list-style-type: none;
