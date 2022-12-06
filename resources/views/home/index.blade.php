@@ -13,8 +13,8 @@
             <div class="row align-items-lg-center justify-content-lg-between py-5">
                <div class="col-lg-5">
                   <div class="text-lg-start text-center">
-                     <h1 class="fw-600 text-orange">We provide the best Methode for your business</h1>
-                     <p class="text-dark-3">Syncore consulting membantu anda dalam pengelolaan keuangan, manajamen bisnis, dan program</p>
+                     <h1 class="fw-600 text-orange">Kami Siap Menyediakan Metode Terbaik untuk Mengembangkan Bisnis Anda</h1>
+                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan Sustainability)</p>
                   </div>
 
                   <div class="d-grid d-md-block my-5 gap-2">
@@ -37,9 +37,8 @@
          <div class="row justify-content-center">
             <div class="col-lg-9">
                <div class="px-5 text-center">
-                  <h2 class="text-orange fw-600 mb-3">Dicintai oleh lebih dari puluhan Klien</h2>
-                  <h5 class="text-dark-3 fw-400">kami mengakui klien kami adalah ahli di industri mereka dan kami memastikan untuk membuat kinerja terbaik untuk mencapai tujuan mereka
-                  </h5>
+                  <h2 class="text-orange fw-600 mb-3">Dipercaya Puluhan Klien untuk Bekerjasama Mengembangkan Bisnis</h2>
+                  <h5 class="text-dark-3 fw-400">Mendapatkan kepercayaan dari klien membuat kami memberikan kinerja terbaik untuk mencapai tujuan bisnis kedepan</h5>
                </div>
             </div>
             <div class="col-12 mt-4">
@@ -68,38 +67,36 @@
             </div>
             <div class="col-lg-6">
                <h1 class="text-orange fw-600">Kenapa Harus Syncore Consulting?</h1>
-               <p class="text-dark-3">Syncore Consulting memiliki metodologi yang sudah teruji selama 12 tahun. Metodologi yang kami kembangkan dikenal sebagai ATMR
-                  (Asses-Treat-Monitor-Review). Metodologi ini memungkinkan kami untuk melakukan proyek berskala besar, kebutuhan khusus, sistematis, dan berkelanjutan. Selain
-                  memiliki metodologi yang teruji, kami memiliki nilai-nilai yang selalu kami jaga, yaitu : </p>
+               <p class="text-dark-3">Syncore Consulting mengembangkan layanan untuk Penta Helix yaitu Pemerintah, Akademisi, Bisnis/Praktisi, Komunitas/NGO, dan Media dengan menggunakan Metode ATMR (Asses-Treat-Monitor-Review). Metodologi ini memungkinkan kami untuk melakukan proyek berskala besar, kebutuhan khusus, sistematis dan berkelanjutan.</p>
 
                <ul class="text-dark-5" id="list-reason">
-                  <div class="row">
+                  <div class="row align-items-center">
                      <div class="col-2 text-lg-end">
-                        <img loading="lazy" src="{{ asset('storage/img/calendar-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('storage/img/users-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
-                        <li>Menjalin kerjasama dan kolaborasi jangka panjang (Long-term partnership & collaboration)</li>
+                        <li>Bekerjasama dengan para profesional yang sudah ahli dibidangnya</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img loading="lazy" src="{{ asset('storage/img/price-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('storage/img/arrow-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
-                        <li>Selalu memberikan nilai lebih kepada client (Always Deliver Values)</li>
+                        <li>Memiliki pelatihan online & offline untuk mendampingi setiap langkah dari bisnis klien</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img loading="lazy" src="{{ asset('storage/img/puzzle-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('storage/img/hand-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
-                        <li>Menjunjung tinggi kejujuran, kepercayaan, dan bersikap terbuka (Open & Trustworthy)</li>
+                        <li>Selalu memberikan nilai lebih kepada klien</li>
                      </div>
 
                      <div class="col-2 text-lg-end">
-                        <img loading="lazy" src="{{ asset('storage/img/rocket-icon.svg') }}" alt="icon" class="img-fluid">
+                        <img loading="lazy" src="{{ asset('storage/img/connection-icon.svg') }}" alt="icon" class="img-fluid">
                      </div>
                      <div class="col-10">
-                        <li>Selalu menyelesaikan tugas yang sudah dimulai (finished what we started)</li>
+                        <li>Selalu berorientasi pada hasil dengan menjunjung tinggi kejujuran dan kepercayaan</li>
                      </div>
                   </div>
                </ul>
@@ -113,9 +110,13 @@
    <section id="help" class="py-lg-5 py-3">
       <div class="background-help-home">
          <div class="container">
-            <div class="text-center">
-               <h2 class="text-orange fw-600">Bagaimana Kami Dapat Membantu Anda?</h2>
-               <p class="text-dark-5">Syncore consulting hadir untuk mengatasi semua permasalahan bisnis anda</p>
+            <div class="row justify-content-lg-center">
+               <div class="col-lg-6">
+                  <div class="text-center">
+                     <h2 class="text-orange fw-600">Bagaimana Cara Kami Membantu Anda <span class="text-dark-3">Mengembangkan Bisnis?</span></h2>
+                     <p class="text-dark-5">Memahami proses bisnis dengan lebih cepat untuk memudahkan pengambilan keputusan yang lebih baik agar bisnis bisa berkembang melalui layanan konsultasi, sistem, pelatihan dan media.</p>
+                  </div>
+               </div>
             </div>
             <div class="row">
                <div class="col-12 mt-4">
@@ -165,7 +166,7 @@
       <div class="container">
          <div class="text-center">
             <h2 class="text-orange fw-600">Portofolio</h2>
-            <p class="text-dark-5">Kepercayaan klien merupakan prioritas kami. Berikut berbagai program yang telah dipercayakan kepada kami</p>
+            <p class="text-dark-5">Mengembangkan bisnis melalui Project yang dikembangkan dan dieksekusi dengan baik</p>
          </div>
          <div class="row justify-content-lg-between mt-5">
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
@@ -315,7 +316,7 @@
    <section id="testimonial" class="py-lg-5 py-3">
       <div class="container">
          <div class="text-center">
-            <h2 class="fw-600">Apa yang Mereka katakan <span class="text-orange">Tentang Kami</span></h2>
+            <h2 class="fw-600">Testimoni client</h2>
          </div>
          <div class="row">
             <div class="col-12 mt-4">
@@ -384,8 +385,8 @@
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-7">
-                  <h2 class="fw-600">Mari Bergabung Bersama Kami</h2>
-                  <p class="text-dark-5">Hubungi kami untuk mengatasi semua persoalan bisnis anda</p>
+                  <h2 class="fw-600">Ayo Coba Konsultasi Gratis</h2>
+                  <p class="text-dark-5">Jangan ragu hubungi kami untuk mengatasi semua persoalan bisnis anda</p>
 
                   <div class="d-grid d-md-block my-5 gap-2">
                      <a href="#" class="btn btn-orange border py-2 px-3">Hubungi Kami</a>

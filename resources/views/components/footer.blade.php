@@ -16,26 +16,26 @@
                </div>
             </div>
 
-            <h5 class="fw-500 text-light">Stay connected</h5>
-            <p class="text-light">We'll keep you up to date with the amazing world of workplace mental health and wellbeing.</p>
-            <form class="d-flex" action="" method="POST">
-               <input class="form-control me-2" type="email" placeholder="Masukan email...">
+            <h5 class="fw-500 text-light">Tetap Terhubungi dengan Kami</h5>
+            <p class="text-light">Dapatkan berita terbaru dan promosi menarik setiap bulannya</p>
+            <form class="d-flex" action="" method="GET">
+               <input class="form-control me-2" type="email" placeholder="Masukan email anda">
                <button class="btn btn-orange" type="submit">Subscribe</button>
             </form>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">PROGRAM</p>
-            <a href="" class="nav-link small mb-2">Convert</a>
-            <a href="" class="nav-link small mb-2">Engage</a>
-            <a href="" class="nav-link small mb-2">Retain</a>
+            <a href="" class="nav-link small mb-2">Policy</a>
+            <a href="" class="nav-link small mb-2">Inovasi</a>
+            <a href="" class="nav-link small mb-2">Governance</a>
+            <a href="" class="nav-link small mb-2">Akutabilitas</a>
+            <a href="" class="nav-link small mb-2">Sustainability</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">RESOURCES</p>
-            <a href="" class="nav-link small mb-2">Mitra</a>
-            <a href="" class="nav-link small mb-2">Blog</a>
+            <a href="" class="nav-link small mb-2">Portofolio</a>
             <a href="" class="nav-link small mb-2">FAQs</a>
-            <a href="" class="nav-link small mb-2">Digital Events</a>
-            <a href="" class="nav-link small mb-2">Testimonials</a>
+            <a href="" class="nav-link small mb-2">Media</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">SUPPORT</p>
@@ -43,8 +43,9 @@
             <a href="" class="nav-link small mb-2">Help Center</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
-            <p class="text-light fw-500">COMPANY</p>
-            <a href="" class="nav-link small mb-2">About Us</a>
+            <p class="text-light fw-500">PERUSAHAAN</p>
+            <a href="" class="nav-link small mb-2">Tentang Kami</a>
+            <a href="" class="nav-link small mb-2">Mitra</a>
          </div>
       </div>
    </div>
