@@ -23,6 +23,8 @@
    <!-- style css -->
    <link rel="stylesheet" href="{{ asset('assets/css/home/style.css') }}">
 
+   <link rel="shortcut icon" href="{{ asset('storage/img/favicon.png') }}" type="image/x-icon">
+
    <!-- for custom css in page -->
    @stack('style')
 </head>

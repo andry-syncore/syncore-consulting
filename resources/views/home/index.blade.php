@@ -11,11 +11,10 @@
       <div class="background-hero-home">
          <div class="container">
             <div class="row align-items-lg-center justify-content-lg-between py-5">
-               <div class="col-lg-5">
+               <div class="col-lg-6">
                   <div class="text-lg-start text-center">
                      <h1 class="fw-600 text-orange">Kami Siap Menyediakan Metode Terbaik untuk Mengembangkan Bisnis Anda</h1>
-                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan
-                        Sustainability)</p>
+                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan Sustainability)</p>
                   </div>
 
                   <div class="d-grid d-md-block my-5 gap-2">
@@ -50,7 +49,6 @@
                      <div class="swiper-slide"><img src="{{ asset('storage/img/homepage/logo-slider-3.svg') }}" alt="logo slider" loading="lazy"></div>
                      <div class="swiper-slide"><img src="{{ asset('storage/img/homepage/logo-slider-4.svg') }}" alt="logo slider" loading="lazy"></div>
                      <div class="swiper-slide"><img src="{{ asset('storage/img/homepage/logo-slider-5.svg') }}" alt="logo slider" loading="lazy"></div>
-                     <div class="swiper-slide"><img src="{{ asset('storage/img/homepage/logo-slider-6.svg') }}" alt="logo slider" loading="lazy"></div>
                   </div>
                </div>
             </div>
