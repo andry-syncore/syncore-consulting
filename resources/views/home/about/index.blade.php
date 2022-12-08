@@ -16,17 +16,17 @@
             <div class="row justify-content-center py-5">
                <div class="col-md-10 col-lg-8">
                   <div class="text-center">
-                     <h1 class="fw-600 text-orange">We're Here to Help!</h1>
-                     <p>Always humans, never bots. The hands-down, sharpest and friendliest support team in the biz. Contact us and we'll get back to you ASAP</p>
+                     <h1 class="fw-600 text-orange">Kami Siap untuk Membantu Anda!</h1>
+                     <p>Jika Anda memiliki kesulitan dan masalah berkaitan dengan bisnis bisa langsung kontak kami saja melalui dua saluran berikut!</p>
 
                      <div class="row mt-5">
                         <div class="col-md-6 mt-md-5 mt-3">
                            <div class="card card-body rounded-4 h-100 border-0 py-5 shadow-sm">
                               <div class="text-center">
                                  <img loading="lazy" src="{{ asset('storage/img/whatsapp.svg') }}" alt="icon whatsapp" class="img-fluid mb-4">
-                                 <p class="fw-800 text-dark-3 mb-0">Chat with Our Team</p>
-                                 <p class="mt-0">Have any questions? Ask away!</p>
-                                 <a href="" target="_blank" class="btn btn-orange mt-4">Chat on WhatsApp</a>
+                                 <p class="fw-800 text-dark-3 mb-0">Kontak Via Whatsapp</p>
+                                 <p class="mt-0">Punya pertanyaan? Langsung chat saja!</p>
+                                 <a href="" target="_blank" class="btn btn-orange mt-4">Hubungi Kami</a>
                               </div>
                            </div>
                         </div>
@@ -34,9 +34,9 @@
                            <div class="card card-body rounded-4 h-100 border-0 py-5 shadow-sm">
                               <div class="text-center">
                                  <img loading="lazy" src="{{ asset('storage/img/users.svg') }}" alt="icon users" class="img-fluid mb-4">
-                                 <p class="fw-800 text-dark-3 mb-0">1-on-1 Meeting with Our Team</p>
-                                 <p class="mt-0">Talk & discuss with our team</p>
-                                 <a href="" target="_blank" class="btn btn-orange mt-4">Request 1-on-1 Meeting</a>
+                                 <p class="fw-800 text-dark-3 mb-0">1 on 1 Diskusi Bersama Tim Kami</p>
+                                 <p class="mt-0">Diskusi mendalam bersama dengan tim</p>
+                                 <a href="" target="_blank" class="btn btn-orange mt-4">Bergabung Langsung</a>
                               </div>
                            </div>
                         </div>
