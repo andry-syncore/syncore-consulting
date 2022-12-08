@@ -393,7 +393,6 @@
    </section>
    <!-- end mitra -->
 
-
    @push('script')
       <script>
          // custom script here
