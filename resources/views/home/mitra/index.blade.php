@@ -92,7 +92,7 @@
                </div>
                
                <div class="col-md-4 px-2 mb-3">
-                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT. bank Rakyat Indonesia.png') }}" alt="PT. bank Rakyat Indonesia" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT. Bank Rakyat Indonesia.png') }}" alt="PT. bank Rakyat Indonesia" class="img-fluid">
                </div>
                
                <div class="col-md-4 px-2 mb-3">
@@ -104,7 +104,7 @@
                </div>
                
                <div class="col-md-4 px-2 mb-3">
-                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bank Indonesia Kalimantan Tengah.png') }}" alt="Bank Indonesia Kalimantan Tengah" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bank Indonesia Kalteng.png') }}" alt="Bank Indonesia Kalimantan Tengah" class="img-fluid">
                </div>
 
                <div class="col-md-4 px-2 mb-3">
@@ -227,7 +227,7 @@
                </div>
 
                <div class="col-md-4 px-2 mb-3">
-                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT. bank Rakyat Indonesia.png') }}" alt="PT. bank Rakyat Indonesia" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT. Bank Rakyat Indonesia.png') }}" alt="PT. bank Rakyat Indonesia" class="img-fluid">
                </div>
                
                <div class="col-md-4 px-2 mb-3">
@@ -239,7 +239,7 @@
                </div>
                
                <div class="col-md-4 px-2 mb-3">
-                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bank Indonesia Kalimantan Tengah.png') }}" alt="Bank Indonesia Kalimantan Tengah" class="img-fluid">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bank Indonesia Kalteng.png') }}" alt="Bank Indonesia Kalimantan Tengah" class="img-fluid">
                </div>
 
                <div class="col-md-4 px-2 mb-3">
