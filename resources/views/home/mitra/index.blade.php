@@ -14,7 +14,8 @@
                <div class="col-lg-6">
                   <div class="text-lg-start text-center">
                      <h1 class="fw-600 text-orange">Mitra</h1>
-                     <p class="text-dark-3">Kami berkolaborasi bersama berbagai mitra strategis dengan setara. Mari berkolaborasi, mari menjadi Pijarian!</p>
+                     <p class="text-dark-3 my-0">Kami berkolaborasi bersama berbagai mitra strategis.</p>
+                     <p class="text-dark-3 my-0">Mari berkolaborasi dengan kami!</p>
                   </div>
                </div>
                <div class="col-lg-5">
