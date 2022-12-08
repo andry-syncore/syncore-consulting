@@ -43,3 +43,9 @@ Route::get('media', function() {
       'title' => 'Media'
    ]);
 })->name('media');
+
+Route::get('mitra', function() {
+   return view('home.mitra.index', [
+      'title' => 'Mitra'
+   ]);
+})->name('mitra');

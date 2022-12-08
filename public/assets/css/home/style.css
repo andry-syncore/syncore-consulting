@@ -218,6 +218,14 @@ footer .nav-link:hover {
    background-repeat: no-repeat;
 }
 
+/* background banner mitra */
+.background-hero-mitra {
+   background: url("/storage/img/mitra/background-hero.png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+}
+
 /* list reason */
 #list-reason {
    list-style-type: none;

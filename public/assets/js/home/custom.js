@@ -24,8 +24,8 @@ const changeIcon = (dropdown) => {
 }
 
 // button tab portfolio
-const btnTabs = document.querySelectorAll('.btn-tab-portfolio')
-btnTabs.forEach((tab) => tab.addEventListener('click', function () {
+const btnTabPortfolios = document.querySelectorAll('.btn-tab-portfolio')
+btnTabPortfolios.forEach((tab) => tab.addEventListener('click', function () {
    // set active button when click
    const activeClass = 'bg-orange-active'
    const paddingClass = 'px-lg-5 mb-2 mb-md-0 px-3'
@@ -33,6 +33,17 @@ btnTabs.forEach((tab) => tab.addEventListener('click', function () {
    const currentActive = document.querySelector(`.${activeClass}`)
    currentActive.className = currentActive.className.replace(`${activeClass} ${paddingClass}`, '')
    this.className += ` ${activeClass} ${paddingClass}`
+}))
+
+// button tab mitra
+const btnTabMitras = document.querySelectorAll('.btn-tab-mitra')
+btnTabMitras.forEach((tab) => tab.addEventListener('click', function () {
+   // set active button when click
+   const activeClass = 'bg-orange-active'
+
+   const currentActive = document.querySelector(`.${activeClass}`)
+   currentActive.className = currentActive.className.replace(`${activeClass}`, '')
+   this.className += ` ${activeClass}`
 }))
 
 // init lazy loading image

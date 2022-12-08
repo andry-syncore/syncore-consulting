@@ -620,7 +620,6 @@
          });
 
          // tab portfolio
-         const btnTabPortfolios = document.querySelectorAll('.btn-tab-portfolio')
          const tabContentPortfolios = document.querySelectorAll('.tab-content-portfolio')
          btnTabPortfolios.forEach(btn => btn.addEventListener('click', function() {
             tabId = this.dataset.target
