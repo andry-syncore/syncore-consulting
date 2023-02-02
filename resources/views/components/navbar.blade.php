@@ -106,3 +106,96 @@
       </div>
    </div>
 </div>
+
+
+<!-- ###################################################################################################################################################### -->
+<!-- OLD NAVBAR (DONT DELETE) -->
+{{-- <div class="col-lg-6 col-xl-4 mb-5">
+   <a href="#" class="text-decoration-none menu-item-program">
+      <div class="card border-0 p-2">
+         <div class="row align-items-center">
+            <div class="col-3 fit-content">
+               <img loading="lazy" src="{{ asset('storage/img/icon-menu-policy.svg') }}" class="img-fluid">
+            </div>
+            <div class="col-9">
+               <p class="text-dark-3 fw-600 mb-1">Policy</p>
+               <div class="small">
+                  <p class="text-dark-5 small my-0">Berkolaborasi bersama akademisi untuk menghasilkan peraturan dan kebijakan yang berdampak besar</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-6 col-xl-4 mb-5">
+   <a href="#" class="text-decoration-none menu-item-program">
+      <div class="card border-0 p-2">
+         <div class="row align-items-center">
+            <div class="col-3 fit-content">
+               <img loading="lazy" src="{{ asset('storage/img/icon-menu-inovasi.svg') }}" class="img-fluid">
+            </div>
+            <div class="col-9">
+               <p class="text-dark-3 fw-600 mb-1">Inovasi</p>
+               <div class="small">
+                  <p class="text-dark-5 small my-0">Kami membantu membuat pelatihan dan pendampingan untuk masyarakat</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-6 col-xl-4 mb-5">
+   <a href="#" class="text-decoration-none menu-item-program">
+      <div class="card border-0 p-2">
+         <div class="row align-items-center">
+            <div class="col-3 fit-content">
+               <img loading="lazy" src="{{ asset('storage/img/icon-menu-governance.svg') }}" class="img-fluid">
+            </div>
+            <div class="col-9">
+               <p class="text-dark-3 fw-600 mb-1">Governance</p>
+               <div class="small">
+                  <p class="text-dark-5 small my-0">Membantu untuk melakukan revitalisasi kelembagaan agar bisa bersaing lagi di pasar</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-6 col-xl-4 mb-5">
+   <a href="#" class="text-decoration-none menu-item-program">
+      <div class="card border-0 p-2">
+         <div class="row align-items-center">
+            <div class="col-3 fit-content">
+               <img loading="lazy" src="{{ asset('storage/img/icon-menu-akuntabilitas.svg') }}" class="img-fluid">
+            </div>
+            <div class="col-9">
+               <p class="text-dark-3 fw-600 mb-1">Akuntabilitas</p>
+               <div class="small">
+                  <p class="text-dark-5 small my-0">Memberikan bantuan dalam Bidang Keuangan, Manajemen, Digitalisasi, Penilaian Kinerja</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div>
+
+<div class="col-lg-6 col-xl-4 mb-5">
+   <a href="#" class="text-decoration-none menu-item-program">
+      <div class="card border-0 p-2">
+         <div class="row align-items-center">
+            <div class="col-3 fit-content">
+               <img loading="lazy" src="{{ asset('storage/img/icon-menu-sustainability.svg') }}" class="img-fluid">
+            </div>
+            <div class="col-9">
+               <p class="text-dark-3 fw-600 mb-1">Sustainability</p>
+               <div class="small">
+                  <p class="text-dark-5 small my-0">Memberikan pandangan dan pertimbangan untuk sebuah keberlanjutan dalam bidang sosial lingkungan dan ekonomi</p>
+               </div>
+            </div>
+         </div>
+      </div>
+   </a>
+</div> --}}

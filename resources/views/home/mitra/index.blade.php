@@ -198,6 +198,142 @@
                <div class="col-md-4 px-2 mb-3">
                   <img loading="lazy" src="{{ asset('storage/img/mitra/Universitas Janabadra.png') }}" alt="Universitas Janabadra" class="img-fluid">
                </div>
+
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/STIE Widya Wiwaha.png') }}" alt="STIE Widya Wiwaha" class="img-fluid">
+               </div>
+
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kopma UGM.png') }}" alt="Kopma UGM" class="img-fluid">
+               </div>
+
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PIP Semarang.png') }}" alt="PIP Semarang" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PIP Makasar.png') }}" alt="PIP Makasar" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Unires UMY.png') }}" alt="Unires UMY" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Cokro Telacake.png') }}" alt="Cokro Telacake" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Swalayan HW.png') }}" alt="Swalayan HW" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bakoel Corp.png') }}" alt="Bakoel Corp" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/AMM Kotagedhe.png') }}" alt="AMM Kotagedhe" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Esoftdream.png') }}" alt="Esoftdream" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Niaga Kita Indonesia.png') }}" alt="Niaga Kita Indonesia" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/HRC.png') }}" alt="HRC" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Toko Taqiy.png') }}" alt="Toko Taqiy" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kota Kita.png') }}" alt="Kota Kita" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Toko Wihan.png') }}" alt="Toko Wihan" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Media Centerlink.png') }}" alt="Media Centerlink" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Ikan Bakar Gambiran.png') }}" alt="Ikan Bakar Gambiran" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Jogja Camp.png') }}" alt="Jogja Camp" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Wisma Joglo.png') }}" alt="Wisma Joglo" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT Asli Motor Klaten.png') }}" alt="PT Asli Motor Klaten" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Madania.png') }}" alt="Madania" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Hotel Galuh.png') }}" alt="Hotel Galuh" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/NMCO.png') }}" alt="NMCO" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kokapura.png') }}" alt="Kokapura" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Medan Jaya Group.png') }}" alt="Medan Jaya Group" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Netindo.png') }}" alt="Netindo" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Pusaka Tour.png') }}" alt="Pusaka Tour" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Gmedia.png') }}" alt="Gmedia" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/DPJ.png') }}" alt="PT DINAMIKA PERKASA JAYA" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Kajen.png') }}" alt="RSUD Kajen" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Bantul.png') }}" alt="RSUD Bantul" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Kraton.png') }}" alt="RSUD Kraton" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Apkomindo DPD DIY.png') }}" alt="Apkomindo DPD DIY" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Trans Marga Jateng.png') }}" alt="Trans Marga Jateng" class="img-fluid">
+               </div>
                
             </div>
          </div>
@@ -262,6 +398,25 @@
                   <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Kota Tangerang.png') }}" alt="RSUD Kota Tangerang" class="img-fluid">
                </div>
                
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Kajen.png') }}" alt="RSUD Kajen" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Bantul.png') }}" alt="RSUD Bantul" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/RSUD Kraton.png') }}" alt="RSUD Kraton" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Apkomindo DPD DIY.png') }}" alt="Apkomindo DPD DIY" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Trans Marga Jateng.png') }}" alt="Trans Marga Jateng" class="img-fluid">
+               </div>
             </div>
          </div>
 
@@ -313,6 +468,25 @@
                   <img loading="lazy" src="{{ asset('storage/img/mitra/Universitas Ahmad Dalan.png') }}" alt="Universitas Ahmad Dalan" class="img-fluid">
                </div>
                
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/STIE Widya Wiwaha.png') }}" alt="STIE Widya Wiwaha" class="img-fluid">
+               </div>
+
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kopma UGM.png') }}" alt="Kopma UGM" class="img-fluid">
+               </div>
+
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PIP Semarang.png') }}" alt="PIP Semarang" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PIP Makasar.png') }}" alt="PIP Makasar" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Unires UMY.png') }}" alt="Unires UMY" class="img-fluid">
+               </div>
             </div>
          </div>
 
@@ -376,6 +550,101 @@
                   <img loading="lazy" src="{{ asset('storage/img/mitra/Wahana Visi.png') }}" alt="Wahana Visi" class="img-fluid">
                </div>
                
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Cokro Telacake.png') }}" alt="Cokro Telacake" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Swalayan HW.png') }}" alt="Swalayan HW" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Bakoel Corp.png') }}" alt="Bakoel Corp" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/AMM Kotagedhe.png') }}" alt="AMM Kotagedhe" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Esoftdream.png') }}" alt="Esoftdream" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Niaga Kita Indonesia.png') }}" alt="Niaga Kita Indonesia" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/HRC.png') }}" alt="HRC" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Toko Taqiy.png') }}" alt="Toko Taqiy" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kota Kita.png') }}" alt="Kota Kita" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Toko Wihan.png') }}" alt="Toko Wihan" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Media Centerlink.png') }}" alt="Media Centerlink" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Ikan Bakar Gambiran.png') }}" alt="Ikan Bakar Gambiran" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Jogja Camp.png') }}" alt="Jogja Camp" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Wisma Joglo.png') }}" alt="Wisma Joglo" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/PT Asli Motor Klaten.png') }}" alt="PT Asli Motor Klaten" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Madania.png') }}" alt="Madania" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Hotel Galuh.png') }}" alt="Hotel Galuh" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/NMCO.png') }}" alt="NMCO" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Kokapura.png') }}" alt="Kokapura" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Medan Jaya Group.png') }}" alt="Medan Jaya Group" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Netindo.png') }}" alt="Netindo" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Pusaka Tour.png') }}" alt="Pusaka Tour" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/Gmedia.png') }}" alt="Gmedia" class="img-fluid">
+               </div>
+               
+               <div class="col-md-4 px-2 mb-3">
+                  <img loading="lazy" src="{{ asset('storage/img/mitra/DPJ.png') }}" alt="PT DINAMIKA PERKASA JAYA" class="img-fluid">
+               </div>
             </div>
          </div>
 
