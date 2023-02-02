@@ -136,7 +136,7 @@
                <h6 class="mb-4">Pendampingan SHRM</h6>
                <div class="small mt-4">
                   <a class="nav-link text-dark-8 my-3" href="#">Rekrutmen</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Penempatan Kerja dan Outsuorcing</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Penempatan Kerja dan Outsourcing</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Pengembangan SDM</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Evaluasi Kinerja</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Remunerasi Karyawan</a>
