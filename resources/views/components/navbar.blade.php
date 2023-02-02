@@ -46,97 +46,61 @@
    <!-- dropdown menu program in desktop -->
    <div class="dropdown-menu-program d-none d-lg-block shadow">
       <div class="container py-4">
-         <h5 class="text-dark-3 fw-600">Program</h5>
-         <hr>
-         <div class="row mt-4">
-            <div class="col-lg-6 col-xl-4 mb-5">
-               <a href="#" class="text-decoration-none menu-item-program">
-                  <div class="card border-0 p-2">
-                     <div class="row align-items-center">
-                        <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-policy.svg') }}" class="img-fluid">
-                        </div>
-                        <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Policy</p>
-                           <div class="small">
-                              <p class="text-dark-5 small my-0">Berkolaborasi bersama akademisi untuk menghasilkan peraturan dan kebijakan yang berdampak besar</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </a>
+         <div class="row">
+            <div class="col-lg-3">
+               <h6 class="mb-4">Program Pendampingan</h6>
+               <div class="small mt-4">
+                  <a href="#" class="nav-link text-dark-8 my-3">Dokumen SOP</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Feasibility Study</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Master Plan</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Keuangan dan Pajak</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Rencana Strategi</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Narasumber Pendampingan</a>
+               </div>
             </div>
 
-            <div class="col-lg-6 col-xl-4 mb-5">
-               <a href="#" class="text-decoration-none menu-item-program">
-                  <div class="card border-0 p-2">
-                     <div class="row align-items-center">
-                        <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-inovasi.svg') }}" class="img-fluid">
-                        </div>
-                        <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Inovasi</p>
-                           <div class="small">
-                              <p class="text-dark-5 small my-0">Kami membantu membuat pelatihan dan pendampingan untuk masyarakat</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </a>
+            <div class="col-lg-3">
+               <h6 class="mb-4">Program Pelatihan</h6>
+               <div class="small mt-4">
+                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan e-SPI</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Manajemen Bisnis</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Keuangan Bisnis</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Digital Marketing</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Kemitraan Narasumber Pelatihan</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Kemitraan Event</a>
+               </div>
             </div>
 
-            <div class="col-lg-6 col-xl-4 mb-5">
-               <a href="#" class="text-decoration-none menu-item-program">
-                  <div class="card border-0 p-2">
-                     <div class="row align-items-center">
-                        <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-governance.svg') }}" class="img-fluid">
-                        </div>
-                        <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Governance</p>
-                           <div class="small">
-                              <p class="text-dark-5 small my-0">Membantu untuk melakukan revitalisasi kelembagaan agar bisa bersaing lagi di pasar</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </a>
+            <div class="col-lg-3">
+               <h6 class="mb-4">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h6>
+               <div class="small mt-4">
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Rumah Sakit</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Perguruan Tinggi</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Perusahaan</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Yayasan</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB BUMDes</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB UMKM</a>
+               </div>
             </div>
 
-            <div class="col-lg-6 col-xl-4 mb-5">
-               <a href="#" class="text-decoration-none menu-item-program">
-                  <div class="card border-0 p-2">
-                     <div class="row align-items-center">
-                        <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-akuntabilitas.svg') }}" class="img-fluid">
-                        </div>
-                        <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Akuntabilitas</p>
-                           <div class="small">
-                              <p class="text-dark-5 small my-0">Memberikan bantuan dalam Bidang Keuangan, Manajemen, Digitalisasi, Penilaian Kinerja</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </a>
+            <div class="col-lg-3">
+               <h6 class="mb-4">Pendampingan SHRM</h6>
+               <div class="small mt-4">
+                  <a href="#" class="nav-link text-dark-8 my-3">Rekrutmen</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Penempatan Kerja dan Outsuorcing</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Pengembangan SDM</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Evaluasi Kinerja</a>
+                  <a href="#" class="nav-link text-dark-8 my-3">Remunerasi Karyawan</a>
+               </div>
             </div>
 
-            <div class="col-lg-6 col-xl-4 mb-5">
-               <a href="#" class="text-decoration-none menu-item-program">
-                  <div class="card border-0 p-2">
-                     <div class="row align-items-center">
-                        <div class="col-3 fit-content">
-                           <img loading="lazy" src="{{ asset('storage/img/icon-menu-sustainability.svg') }}" class="img-fluid">
-                        </div>
-                        <div class="col-9">
-                           <p class="text-dark-3 fw-600 mb-1">Sustainability</p>
-                           <div class="small">
-                              <p class="text-dark-5 small my-0">Memberikan pandangan dan pertimbangan untuk sebuah keberlanjutan dalam bidang sosial lingkungan dan ekonomi</p>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-               </a>
+            <div class="col-lg-3">
+               <h6 class="mb-4">Program Scale Up & Inkubasi Bisnis</h6>
+               <div class="small mt-4">
+                  <a href="#" class="nav-link text-dark-8 my-3">Riset, Development, and Engineering Business (Setup Bisnis)</a>
+                  <a href="#" class="nav-link text-dark-8 my-3"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a>
+               </div>
             </div>
          </div>
       </div>
