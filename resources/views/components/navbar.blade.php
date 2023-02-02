@@ -64,7 +64,7 @@
                            <p class="m-0">Pendampingan SHRM</p>
                         </li>
                         <li><a class="dropdown-item" href="#">Rekrutmen</a></li>
-                        <li><a class="dropdown-item" href="#">Penempatan Kerja dan Outsuorcing</a></li>
+                        <li><a class="dropdown-item" href="#">Penempatan Kerja dan Outsourcing</a></li>
                         <li><a class="dropdown-item" href="#">Pengembangan SDM</a></li>
                         <li><a class="dropdown-item" href="#">Evaluasi Kinerja</a></li>
                         <li><a class="dropdown-item" href="#">Remunerasi Karyawan</a></li>
