@@ -2,15 +2,15 @@
    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
       <div class="container">
          <a class="navbar-brand" href="{{ route('home') }}">
-            <img loading="lazy" src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting">
+            <img src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting" loading="lazy">
          </a>
-         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#nav-collapse">
+         <button class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#nav-collapse" type="button">
             <i class="fa-solid fa-bars fa-xl text-orange"></i>
          </button>
          <div class="offcanvas offcanvas-end" id="nav-collapse">
             <div class="offcanvas-header">
-               <img loading="lazy" src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting">
-               <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               <img src="{{ asset('storage/img/logo-navbar.svg') }}" alt="logo syncore consulting" loading="lazy">
+               <button class="btn-close" data-bs-dismiss="offcanvas" type="button" aria-label="Close"></button>
             </div>
             <div class="offcanvas-body">
                <div class="navbar-nav m-auto">
@@ -21,24 +21,72 @@
 
                   <!-- dropdown menu program show in mobile & tablet -->
                   <li class="nav-item dropdown">
-                     <a class="nav-link dropdown-toggle d-lg-none" href="#" role="button" data-bs-toggle="dropdown">Program</a>
+                     <a class="nav-link dropdown-toggle d-lg-none" data-bs-toggle="dropdown" href="#" role="button">Program</a>
                      <ul class="dropdown-menu border-0">
-                        <li><a class="dropdown-item" href="#">Policy</a></li>
-                        <li><a class="dropdown-item" href="#">Inovasi</a></li>
-                        <li><a class="dropdown-item" href="#">Governance</a></li>
-                        <li><a class="dropdown-item" href="#">Akuntabilitas</a></li>
-                        <li><a class="dropdown-item" href="#">Sustainability</a></li>
+                        <li>
+                           <p class="m-0">Program Pendampingan</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Dokumen SOP</a></li>
+                        <li><a class="dropdown-item" href="#">Feasibility Study</a></li>
+                        <li><a class="dropdown-item" href="#">Master Plan</a></li>
+                        <li><a class="dropdown-item" href="#">Keuangan dan Pajak</a></li>
+                        <li><a class="dropdown-item" href="#">Rencana Strategi</a></li>
+                        <li><a class="dropdown-item" href="#">Narasumber Pendampingan</a></li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li>
+                           <p class="m-0">Program Pelatihan</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pelatihan e-SPI</a></li>
+                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a></li>
+                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Manajemen Bisnis</a></li>
+                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Keuangan Bisnis</a></li>
+                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
+                        <li><a class="dropdown-item" href="#">Kemitraan Narasumber Pelatihan</a></li>
+                        <li><a class="dropdown-item" href="#">Kemitraan Event</a></li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li>
+                           <p class="m-0">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Rumah Sakit</a></li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Perguruan Tinggi</a></li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Perusahaan</a></li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Yayasan</a></li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB BUMDes</a></li>
+                        <li><a class="dropdown-item" href="#">Pendampingan SAAB UMKM</a></li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li>
+                           <p class="m-0">Pendampingan SHRM</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Rekrutmen</a></li>
+                        <li><a class="dropdown-item" href="#">Penempatan Kerja dan Outsuorcing</a></li>
+                        <li><a class="dropdown-item" href="#">Pengembangan SDM</a></li>
+                        <li><a class="dropdown-item" href="#">Evaluasi Kinerja</a></li>
+                        <li><a class="dropdown-item" href="#">Remunerasi Karyawan</a></li>
+
+                        <div class="dropdown-divider"></div>
+
+                        <li>
+                           <p class="m-0">Program Scale Up & Inkubasi Bisnis</p>
+                        </li>
+                        <li><a class="dropdown-item" href="#">Riset, Development, and Engineering Business (Setup Bisnis)</a></li>
+                        <li><a class="dropdown-item" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a></li>
                      </ul>
                   </li>
                   <a class="nav-link px-lg-3 {{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>
                   {{-- <a class="nav-link px-lg-3 {{ request()->is('media') ? 'active' : '' }}" href="{{ route('media') }}">Media</a> --}}
                   <a class="nav-link px-lg-3 {{ request()->is('mitra') ? 'active' : '' }}" href="{{ route('mitra') }}">Mitra</a>
-                  <a href="#" class="btn btn-orange d-block d-lg-none mt-2 px-4">Hubungi Kami</a>
+                  <a class="btn btn-orange d-block d-lg-none mt-2 px-4" href="#">Hubungi Kami</a>
                </div>
             </div>
          </div>
          <div class="ms-auto d-none d-lg-block">
-            <a href="#" class="btn btn-orange px-4">Hubungi Kami</a>
+            <a class="btn btn-orange px-4" href="#">Hubungi Kami</a>
          </div>
       </div>
    </nav>
@@ -50,63 +98,62 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Program Pendampingan</h6>
                <div class="small mt-4">
-                  <a href="#" class="nav-link text-dark-8 my-3">Dokumen SOP</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Feasibility Study</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Master Plan</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Keuangan dan Pajak</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Rencana Strategi</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Narasumber Pendampingan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Dokumen SOP</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Feasibility Study</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Master Plan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Keuangan dan Pajak</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Rencana Strategi</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Narasumber Pendampingan</a>
                </div>
             </div>
 
             <div class="col-lg-3">
                <h6 class="mb-4">Program Pelatihan</h6>
                <div class="small mt-4">
-                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan e-SPI</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Manajemen Bisnis</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pelatihan Tata Kelola Keuangan Bisnis</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Digital Marketing</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Kemitraan Narasumber Pelatihan</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Kemitraan Event</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan e-SPI</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Manajemen Bisnis</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Keuangan Bisnis</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Digital Marketing</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Kemitraan Narasumber Pelatihan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Kemitraan Event</a>
                </div>
             </div>
 
             <div class="col-lg-3">
                <h6 class="mb-4">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h6>
                <div class="small mt-4">
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Rumah Sakit</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Perguruan Tinggi</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Perusahaan</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB Yayasan</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB BUMDes</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pendampingan SAAB UMKM</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Rumah Sakit</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Perguruan Tinggi</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Perusahaan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Yayasan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB BUMDes</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB UMKM</a>
                </div>
             </div>
 
             <div class="col-lg-3">
                <h6 class="mb-4">Pendampingan SHRM</h6>
                <div class="small mt-4">
-                  <a href="#" class="nav-link text-dark-8 my-3">Rekrutmen</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Penempatan Kerja dan Outsuorcing</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Pengembangan SDM</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Evaluasi Kinerja</a>
-                  <a href="#" class="nav-link text-dark-8 my-3">Remunerasi Karyawan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Rekrutmen</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Penempatan Kerja dan Outsuorcing</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Pengembangan SDM</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Evaluasi Kinerja</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Remunerasi Karyawan</a>
                </div>
             </div>
 
             <div class="col-lg-3">
                <h6 class="mb-4">Program Scale Up & Inkubasi Bisnis</h6>
                <div class="small mt-4">
-                  <a href="#" class="nav-link text-dark-8 my-3">Riset, Development, and Engineering Business (Setup Bisnis)</a>
-                  <a href="#" class="nav-link text-dark-8 my-3"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Riset, Development, and Engineering Business (Setup Bisnis)</a>
+                  <a class="nav-link text-dark-8 my-3" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a>
                </div>
             </div>
          </div>
       </div>
    </div>
 </div>
-
 
 <!-- ###################################################################################################################################################### -->
 <!-- OLD NAVBAR (DONT DELETE) -->
