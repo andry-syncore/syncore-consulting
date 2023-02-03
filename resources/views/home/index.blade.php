@@ -122,9 +122,9 @@
                </div>
             </div>
             <div class="row mt-5">
-               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
-                  <div class="card border-0 shadow-sm rounded-4 h-100">
-                     <div class="py-3 d-flex justify-content-center">
+               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/people-group.png') }}" alt="Gambar logo program pendampingan">
                      </div>
                      <div class="card-body text-center">
@@ -134,55 +134,58 @@
                      </div>
                   </div>
                </div>
-               
-               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
-                  <div class="card border-0 shadow-sm rounded-4 h-100">
-                     <div class="py-3 d-flex justify-content-center">
+
+               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/grafik.png') }}" alt="Gambar logo program pelatihan">
                      </div>
                      <div class="card-body text-center">
                         <h5 class="fw-500">Program Pelatihan</h5>
-                        <p class="text-dark-8 my-3">Program Pelatihan Terpadu untuk Pertumbuhan Bisnis Anda,  Pelatihan e-SPI, Tata Kelola Kelembagaan dan Inovasi Usaha, Tata Kelola Manajemen Bisnis, Tata Kelola Keuangan Bisnis, Digital Marketing, Kemitraan Narasumber Pelatihan, dan Kemitraan Event</p>
+                        <p class="text-dark-8 my-3">Program Pelatihan Terpadu untuk Pertumbuhan Bisnis Anda, Pelatihan e-SPI, Tata Kelola Kelembagaan dan Inovasi Usaha, Tata Kelola
+                           Manajemen Bisnis, Tata Kelola Keuangan Bisnis, Digital Marketing, Kemitraan Narasumber Pelatihan, dan Kemitraan Event</p>
                      </div>
                   </div>
                </div>
-               
-               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
-                  <div class="card border-0 shadow-sm rounded-4 h-100">
-                     <div class="py-3 d-flex justify-content-center">
+
+               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/rocket.png') }}" alt="Gambar logo scale up & inkubasi bisnis">
                      </div>
                      <div class="card-body text-center">
                         <h5 class="fw-500">Scale Up & Inkubasi Bisnis </h5>
-                        <p class="text-dark-8 my-3">Program Scale Up dan Inkubasi Bisnis untuk Tumbuh dan Berkembang: Riset, Pengembangan, dan Engineering Bisnis (Pembuatan Bisnis) dan Kemitraan Digital Marketing (Penguatan Pasar dan Penjualan)</p>
+                        <p class="text-dark-8 my-3">Program Scale Up dan Inkubasi Bisnis untuk Tumbuh dan Berkembang: Riset, Pengembangan, dan Engineering Bisnis (Pembuatan Bisnis)
+                           dan Kemitraan Digital Marketing (Penguatan Pasar dan Penjualan)</p>
                      </div>
                   </div>
                </div>
-               
-               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
-                  <div class="card border-0 shadow-sm rounded-4 h-100">
-                     <div class="py-3 d-flex justify-content-center">
+
+               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/hand-shake.png') }}" alt="Gambar logo pendampingan SHRM">
                      </div>
                      <div class="card-body text-center">
                         <h5 class="fw-500">Pendampingan SHRM</h5>
-                        <p class="text-dark-8 my-3">Program Pendampingan SHRM untuk Kebutuhan Sumber Daya Manusia Anda: "Rekruitment, Penempatan Kerja dan Outsourcing, Pengembangan SDM, Evaluasi Kinerja, dan Remunerasi Karyawan"</p>
+                        <p class="text-dark-8 my-3">Program Pendampingan SHRM untuk Kebutuhan Sumber Daya Manusia Anda: "Rekruitment, Penempatan Kerja dan Outsourcing, Pengembangan
+                           SDM, Evaluasi Kinerja, dan Remunerasi Karyawan"</p>
                      </div>
                   </div>
                </div>
-               
-               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
-                  <div class="card border-0 shadow-sm rounded-4 h-100">
-                     <div class="py-3 d-flex justify-content-center">
+
+               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/phone-glow.png') }}" alt="Gambar logo pendampingan keuangan">
                      </div>
                      <div class="card-body text-center">
                         <h5 class="fw-500">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h5>
-                        <p class="text-dark-8 my-3">Program Pendampingan Keuangan dengan Sistem Akuntansi Analisis Bisnis untuk Kebijakan Finansial yang Tepat: Pendampingan SAAB Rumah Sakit, Perguruan Tinggi, Perusahaan, Yayasan, BUMDes, dan UMKM</p>
+                        <p class="text-dark-8 my-3">Program Pendampingan Keuangan dengan Sistem Akuntansi Analisis Bisnis untuk Kebijakan Finansial yang Tepat: Pendampingan SAAB
+                           Rumah Sakit, Perguruan Tinggi, Perusahaan, Yayasan, BUMDes, dan UMKM</p>
                      </div>
                   </div>
                </div>
-               
 
                <!-- OLD SLIDER PROGRAM (DONT DELETE PLEASE) -->
                {{-- <div class="col-12 mt-4">
@@ -238,7 +241,7 @@
          </div>
          <div class="row justify-content-lg-between mt-5">
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-md-0 mb-2 py-2 px-3" data-target="tab-policy">Policy</button>
+               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-2 mb-md-0 px-3 py-2" data-target="tab-policy">Policy</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
