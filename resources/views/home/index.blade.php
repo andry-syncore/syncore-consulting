@@ -14,7 +14,8 @@
                <div class="col-lg-6">
                   <div class="text-lg-start text-center">
                      <h1 class="fw-600 text-orange">Kami Siap Menyediakan Metode Terbaik untuk Mengembangkan Bisnis Anda</h1>
-                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan Sustainability)</p>
+                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan
+                        Sustainability)</p>
                   </div>
 
                   <div class="d-grid d-md-block my-5 gap-2">
@@ -120,8 +121,72 @@
                   </div>
                </div>
             </div>
-            <div class="row">
-               <div class="col-12 mt-4">
+            <div class="row mt-5">
+               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <div class="card border-0 shadow-sm rounded-4 h-100">
+                     <div class="py-3 d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/people-group.png') }}" alt="Gambar logo program pendampingan">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Program Pendampingan</h5>
+                        <p class="text-dark-8 my-3">Mencapai Sukses Bersama Program Pendampingan Mendapatkan Pendampingan Dokumen SOP, Studi Kelayakan, Master Plan, Keuangan dan
+                           Pajak, Rencana Strategi, dan Kemitraan Narasumber</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <div class="card border-0 shadow-sm rounded-4 h-100">
+                     <div class="py-3 d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/grafik.png') }}" alt="Gambar logo program pelatihan">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Program Pelatihan</h5>
+                        <p class="text-dark-8 my-3">Program Pelatihan Terpadu untuk Pertumbuhan Bisnis Anda,  Pelatihan e-SPI, Tata Kelola Kelembagaan dan Inovasi Usaha, Tata Kelola Manajemen Bisnis, Tata Kelola Keuangan Bisnis, Digital Marketing, Kemitraan Narasumber Pelatihan, dan Kemitraan Event</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <div class="card border-0 shadow-sm rounded-4 h-100">
+                     <div class="py-3 d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/rocket.png') }}" alt="Gambar logo scale up & inkubasi bisnis">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Scale Up & Inkubasi Bisnis </h5>
+                        <p class="text-dark-8 my-3">Program Scale Up dan Inkubasi Bisnis untuk Tumbuh dan Berkembang: Riset, Pengembangan, dan Engineering Bisnis (Pembuatan Bisnis) dan Kemitraan Digital Marketing (Penguatan Pasar dan Penjualan)</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <div class="card border-0 shadow-sm rounded-4 h-100">
+                     <div class="py-3 d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/hand-shake.png') }}" alt="Gambar logo pendampingan SHRM">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Pendampingan SHRM</h5>
+                        <p class="text-dark-8 my-3">Program Pendampingan SHRM untuk Kebutuhan Sumber Daya Manusia Anda: "Rekruitment, Penempatan Kerja dan Outsourcing, Pengembangan SDM, Evaluasi Kinerja, dan Remunerasi Karyawan"</p>
+                     </div>
+                  </div>
+               </div>
+               
+               <div class="col-12 col-md-6 col-lg mb-4 mb-lg-0">
+                  <div class="card border-0 shadow-sm rounded-4 h-100">
+                     <div class="py-3 d-flex justify-content-center">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/phone-glow.png') }}" alt="Gambar logo pendampingan keuangan">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h5>
+                        <p class="text-dark-8 my-3">Program Pendampingan Keuangan dengan Sistem Akuntansi Analisis Bisnis untuk Kebijakan Finansial yang Tepat: Pendampingan SAAB Rumah Sakit, Perguruan Tinggi, Perusahaan, Yayasan, BUMDes, dan UMKM</p>
+                     </div>
+                  </div>
+               </div>
+               
+
+               <!-- OLD SLIDER PROGRAM (DONT DELETE PLEASE) -->
+               {{-- <div class="col-12 mt-4">
+                  
                   <div class="swiper slider-help">
                      <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -156,7 +221,8 @@
                      <div class="swiper-button-prev d-none d-md-flex shadow"><i class="fa-solid fa-angle-left text-dark fa-2x"></i></div>
                      <div class="swiper-button-next d-none d-md-flex shadow"><i class="fa-solid fa-angle-right text-dark fa-2x"></i></div>
                   </div>
-               </div>
+
+               </div> --}}
             </div>
          </div>
       </div>
@@ -172,7 +238,7 @@
          </div>
          <div class="row justify-content-lg-between mt-5">
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2 bg-orange-active px-lg-5 mb-2 mb-md-0 px-3" data-target="tab-policy">Policy</button>
+               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-md-0 mb-2 py-2 px-3" data-target="tab-policy">Policy</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
@@ -194,11 +260,12 @@
          </div>
          <hr class="d-none d-md-block my-3">
 
-         <div id="tab-policy" class="tab-content-portfolio">
+         <div class="tab-content-portfolio" id="tab-policy">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Kepmenko PMK Nomor 32 Tahun 2022 Tentang Pedoman Umum Pelaksanaan Program Percepatan Penghapusan Kemiskinan Ekstrem</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan lembaga TNP2K dan Bumdes.id dalam melakukan riset mewawancari 50 direktur BUM Desa dan 50 kepala desa yang tersebar di seluruh Indonesia.</p>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan lembaga TNP2K dan Bumdes.id dalam melakukan riset mewawancari 50 direktur BUM Desa
+                     dan 50 kepala desa yang tersebar di seluruh Indonesia.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
@@ -212,11 +279,12 @@
             </div>
          </div>
 
-         <div id="tab-inovasi" class="tab-content-portfolio d-none">
+         <div class="tab-content-portfolio d-none" id="tab-inovasi">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program Desa Brilian 2020 Dan Desa Brilian 2021 Bekerjasama Dengan Pt. Bank Rakyat Indonesia Tbk.</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan bumdes.id dan PT. Bank Rakyat Indonesia Tbk membuat program Desa Brilian di tahun 2020 dan 2021.</p>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan bumdes.id dan PT. Bank Rakyat Indonesia Tbk membuat program Desa Brilian di tahun
+                     2020 dan 2021.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
@@ -229,12 +297,14 @@
                <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
             </div>
          </div>
-         
-         <div id="tab-governance" class="tab-content-portfolio d-none">
+
+         <div class="tab-content-portfolio d-none" id="tab-governance">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program Revitalisasi Kelembagaan Bum Desa Umbara Desa Sanggrahan Dan Bum Desa Kemudo Makmur Desa Kemudo Bekerjasama Dengan Csr PT. Sarihusada Generasi Mahardika</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Pada tahun 2020 - 2021 syncore consulting bekerjasama dengan PT. Sarihusada Generasi Mahardika (SGM) dan Bumdes.id. PT. SGM memiliki pabrik yang berada di wilayah Desa Kemudo.</p>
+                  <h2 class="fw-600 mb-lg-4">Program Revitalisasi Kelembagaan Bum Desa Umbara Desa Sanggrahan Dan Bum Desa Kemudo Makmur Desa Kemudo Bekerjasama Dengan Csr PT.
+                     Sarihusada Generasi Mahardika</h2>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Pada tahun 2020 - 2021 syncore consulting bekerjasama dengan PT. Sarihusada Generasi Mahardika (SGM) dan Bumdes.id. PT.
+                     SGM memiliki pabrik yang berada di wilayah Desa Kemudo.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
@@ -248,12 +318,12 @@
             </div>
          </div>
 
-
-         <div id="tab-akuntability" class="tab-content-portfolio d-none">
+         <div class="tab-content-portfolio d-none" id="tab-akuntability">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program Pendampingan Tata Kelola Keuangan Menggunakan Sistem Aplikasi Keuangan</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting mengembangkan sistem aplikasi akuntansi bumdes (SAAB) yang telah disesuaikan dengan SAK ETAP dan Peraturan Menteri Desa PDTT No 3 tahun 2021.</p>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting mengembangkan sistem aplikasi akuntansi bumdes (SAAB) yang telah disesuaikan dengan SAK ETAP dan
+                     Peraturan Menteri Desa PDTT No 3 tahun 2021.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
@@ -267,12 +337,13 @@
             </div>
          </div>
 
-
-         <div id="tab-sustainability" class="tab-content-portfolio d-none">
+         <div class="tab-content-portfolio d-none" id="tab-sustainability">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun Pasar Minggu Pagi (Sunmor Kerto)</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Sejak masa pandemi covid 19 tahun 2021 hingga 2022 PT. SGM pun consen pada peningkatan pendapatan UMKM yang terdampak pandemi covid 19 di RW 9 dan RW 8 Kalurahan Muja Muju Umbulharjo.</p>
+                  <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun
+                     Pasar Minggu Pagi (Sunmor Kerto)</h2>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Sejak masa pandemi covid 19 tahun 2021 hingga 2022 PT. SGM pun consen pada peningkatan pendapatan UMKM yang terdampak
+                     pandemi covid 19 di RW 9 dan RW 8 Kalurahan Muja Muju Umbulharjo.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
@@ -528,43 +599,44 @@
             },
          });
 
-         const sliderHelp = new Swiper('.slider-help', {
-            loop: true,
-            centeredSlides: true,
-            pagination: {
-               el: ".swiper-pagination",
-            },
-            breakpoints: {
-               0: {
-                  slidesPerView: 1,
-                  spaceBetween: 30,
-               },
-               768: {
-                  slidesPerView: 2,
-                  spaceBetween: 20,
-                  navigation: {
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-                  },
-               },
-               992: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                  navigation: {
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-                  },
-               },
-               1200: {
-                  slidesPerView: 3,
-                  spaceBetween: 20,
-                  navigation: {
-                     nextEl: '.swiper-button-next',
-                     prevEl: '.swiper-button-prev',
-                  },
-               }
-            },
-         });
+         //  OLD SLIDER PROGRAM (DONT DELETE PLEASE)
+         // const sliderHelp = new Swiper('.slider-help', {
+         //    loop: true,
+         //    centeredSlides: true,
+         //    pagination: {
+         //       el: ".swiper-pagination",
+         //    },
+         //    breakpoints: {
+         //       0: {
+         //          slidesPerView: 1,
+         //          spaceBetween: 30,
+         //       },
+         //       768: {
+         //          slidesPerView: 2,
+         //          spaceBetween: 20,
+         //          navigation: {
+         //             nextEl: '.swiper-button-next',
+         //             prevEl: '.swiper-button-prev',
+         //          },
+         //       },
+         //       992: {
+         //          slidesPerView: 3,
+         //          spaceBetween: 20,
+         //          navigation: {
+         //             nextEl: '.swiper-button-next',
+         //             prevEl: '.swiper-button-prev',
+         //          },
+         //       },
+         //       1200: {
+         //          slidesPerView: 3,
+         //          spaceBetween: 20,
+         //          navigation: {
+         //             nextEl: '.swiper-button-next',
+         //             prevEl: '.swiper-button-prev',
+         //          },
+         //       }
+         //    },
+         // });
 
          const sliderArticle = new Swiper('.slider-article', {
             loop: true,
