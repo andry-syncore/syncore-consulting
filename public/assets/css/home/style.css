@@ -3,6 +3,7 @@
 /* font familly */
 * {
    font-family: "Inter", sans-serif;
+   scroll-margin-top: 100px;
 }
 
 /* text orange */
@@ -27,6 +28,16 @@
 /* text 888 */
 .text-dark-8 {
    color: #888;
+}
+
+/* background-orange */
+.bg-orange {
+   background-color: #F97316;
+}
+
+/* background purple */
+.bg-purple {
+   background-color: #002A38;
 }
 
 /* font weight */
@@ -85,6 +96,36 @@
    color: #fff;
 }
 
+/* button purple active */
+.btn.bg-purple-active {
+   background: rgba(249, 115, 22, 0.2);
+   color: #002A38;
+   font-weight: 600;
+   text-decoration: underline;
+}
+
+.btn.bg-purple-active:hover,
+.btn.bg-purple-active:active,
+.btn.bg-purple-active:focus {
+   background: rgba(249, 115, 22, 0.2);
+   color: #002A38;
+   font-weight: 600;
+   text-decoration: underline;
+}
+
+/* button purple */
+.btn.btn-purple {
+   background-color: #002A38;
+   color: #fff;
+}
+
+.btn.btn-purple:hover,
+.btn.btn-purple:active,
+.btn.btn-purple:focus {
+   background-color: #001e38;
+   color: #fff;
+}
+
 /* nav style */
 .navbar {
    z-index: 999;
@@ -102,7 +143,6 @@
    color: #f46a35;
    font-weight: 600;
 }
-
 
 /* dropdwown navbar */
 .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item:hover {
@@ -226,6 +266,36 @@ footer .nav-link:hover {
    background-repeat: no-repeat;
 }
 
+/* text header detail portfolio */
+.text-header-portfolio {
+   top: 15%;
+}
+
+/* nav link content detail portfolio */
+#content-detail-portfolio .nav-link {
+   padding: .6em 1em;
+}
+
+#content-detail-portfolio .nav-link:hover,
+#content-detail-portfolio .nav-link.active {
+   background-color: #F4F4F4;
+   border-radius: 4px;
+   padding: .6em 1em;
+   font-weight: 600;
+}
+
+/* menu detail portfolio */
+#menu-detail-portfolio {
+   position: -webkit-sticky;
+   position: sticky;
+   top: 10%;
+}
+
+/* other portfolio */
+#other-portfolio {
+   background-color: #F2F4F7;
+}
+
 /* list reason */
 #list-reason {
    list-style-type: none;
@@ -276,12 +346,20 @@ footer .nav-link:hover {
    #list-reason .row div.text-end {
       width: fit-content;
    }
+   
+   .text-header-portfolio {
+      top: 20%;
+   }
 }
 
 @media (min-width: 768px) {
    #list-reason .row div.text-end {
       width: fit-content;
       height: 70px;
+   }
+
+   .text-header-portfolio {
+      top: 30%;
    }
 }
 
@@ -290,12 +368,20 @@ footer .nav-link:hover {
       width: fit-content;
       height: 70px;
    }
+
+   .text-header-portfolio {
+      top: 40%;
+   }
 }
 
 @media (min-width: 1200px) {
    #list-reason .row div.text-end {
       width: fit-content;
       height: 70px;
+   }
+
+   .text-header-portfolio {
+      top: 40%;
    }
 }
 
@@ -309,5 +395,9 @@ footer .nav-link:hover {
       list-style-type: none;
       padding-left: 0;
       margin-left: -1.6em;
+   }
+
+   .text-header-portfolio {
+      top: 40%;
    }
 }

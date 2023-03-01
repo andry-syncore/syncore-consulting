@@ -127,6 +127,7 @@
                   </div>
                </div>
             </div>
+
             <div class="col-md-6 mb-4">
                <div class="card card-body rounded-3 h-100 shadow-sm">
                   <div class="rounded-3 overflow-hidden">
@@ -141,6 +142,7 @@
                   </div>
                </div>
             </div>
+
             <div class="col-md-6 mb-4">
                <div class="card card-body rounded-3 h-100 shadow-sm">
                   <div class="rounded-3 overflow-hidden">
@@ -155,6 +157,7 @@
                   </div>
                </div>
             </div>
+
             <div class="col-md-6 mb-4">
                <div class="card card-body rounded-3 h-100 shadow-sm">
                   <div class="rounded-3 overflow-hidden">
@@ -169,6 +172,7 @@
                   </div>
                </div>
             </div>
+
             <div class="col-md-6 mb-4">
                <div class="card card-body rounded-3 h-100 shadow-sm">
                   <div class="rounded-3 overflow-hidden">
@@ -183,6 +187,7 @@
                   </div>
                </div>
             </div>
+            
             <div class="col-md-6 mb-4">
                <div class="card card-body rounded-3 h-100 shadow-sm">
                   <div class="rounded-3 overflow-hidden">

@@ -38,6 +38,12 @@ Route::get('portfolio', function() {
    ]);
 })->name('portfolio');
 
+Route::get('portfolio/{portfolio}', function() {
+   return view('home.portfolio.detail', [
+      'title' => 'Detail Portfolio'
+   ]);
+})->name('portfolio.show');
+
 Route::get('media', function() {
    return view('home.media.index', [
       'title' => 'Media'
