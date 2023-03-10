@@ -3,6 +3,8 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Dashboard\CategoryPortfolioController;
 use App\Http\Controllers\Dashboard\PortfolioController;
+use App\Http\Controllers\Home\DocumentController;
+use App\Models\Document;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
 
@@ -80,8 +82,5 @@ Route::get('mitra', function () {
    ]);
 })->name('mitra');
 
-Route::get('download', function() {
-   return view('home.download.index', [
-      'title' => 'Download'
-   ]);
-})->name('download');
+Route::get('document', [DocumentController::class, 'index'])->name('document.index');
+Route::get('document/{document}', [DocumentController::class, 'download'])->name('document.download');

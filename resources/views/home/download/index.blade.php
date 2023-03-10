@@ -45,13 +45,22 @@
                   <table class="table-borderless table-sm m-0 table p-0" id="table-download">
                      <thead class="table-light">
                         <tr>
+                           <th>#</th>
                            <th>Nama Dokumen</th>
-                           <th>Kategori</th>
                            <th>Tanggal</th>
-                           <th>Unduh</th>
+                           <th style="width: 1%; white-space: nowrap;">Unduh</th>
                         </tr>
                      </thead>
-                     <tbody class="small"></tbody>
+                     <tbody class="small">
+                        @foreach ($documents as $document)
+                           <tr>
+                              <td>{{ $loop->iteration }}</td>
+                              <td>{{ $document->name }}</td>
+                              <td>{{ \Carbon\Carbon::parse($document->created_at)->isoFormat('DD MMMM YYYY') }}</td>
+                              <td><a href="{{ route('document.download', $document->slug) }}" class="btn btn-orange btn-sm rounded-3 px-3">Unduh</a></td>
+                           </tr>
+                        @endforeach
+                     </tbody>
                   </table>
                </div>
             </div>
