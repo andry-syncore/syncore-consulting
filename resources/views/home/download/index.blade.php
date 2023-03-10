@@ -24,7 +24,7 @@
             <div class="card card-body rounded-5 p-4 shadow-sm">
                <h5 class="mt-0 mb-4 p-0" style="font-weight: 600">Cari Dokumen Kebutuhan Anda</h5>
                <form action="" method="get">
-                  <div class="row align-items-end justify-content-between">
+                  <div class="row align-items-end">
                      <div class="col-lg-4">
                         <label class="small mb-2" for="search" style="font-weight: 600">Kata kunci pencarian</label>
                         <div class="input-group">
@@ -33,7 +33,7 @@
                         </div>
                      </div>
                      <div class="col-lg-2">
-                        <button class="btn btn-orange rounded-4 text-light w-100" type="submit"><i class="fa-solid fa-magnifying-glass text-light"></i> Cari Sekarang</button>
+                        <button class="btn btn-orange text-light w-100" type="submit"><i class="fa-solid fa-magnifying-glass text-light"></i> Cari Sekarang</button>
                      </div>
                   </div>
                </form>
