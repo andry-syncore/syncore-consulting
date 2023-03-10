@@ -79,3 +79,9 @@ Route::get('mitra', function () {
       'title' => 'Mitra'
    ]);
 })->name('mitra');
+
+Route::get('download', function() {
+   return view('home.download.index', [
+      'title' => 'Download'
+   ]);
+})->name('download');
