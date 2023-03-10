@@ -3,7 +3,7 @@
       <img loading="lazy" src="{{ asset('storage/img/logo-footer.svg') }}" alt="logo footer" class="img-fluid">
 
       <div class="row my-5">
-         <div class="col-12 col-lg-4 col-xl-5 mb-lg-0 mb-5 me-5">
+         <div class="col-12 col-lg-4 col-xl-5 mb-lg-0 mb-5">
             <h4 class="fw-500 text-light">Office</h4>
             <p class="text-light">Jl. Nogotirto No. 15B, Gamping, Sleman, Daerah Istimewa Yogyakarta 55282</p>
 
