@@ -1,0 +1,33 @@
+.bg-orange {
+   background-color: #d8610c;
+}
+
+/* button orange active */
+.btn.bg-orange-active {
+   background: rgba(249, 115, 22, 0.2);
+   color: #f46a35;
+   font-weight: 600;
+   text-decoration: underline;
+}
+
+.btn.bg-orange-active:hover,
+.btn.bg-orange-active:active,
+.btn.bg-orange-active:focus {
+   background: rgba(249, 115, 22, 0.2);
+   color: #f46a35;
+   font-weight: 600;
+   text-decoration: underline;
+}
+
+/* button orange */
+.btn.btn-orange {
+   background-color: #f46a35;
+   color: #fff;
+}
+
+.btn.btn-orange:hover,
+.btn.btn-orange:active,
+.btn.btn-orange:focus {
+   background-color: #ef4a08;
+   color: #fff;
+}

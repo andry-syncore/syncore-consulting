@@ -9,11 +9,11 @@
 
             <div class="border-secondary rounded-3 text-light mt-4 mb-5 border p-2">
                <div class="mb-2">
-                  <i class="fa-solid fa-phone"></i> Telp 0274-488599 | marketing@syncoreconsulting.com
+                  <i class="fa-solid fa-phone"></i> Telp 081 996 900 800 | <i class="fa-solid fa-envelope"></i> partnership.syncoreconsulting.com
                </div>
-               <div>
-                  <i class="fa-solid fa-phone"></i> 087 738 900 800 | training@syncore.co.id
-               </div>
+               <!--<div>-->
+               <!--   <i class="fa-solid fa-envelope"></i> partnership.syncoreconsulting.com-->
+               <!--</div>-->
             </div>
 
             <h5 class="fw-500 text-light">Tetap Terhubungi dengan Kami</h5>
@@ -25,11 +25,12 @@
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">PROGRAM</p>
-            <a href="" class="nav-link small mb-2">Policy</a>
-            <a href="" class="nav-link small mb-2">Inovasi</a>
-            <a href="" class="nav-link small mb-2">Governance</a>
-            <a href="" class="nav-link small mb-2">Akutabilitas</a>
-            <a href="" class="nav-link small mb-2">Sustainability</a>
+            <a href="" class="nav-link small mb-2">Pelatihan</a>
+            <a href="" class="nav-link small mb-2">Pendampingan </a>
+            <a href="" class="nav-link small mb-2">Scale up & Inkubasi</a>
+            <a href="" class="nav-link small mb-2">Kemitraan Riset</a>
+            <a href="" class="nav-link small mb-2">SHRM</a>
+            <a href="" class="nav-link small mb-2">Pendampingan Keuangan</a>
          </div>
          <div class="col-6 col-md-3 col-lg-2 col-xl ps-lg-5 mb-md-0 mb-4">
             <p class="text-light fw-500">RESOURCES</p>

@@ -14,8 +14,8 @@
                <div class="col-lg-6">
                   <div class="text-lg-start text-center">
                      <h1 class="fw-600 text-orange">Kami Siap Menyediakan Metode Terbaik untuk Mengembangkan Bisnis Anda</h1>
-                     <p class="text-dark-3">Syncore Consulting siap membantu bisnis melalui lima layanan utama yakni PIGAS (Policy, Inovasi, Governance, Akuntabilitas, dan
-                        Sustainability)</p>
+                     <p class="text-dark-3">Syncore consulting siap membantu bisnis anda melalui program utama kami (Pelatihan, Pendampingan, Kemitraan Riset, Inkubasi dan Scale Up,
+                        SHRM)</p>
                   </div>
 
                   <div class="d-grid d-md-block my-5 gap-2">
@@ -122,7 +122,7 @@
                </div>
             </div>
             <div class="row mt-5">
-               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
                   <div class="card rounded-4 h-100 border-0 shadow-sm">
                      <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/people-group.png') }}" alt="Gambar logo program pendampingan">
@@ -135,7 +135,7 @@
                   </div>
                </div>
 
-               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
                   <div class="card rounded-4 h-100 border-0 shadow-sm">
                      <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/grafik.png') }}" alt="Gambar logo program pelatihan">
@@ -148,7 +148,7 @@
                   </div>
                </div>
 
-               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
                   <div class="card rounded-4 h-100 border-0 shadow-sm">
                      <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/rocket.png') }}" alt="Gambar logo scale up & inkubasi bisnis">
@@ -161,7 +161,7 @@
                   </div>
                </div>
 
-               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
                   <div class="card rounded-4 h-100 border-0 shadow-sm">
                      <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/hand-shake.png') }}" alt="Gambar logo pendampingan SHRM">
@@ -174,7 +174,7 @@
                   </div>
                </div>
 
-               <div class="col-12 col-md-6 col-lg mb-lg-0 mb-4">
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
                   <div class="card rounded-4 h-100 border-0 shadow-sm">
                      <div class="d-flex justify-content-center py-3">
                         <img class="img-fluid" src="{{ asset('storage/img/homepage/phone-glow.png') }}" alt="Gambar logo pendampingan keuangan">
@@ -183,6 +183,19 @@
                         <h5 class="fw-500">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h5>
                         <p class="text-dark-8 my-3">Program Pendampingan Keuangan dengan Sistem Akuntansi Analisis Bisnis untuk Kebijakan Finansial yang Tepat: Pendampingan SAAB
                            Rumah Sakit, Perguruan Tinggi, Perusahaan, Yayasan, BUMDes, dan UMKM</p>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-12 col-md-6 col-lg-4 mb-lg-4 mb-4">
+                  <div class="card rounded-4 h-100 border-0 shadow-sm">
+                     <div class="d-flex justify-content-center py-3">
+                        <img class="img-fluid" src="{{ asset('storage/img/homepage/search.png') }}" alt="Gambar logo pendampingan keuangan">
+                     </div>
+                     <div class="card-body text-center">
+                        <h5 class="fw-500">Kemitraan Riset</h5>
+                        <p class="text-dark-8 my-3">Program ini menyediakan berbagai jenis dukungan riset, termasuk analisis data, metodologi riset, kajian literatur, dan penulisan
+                           laporan riset. Selain itu, Syncore Consulting juga dapat membantu dalam hal pemasaran riset atau pengajuan proposal riset kepada pihak-pihak yang
+                           berkepentingan.</p>
                      </div>
                   </div>
                </div>
@@ -241,39 +254,43 @@
          </div>
          <div class="row justify-content-lg-between mt-5">
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-2 mb-md-0 px-3 py-2" data-target="tab-policy">Policy</button>
+               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-md-0 mb-2 px-3 py-2" data-target="tab-Pelatihan">Pelatihan</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-inovasi">Inovasi</button>
+               <button class="btn btn-tab-portfolio py-2" data-target="tab-Pendampingan">Pendampingan</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-governance">Governance</button>
+               <button class="btn btn-tab-portfolio py-2" data-target="tab-Scale">Scale Up & Inkubasi Bisnis</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-akuntability">Akuntability</button>
+               <button class="btn btn-tab-portfolio py-2" data-target="tab-Kemitraan">Kemitraan Riset</button>
                <hr class="d-block d-md-none my-0">
             </div>
             <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-sustainability">Sustainability</button>
+               <button class="btn btn-tab-portfolio py-2" data-target="tab-shrm">SHRM</button>
+               <hr class="d-block d-md-none my-0">
+            </div>
+            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2" data-target="tab-Keuangan">Pendampingan Keuangan</button>
                <hr class="d-block d-md-none my-0">
             </div>
          </div>
          <hr class="d-none d-md-block my-3">
 
-         <div class="tab-content-portfolio" id="tab-policy">
+         <div class="tab-content-portfolio" id="tab-Pelatihan">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Kepmenko PMK Nomor 32 Tahun 2022 Tentang Pedoman Umum Pelaksanaan Program Percepatan Penghapusan Kemiskinan Ekstrem</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan lembaga TNP2K dan Bumdes.id dalam melakukan riset mewawancari 50 direktur BUM Desa
-                     dan 50 kepala desa yang tersebar di seluruh Indonesia.</p>
+                  <h2 class="fw-600 mb-lg-4">Konsultasi Digital Marketing Pelaku Usaha di Kalimantan Tengah</h2>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Pandemi covid 19 mengakibatkan kondisi ekonomi Indonesia menurun terkhusus di Kalimantan tengah. Apalagi di industry
+                     pariwisata dan sejenisnya. Selain itu, pelaku usaha di Kalimantan tengah.</p>
                   <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
                </div>
                <div class="col-lg-6">
                   <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-policy-1.png') }}" alt="" loading="lazy">
+                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-pelatihan-1.png') }}" alt="" loading="lazy">
                   </div>
                </div>
             </div>
@@ -282,7 +299,7 @@
             </div>
          </div>
 
-         <div class="tab-content-portfolio d-none" id="tab-inovasi">
+         <div class="tab-content-portfolio d-none" id="tab-Pendampingan">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program Desa Brilian 2020 Dan Desa Brilian 2021 Bekerjasama Dengan Pt. Bank Rakyat Indonesia Tbk.</h2>
@@ -301,7 +318,7 @@
             </div>
          </div>
 
-         <div class="tab-content-portfolio d-none" id="tab-governance">
+         <div class="tab-content-portfolio d-none" id="tab-Scale">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program Revitalisasi Kelembagaan Bum Desa Umbara Desa Sanggrahan Dan Bum Desa Kemudo Makmur Desa Kemudo Bekerjasama Dengan Csr PT.
@@ -321,7 +338,7 @@
             </div>
          </div>
 
-         <div class="tab-content-portfolio d-none" id="tab-akuntability">
+         <div class="tab-content-portfolio d-none" id="tab-Kemitraan">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program Pendampingan Tata Kelola Keuangan Menggunakan Sistem Aplikasi Keuangan</h2>
@@ -340,7 +357,27 @@
             </div>
          </div>
 
-         <div class="tab-content-portfolio d-none" id="tab-sustainability">
+         <div class="tab-content-portfolio d-none" id="tab-shrm">
+            <div class="row justify-content-between align-items-center my-4">
+               <div class="col-lg-6 mb-lg-0 mb-3">
+                  <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun
+                     Pasar Minggu Pagi (Sunmor Kerto)</h2>
+                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Sejak masa pandemi covid 19 tahun 2021 hingga 2022 PT. SGM pun consen pada peningkatan pendapatan UMKM yang terdampak
+                     pandemi covid 19 di RW 9 dan RW 8 Kalurahan Muja Muju Umbulharjo.</p>
+                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
+               </div>
+               <div class="col-lg-6">
+                  <div class="rounded-4 overflow-hidden">
+                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-sustainability-1.png') }}" alt="" loading="lazy">
+                  </div>
+               </div>
+            </div>
+            <div class="mt-5 text-center">
+               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
+            </div>
+         </div>
+
+         <div class="tab-content-portfolio d-none" id="tab-Keuangan">
             <div class="row justify-content-between align-items-center my-4">
                <div class="col-lg-6 mb-lg-0 mb-3">
                   <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun
@@ -373,80 +410,85 @@
             </div>
             <div class="row">
                <div class="col-12 mt-4">
-                  <div class="swiper slider-article">
+                  <div class="swiper slider-article h-100">
                      <div class="swiper-wrapper">
-
-                        <div class="swiper-slide">
-                           <div class="card card-body rounded-3 shadow-sm">
-                              <div class="rounded-3 position-relative mb-2 overflow-hidden">
-                                 <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img class="img-fluid w-100" src="{{ asset('storage/img/homepage/image-article-1.png') }}" alt="gambar artikel" loading="lazy">
-                              </div>
-                              <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
-                                 Policy
-                              </div>
-                              <h5 class="fw-600 mb-5">Aspek-aspek yang Perlu diperhatikan Dalam Menganalisis Kelayakan Usaha</h5>
-                              <div class="card-footer bg-transparent px-0">
-                                 <div class="d-flex align-items-center">
-                                    <div class="rounded-circle overflow-hidden">
-                                       <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy">
+                        @foreach ($articles as $article)
+                           <div class="swiper-slide">
+                              <a class="text-decoration-none link-dark" href="{{ $article['link'] }}" target="_blank">
+                                 <div class="card card-body rounded-3 shadow-sm">
+                                    <div class="rounded-3 position-relative mb-2 overflow-hidden">
+                                       <!--<div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>-->
+                                       <img class="img-fluid w-100" src="{{ $article['rttpg_featured_image_url']['large'][0] }}" alt="gambar artikel" loading="lazy">
                                     </div>
-                                    <div class="ms-2">
-                                       <p class="fw-500 small m-0">Lana Steiner</p>
-                                       <p class="text-secondary small m-0">18 Jan 2022</p>
+                                    <div class="alert alert-primary rounded-3 fw-600 alert-fit-content text-decoration-none py-2" role="alert"
+                                       style="text-decoration:none !important;">
+                                       {!! $article['rttpg_category'] !!}
                                     </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                           <div class="card card-body rounded-3 shadow-sm">
-                              <div class="rounded-3 position-relative mb-2 overflow-hidden">
-                                 <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img class="img-fluid w-100" src="{{ asset('storage/img/homepage/image-article-2.png') }}" alt="gambar artikel" loading="lazy">
-                              </div>
-                              <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
-                                 Sustainability
-                              </div>
-                              <h5 class="fw-600 mb-5">Jenis-Jenis Desa Berdasarkan Tingkat Perkembangannya</h5>
-                              <div class="card-footer bg-transparent px-0">
-                                 <div class="d-flex align-items-center">
-                                    <div class="rounded-circle overflow-hidden">
-                                       <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy">
-                                    </div>
-                                    <div class="ms-2">
-                                       <p class="fw-500 small m-0">Lana Steiner</p>
-                                       <p class="text-secondary small m-0">18 Jan 2022</p>
+                                    <h5 class="fw-600 mb-5">{!! $article['title']['rendered'] !!}</h5>
+                                    <div class="card-footer bg-transparent px-0">
+                                       <div class="d-flex align-items-center">
+                                          <div class="rounded-circle overflow-hidden">
+                                             <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy"
+                                                width="40" height="40">
+                                          </div>
+                                          <div class="ms-2">
+                                             <p class="fw-500 small m-0">{{ $article['rttpg_author']['display_name'] }}</p>
+                                             <p class="text-secondary small m-0">{{ \Carbon\Carbon::parse($article['date'])->isoFormat('D MMMM Y') }}</p>
+                                          </div>
+                                       </div>
                                     </div>
                                  </div>
-                              </div>
+                              </a>
                            </div>
-                        </div>
+                        @endforeach
 
-                        <div class="swiper-slide">
-                           <div class="card card-body rounded-3 shadow-sm">
-                              <div class="rounded-3 position-relative mb-2 overflow-hidden">
-                                 <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>
-                                 <img class="img-fluid w-100" src="{{ asset('storage/img/homepage/image-article-3.png') }}" alt="gambar artikel" loading="lazy">
-                              </div>
-                              <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">
-                                 Lingkungan
-                              </div>
-                              <h5 class="fw-600 mb-5">Pendampingan BUMDes Implementasi Dana Ketahanan Pangan</h5>
-                              <div class="card-footer bg-transparent px-0">
-                                 <div class="d-flex align-items-center">
-                                    <div class="rounded-circle overflow-hidden">
-                                       <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy">
-                                    </div>
-                                    <div class="ms-2">
-                                       <p class="fw-500 small m-0">Lana Steiner</p>
-                                       <p class="text-secondary small m-0">18 Jan 2022</p>
-                                    </div>
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                        <!--<div class="swiper-slide">-->
+                        <!--   <div class="card card-body rounded-3 shadow-sm">-->
+                        <!--      <div class="rounded-3 position-relative mb-2 overflow-hidden">-->
+                        <!--         <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>-->
+                        <!--         <img class="img-fluid w-100" src="{{ asset('storage/img/homepage/image-article-2.png') }}" alt="gambar artikel" loading="lazy">-->
+                        <!--      </div>-->
+                        <!--      <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">-->
+                        <!--         Sustainability-->
+                        <!--      </div>-->
+                        <!--      <h5 class="fw-600 mb-5">Jenis-Jenis Desa Berdasarkan Tingkat Perkembangannya</h5>-->
+                        <!--      <div class="card-footer bg-transparent px-0">-->
+                        <!--         <div class="d-flex align-items-center">-->
+                        <!--            <div class="rounded-circle overflow-hidden">-->
+                        <!--               <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy">-->
+                        <!--            </div>-->
+                        <!--            <div class="ms-2">-->
+                        <!--               <p class="fw-500 small m-0">Lana Steiner</p>-->
+                        <!--               <p class="text-secondary small m-0">18 Jan 2022</p>-->
+                        <!--            </div>-->
+                        <!--         </div>-->
+                        <!--      </div>-->
+                        <!--   </div>-->
+                        <!--</div>-->
+
+                        <!--<div class="swiper-slide">-->
+                        <!--   <div class="card card-body rounded-3 shadow-sm">-->
+                        <!--      <div class="rounded-3 position-relative mb-2 overflow-hidden">-->
+                        <!--         <div class="bg-light position-absolute rounded-3 end-0 me-3 fw-500 top-0 mt-3 border bg-opacity-75 p-2 shadow">52 mins</div>-->
+                        <!--         <img class="img-fluid w-100" src="{{ asset('storage/img/homepage/image-article-3.png') }}" alt="gambar artikel" loading="lazy">-->
+                        <!--      </div>-->
+                        <!--      <div class="alert alert-primary rounded-3 fw-600 alert-fit-content py-2" role="alert">-->
+                        <!--         Lingkungan-->
+                        <!--      </div>-->
+                        <!--      <h5 class="fw-600 mb-5">Pendampingan BUMDes Implementasi Dana Ketahanan Pangan</h5>-->
+                        <!--      <div class="card-footer bg-transparent px-0">-->
+                        <!--         <div class="d-flex align-items-center">-->
+                        <!--            <div class="rounded-circle overflow-hidden">-->
+                        <!--               <img class="img-fluid" src="{{ asset('storage/img/homepage/image-user-article.png') }}" alt="gambar user" loading="lazy">-->
+                        <!--            </div>-->
+                        <!--            <div class="ms-2">-->
+                        <!--               <p class="fw-500 small m-0">Lana Steiner</p>-->
+                        <!--               <p class="text-secondary small m-0">18 Jan 2022</p>-->
+                        <!--            </div>-->
+                        <!--         </div>-->
+                        <!--      </div>-->
+                        <!--   </div>-->
+                        <!--</div>-->
 
                      </div>
 
@@ -458,7 +500,7 @@
                </div>
 
                <div class="mt-5 text-center">
-                  <a class="btn btn-outline-dark" href="">Lihat semua Artikel</a>
+                  <a class="btn btn-outline-dark" href="https://blog.syncoreconsulting.com/" target="_blank">Lihat semua Artikel</a>
                </div>
             </div>
          </div>
@@ -534,8 +576,8 @@
    <!-- end testimonial -->
 
    <!-- section banner -->
-   <section class="py-lg-5 py-3" id="banner">
-      <div class="background-banner-home">
+   <section class="py-lg-5 mb-0 py-3" id="banner" style="background: #FFFFF0;">
+      <div class="background-banner-home1">
          <div class="container">
             <div class="row align-items-center">
                <div class="col-md-7">

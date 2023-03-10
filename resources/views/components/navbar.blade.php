@@ -81,6 +81,8 @@
                   <a class="nav-link px-lg-3 {{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>
                   {{-- <a class="nav-link px-lg-3 {{ request()->is('media') ? 'active' : '' }}" href="{{ route('media') }}">Media</a> --}}
                   <a class="nav-link px-lg-3 {{ request()->is('mitra') ? 'active' : '' }}" href="{{ route('mitra') }}">Mitra</a>
+                  <a class="nav-link px-lg-3 {{ request()->is('download') ? 'active' : '' }}" href="">Download</a>
+                  <a class="nav-link px-lg-3" href="https://blog.syncoreconsulting.com/">Blog</a>
                   <a class="btn btn-orange d-block d-lg-none mt-2 px-4" href="#">Hubungi Kami</a>
                </div>
             </div>

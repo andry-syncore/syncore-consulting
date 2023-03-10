@@ -61,17 +61,8 @@
             <div class="col-md-9">
                <div class="card card-body">
                   <p class="fw-600 m-0" id="latar-belakang">Latar Belakang Proyek</p>
-                  <p class="text-dark-5 small mt-3 mb-0">Pada tahun 2020 penduduk Indonesia mencapai 273,5 juta orang, dengan 119,3 juta orang tinggal di perdesaan (atau 46,62
-                     persen). Di Indonesia,
-                     jumlah penduduk miskin meningkat menjadi 26,42 juta jiwa pada tahun 2020 akibat pandemi virus corona (covid-19), dengan 57,76 persen atau 15,26 juta jiwa tinggal
-                     di pedesaan. Upaya peningkatan kesejahteraan masyarakat melalui kegiatan pemberdayaan ekonomi di pedesaan perlu dilakukan untuk mencegah bertambahnya jumlah
-                     penduduk miskin di Indonesia, khususnya di pedesaan.
-
-                     Sebagai pendukung penting bagi pembangunan dan kegiatan sosial yang membutuhkan partisipasi masyarakat, desa memiliki modal sosial masyarakat yang kuat. Namun,
-                     keterbatasan modal ekonomi desa berbanding terbalik dengan kondisi tersebut. Proporsi penduduk miskin yang lebih tinggi dibandingkan dengan daerah perkotaan.
-                     Namun, kewenangan yang diberikan UU Desa memberikan kesempatan kepada desa untuk memperluas dan meningkatkan kegiatan ekonominya. Desa memiliki pilihan untuk
-                     membentuk Badan Usaha Milik Desa (BUM Desa), yang dapat didirikan dengan semangat kekeluargaan dan gotong royong untuk menggunakan seluruh sumber daya ekonomi,
-                     alam, dan manusia untuk meningkatkan kesejahteraan masyarakatnya.</p>
+                  <p class="text-dark-5 small mt-3 mb-0">Pada tahun 2020 penduduk Indonesia mencapai 273,5 juta orang, dengan 119,3 juta orang tinggal di perdesaan (atau 46,62 persen). Di Indonesia, jumlah penduduk miskin meningkat menjadi 26,42 juta jiwa pada tahun 2020 akibat pandemi virus corona (covid-19), dengan 57,76 persen atau 15,26 juta jiwa tinggal di pedesaan. Upaya peningkatan kesejahteraan masyarakat melalui kegiatan pemberdayaan ekonomi di pedesaan perlu dilakukan untuk mencegah bertambahnya jumlah penduduk miskin di Indonesia, khususnya di pedesaan.Sebagai pendukung penting bagi pembangunan dan kegiatan sosial yang membutuhkan partisipasi masyarakat, desa memiliki modal sosial masyarakat yang kuat. Namun,
+                  keterbatasan modal ekonomi desa berbanding terbalik dengan kondisi tersebut. Proporsi penduduk miskin yang lebih tinggi dibandingkan dengan daerah perkotaan. Namun, kewenangan yang diberikan UU Desa memberikan kesempatan kepada desa untuk memperluas dan meningkatkan kegiatan ekonominya. Desa memiliki pilihan untuk membentuk Badan Usaha Milik Desa (BUM Desa), yang dapat didirikan dengan semangat kekeluargaan dan gotong royong untuk menggunakan seluruh sumber daya ekonomi, alam, dan manusia untuk meningkatkan kesejahteraan masyarakatnya.</p>
 
                   <div class="rounded-2 mt-4 overflow-hidden">
                      <img class="img-fluid" src="{{ asset('storage/img/portfolio/detail-image-portfolio-1.png') }}" alt="Gambar portfolio">

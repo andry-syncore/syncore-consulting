@@ -69,28 +69,32 @@
          </div>
 
          <div class="row mt-5">
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
                <button class="btn btn-tab-portfolio py-2 bg-orange-active px-lg-5 mb-2 mb-md-0 px-3">Semua</button>
                <hr class="d-block d-md-none my-0">
             </div>
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2">Policy</button>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">Pelatihan</button>
                <hr class="d-block d-md-none my-0">
             </div>
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2">Inovasi</button>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">Pendampingan</button>
                <hr class="d-block d-md-none my-0">
             </div>
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2">Governance</button>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">Scale Up & Inkubasi Bisnis</button>
                <hr class="d-block d-md-none my-0">
             </div>
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2">Akuntability</button>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">Kemitraan Riset</button>
                <hr class="d-block d-md-none my-0">
             </div>
-            <div class="col-12 col-md-4 col-lg-2 mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2">Sustainability</button>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">SHRM</button>
+               <hr class="d-block d-md-none my-0">
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 mb-lg-3 text-lg-center mb-1">
+               <button class="btn btn-tab-portfolio py-2">Pendampingan Keuangan</button>
                <hr class="d-block d-md-none my-0">
             </div>
          </div>
