@@ -25,11 +25,5 @@ class DatabaseSeeder extends Seeder
          'password' => '$2y$10$xGme1b.sfGu0Hh8c33EDb.oLWsLW4Y51Eo8VkK6sJwykqUoSl5kWC', // syncore12345
          'remember_token' => Str::random(10),
       ]);
-
-      Document::create([
-         'name' => 'Silabus Koperasi Simpan Pinjam',
-         'slug' => 'silabus-koperasi-simpan-panjam',
-         'file_path' => '01-silabus-koperasi-simpan-pinjam.pdf'
-      ]);
    }
 }

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Dashboard\CategoryPortfolioController;
+use App\Http\Controllers\Dashboard\DocumentController as DashboardDocumentController;
 use App\Http\Controllers\Dashboard\PortfolioController;
 use App\Http\Controllers\Home\DocumentController;
 use App\Models\Document;
@@ -31,6 +32,7 @@ Route::middleware(['auth'])->group(function () {
 
    Route::resource('portfolios', PortfolioController::class);
    Route::resource('categories', CategoryPortfolioController::class);
+   Route::resource('documents', DashboardDocumentController::class)->except('show');
 });
 
 // route beranda

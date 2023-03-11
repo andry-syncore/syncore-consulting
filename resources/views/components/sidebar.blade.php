@@ -32,8 +32,8 @@
          <span>Portfolio</span></a>
    </li>
 
-   <li class="nav-item">
-      <a class="nav-link" href="{{ route('dashboard') }}">
+   <li class="nav-item {{ Route::is('documents*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('documents.index') }}">
          <i class="fa-solid fa-file-lines"></i>
          <span>Dokumen</span></a>
    </li>

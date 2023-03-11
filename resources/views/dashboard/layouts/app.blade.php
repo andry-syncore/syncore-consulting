@@ -31,6 +31,25 @@
             </div>
          </div>
 
+         <div class="modal fade" id="deleteModal" tabindex="-1">
+            <div class="modal-dialog modal-sm">
+               <div class="modal-content">
+                  <div class="modal-body text-center">
+                     <p class="m-0">Yakin untuk menghapus dokumen ini ?</p>
+                  </div>
+                  <div class="modal-footer d-flex justify-content-center border-0">
+                     <button class="btn btn-secondary btn-sm px-4" data-dismiss="modal" type="button">Batal</button>
+                     <form action="" method="post">
+                        @csrf
+                        @method('DELETE')
+
+                        <button class="btn btn-danger btn-sm px-4" type="submit" type="button">Hapus</button>
+                     </form>
+                  </div>
+               </div>
+            </div>
+         </div>
+
          <x-foot-dashboard />
 
       </div>
@@ -46,6 +65,7 @@
    <script src="{{ asset('assets/js/dashboard/bootstrap.bundle.min.js') }}"></script>
    <script src="{{ asset('assets/js/dashboard/jquery.easing.min.js') }}"></script>
    <script src="{{ asset('assets/js/dashboard/sb-admin-2.min.js') }}"></script>
+   <script src="{{ asset('assets/js/dashboard/global.js') }}"></script>
 </body>
 
 </html>

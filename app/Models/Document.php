@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
 
 class Document extends Model
 {
@@ -14,5 +15,10 @@ class Document extends Model
    public function getRouteKeyName()
    {
       return 'slug';
+   }
+
+   public function setNameAttribute($val)
+   {
+      $this->attributes['name'] = Str::title($val);
    }
 }

@@ -16,7 +16,7 @@
                   </div>
                </div>
                <div class="col-md-6 order-0 order-md-1 text-md-end d-none d-md-block text-center">
-                  <img src="{{ asset('storage/img/download.svg') }}" alt="" class="img-fluid w-75">
+                  <img class="img-fluid w-75" src="{{ asset('storage/img/download.svg') }}" alt="">
                </div>
             </div>
 
@@ -41,6 +41,12 @@
 
             <!-- card tabel -->
             <div class="card card-body rounded-5 my-4 p-4 shadow-sm">
+               @if (session()->has('error'))
+                  <div class="alert alert-danger text-center">
+                     {{ session()->get('error') }}
+                  </div>
+               @endif
+
                <div class="table-responsive">
                   <table class="table-borderless table-sm m-0 table p-0" id="table-download">
                      <thead class="table-light">
@@ -57,7 +63,7 @@
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $document->name }}</td>
                               <td>{{ \Carbon\Carbon::parse($document->created_at)->isoFormat('DD MMMM YYYY') }}</td>
-                              <td><a href="{{ route('document.download', $document->slug) }}" class="btn btn-orange btn-sm rounded-3 px-3">Unduh</a></td>
+                              <td><a class="btn btn-orange btn-sm rounded-3 px-3" href="{{ route('document.download', $document->slug) }}">Unduh</a></td>
                            </tr>
                         @endforeach
                      </tbody>

@@ -19,7 +19,11 @@ class DocumentController extends Controller
 
    public function download(Document $document)
    {
-      $path = public_path("storage/document/$document->file_path");
-      return response()->download($path);
+      try {
+         $path = public_path("storage/$document->file_path");
+         return response()->download($path);
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
+      }
    }
 }
