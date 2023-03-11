@@ -19,7 +19,7 @@ class DocumentController extends Controller
    {
       return view('dashboard.document.index', [
          'title' => 'Dokumen Consulting',
-         'documents' => Document::paginate(15)
+         'documents' => Document::paginate(10)
       ]);
    }
 

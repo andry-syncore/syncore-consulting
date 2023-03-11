@@ -12,6 +12,11 @@ class Document extends Model
 
    protected $guarded = ['id'];
 
+   public function scopeFilter($query, $request)
+   {
+      return $query->where('name', 'LIKE', "%$request%");
+   }
+
    public function getRouteKeyName()
    {
       return 'slug';

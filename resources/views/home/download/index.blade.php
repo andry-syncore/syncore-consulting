@@ -29,7 +29,7 @@
                         <label class="small mb-2" for="search" style="font-weight: 600">Kata kunci pencarian</label>
                         <div class="input-group">
                            <span class="input-group-text bg-transparent"><i class="fa-solid fa-magnifying-glass text-orange"></i></span>
-                           <input class="form-control border-start-0" id="search" name="search" type="text" value="" placeholder="Cari dokumen...">
+                           <input class="form-control border-start-0" id="search" name="search" type="text" placeholder="Cari dokumen..." value="{{ request()->search }}">
                         </div>
                      </div>
                      <div class="col-lg-2">
@@ -68,6 +68,10 @@
                         @endforeach
                      </tbody>
                   </table>
+
+                  <div class="d-flex justify-content-center">
+                     {{ $documents->links() }}
+                  </div>
                </div>
             </div>
          </div>

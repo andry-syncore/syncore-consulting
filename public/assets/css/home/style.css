@@ -341,6 +341,16 @@ footer .nav-link:hover {
    background-color: transparent;
 }
 
+ul.pagination li.page-item.active span{
+   background-color: #f46a35;
+   border-color: #f46a35;
+   color: #fff;
+}
+
+ul.pagination li.page-item a.page-link {
+   color: #555;
+}
+
 /* breakpoints responsive */
 @media (min-width: 576px) {
    #list-reason .row div.text-end {

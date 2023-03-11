@@ -5,15 +5,14 @@ namespace App\Http\Controllers\Home;
 use App\Http\Controllers\Controller;
 use App\Models\Document;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 class DocumentController extends Controller
 {
-   public function index()
+   public function index(Request $request)
    {
       return view('home.download.index', [
          'title' => 'Download',
-         'documents' => Document::paginate(15)
+         'documents' => Document::filter($request->search ?? '')->paginate(10)->withQueryString()
       ]);
    }
 
