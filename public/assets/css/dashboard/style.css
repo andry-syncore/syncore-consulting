@@ -41,3 +41,17 @@ ul.pagination li.page-item.active span{
 ul.pagination li.page-item a.page-link {
    color: #555;
 }
+
+trix-toolbar  button.trix-button.trix-button--icon.trix-button--icon-attach {
+   display: none;
+}
+
+trix-editor {
+   height: 200px;
+   max-height: 500px;
+   overflow: scroll;
+}
+
+trix-editor.is-invalid {
+   border: 1px solid #e74a3b;
+}

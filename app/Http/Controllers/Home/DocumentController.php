@@ -26,3 +26,4 @@ class DocumentController extends Controller
       }
    }
 }
+

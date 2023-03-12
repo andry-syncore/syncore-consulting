@@ -13,6 +13,8 @@
    <link href="{{ asset('assets/css/dashboard/sb-admin-2.min.css') }}" rel="stylesheet">
 
    <link href="{{ asset('assets/css/dashboard/style.css') }}" rel="stylesheet">
+
+   <link rel="stylesheet" type="text/css" href="https://unpkg.com/trix@2.0.0/dist/trix.css">
 </head>
 
 <body id="page-top">
@@ -35,7 +37,7 @@
             <div class="modal-dialog modal-sm">
                <div class="modal-content">
                   <div class="modal-body text-center">
-                     <p class="m-0">Yakin untuk menghapus dokumen ini ?</p>
+                     <p class="m-0">Yakin untuk menghapus data ini ?</p>
                   </div>
                   <div class="modal-footer d-flex justify-content-center border-0">
                      <button class="btn btn-secondary btn-sm px-4" data-dismiss="modal" type="button">Batal</button>
@@ -65,6 +67,7 @@
    <script src="{{ asset('assets/js/dashboard/bootstrap.bundle.min.js') }}"></script>
    <script src="{{ asset('assets/js/dashboard/jquery.easing.min.js') }}"></script>
    <script src="{{ asset('assets/js/dashboard/sb-admin-2.min.js') }}"></script>
+   <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
    <script src="{{ asset('assets/js/dashboard/global.js') }}"></script>
 </body>
 

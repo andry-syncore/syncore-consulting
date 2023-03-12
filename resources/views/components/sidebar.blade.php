@@ -12,7 +12,7 @@
    <hr class="sidebar-divider my-0">
 
    <!-- Nav Item - Dashboard -->
-   <li class="nav-item">
+   <li class="nav-item {{ Route::is('dashboard*') ? 'active' : '' }}">
       <a class="nav-link" href="{{ route('dashboard') }}">
          <i class="fas fa-fw fa-tachometer-alt"></i>
          <span>Dashboard</span></a>
@@ -26,8 +26,14 @@
       Menu
    </div>
 
-   <li class="nav-item">
-      <a class="nav-link" href="{{ route('dashboard') }}">
+   <li class="nav-item {{ Route::is('category_portfolios*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('category_portfolios.index') }}">
+         <i class="fa-solid fa-newspaper"></i>
+         <span>Kategori Portfolio</span></a>
+   </li>
+
+   <li class="nav-item {{ Route::is('portfolios*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('portfolios.index') }}">
          <i class="fa-solid fa-newspaper"></i>
          <span>Portfolio</span></a>
    </li>

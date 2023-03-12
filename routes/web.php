@@ -5,6 +5,7 @@ use App\Http\Controllers\Dashboard\CategoryPortfolioController;
 use App\Http\Controllers\Dashboard\DocumentController as DashboardDocumentController;
 use App\Http\Controllers\Dashboard\PortfolioController;
 use App\Http\Controllers\Home\DocumentController;
+use App\Http\Controllers\Home\PortfolioController as HomePortfolioController;
 use App\Models\Document;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
@@ -20,7 +21,8 @@ use Illuminate\Support\Facades\Http;
 |
 */
 
-Route::get('admin', [LoginController::class, 'index'])->name('login');
+Route::get('admin', [LoginController::class, 'index'])->name('admin');
+Route::get('login', [LoginController::class, 'index'])->name('login');
 Route::post('login', [LoginController::class, 'authenticate'])->name('login');
 
 Route::middleware(['auth'])->group(function () {
@@ -30,8 +32,8 @@ Route::middleware(['auth'])->group(function () {
       return view('dashboard.index', ['title' => 'Dashboard']);
    })->name('dashboard');
 
-   Route::resource('portfolios', PortfolioController::class);
-   Route::resource('categories', CategoryPortfolioController::class);
+   Route::resource('portfolios', PortfolioController::class)->except('show');
+   Route::resource('category_portfolios', CategoryPortfolioController::class)->except('create', 'show');
    Route::resource('documents', DashboardDocumentController::class)->except('show');
 });
 
@@ -60,11 +62,11 @@ Route::get('faq', function () {
    ]);
 })->name('faq');
 
-Route::get('portfolio', function () {
-   return view('home.portfolio.index', [
-      'title' => 'Portfolio'
-   ]);
-})->name('portfolio');
+Route::prefix('portfolio')->controller(HomePortfolioController::class)->group(function() {
+   Route::get('/', 'index')->name('portfolio');
+   Route::get('/{portfolio}/detail', 'detail')->name('portfolio.detail');
+});
+
 
 Route::get('portfolio/{portfolio}', function () {
    return view('home.portfolio.detail', [
