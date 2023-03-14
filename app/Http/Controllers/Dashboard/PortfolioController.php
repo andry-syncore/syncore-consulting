@@ -7,6 +7,7 @@ use App\Models\CategoryPortfolio;
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class PortfolioController extends Controller
 {
@@ -78,18 +79,17 @@ class PortfolioController extends Controller
          'photos' => 'Foto dokumentasi'
       ];
 
-      $validate = $request->validate($rules, $messages, $aliases);
-
       try {
+         $validate = $request->validate($rules, $messages, $aliases);
          $validate['slug'] = Str::slug($request->title);
          $validate['photos'] = $request->file('photos')->store('img/portfolio');
+
          Portfolio::create($validate);
 
          return redirect()->route('portfolios.index')->with('success', 'Data berhasil ditambahkan');
       } catch (\Throwable $th) {
          return redirect()->back()->with('error', 'Gagal menyimpan data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
       }
-
    }
 
    /**
@@ -100,7 +100,11 @@ class PortfolioController extends Controller
     */
    public function edit(Portfolio $portfolio)
    {
-      //
+      return view('dashboard.portfolio.edit', [
+         'title' => 'Portfolio',
+         'categories' => CategoryPortfolio::all(),
+         'portfolio' => $portfolio->load('category')
+      ]);
    }
 
    /**
@@ -112,7 +116,55 @@ class PortfolioController extends Controller
     */
    public function update(Request $request, Portfolio $portfolio)
    {
-      //
+      $rules = [
+         'category_portfolio_id' => 'required',
+         'title' => 'required|unique:portfolios,title,'.$portfolio->id,
+         'client' => 'required',
+         'location' => 'required',
+         'year' => 'required',
+         'background' => 'required',
+         'problem' => 'required',
+         'solution' => 'required',
+         'metodologi' => 'required',
+         'result' => 'required',
+         'photos' => 'mimes:jpg,png',
+      ];
+
+      $messages = [
+         'required' => ':attribute wajib diisi',
+         'unique' => ':attribute sudah digunakan di database',
+         'mimes' => ':attribute harus berupa :values'
+      ];
+
+      $aliases = [
+         'category_portfolio_id' => 'Kategori',
+         'title' => 'Nama project',
+         'client' => 'Klien',
+         'location' => 'Lokasi',
+         'year' => 'Tahun',
+         'background' => 'Latar belakang',
+         'problem' => 'Permasalahan klien',
+         'solution' => 'Solusi',
+         'metodologi' => 'Tahapan atau metodologi',
+         'result' => 'Hasil',
+         'photos' => 'Foto dokumentasi'
+      ];
+
+      try {
+         $validate = $request->validate($rules, $messages, $aliases);
+         $validate['slug'] = Str::slug($request->title);
+
+         if ($request->file('photos')) {
+            Storage::delete($portfolio->photos);
+            $validate['photos'] = $request->file('photos')->store('img/portfolio');
+         }
+
+         $portfolio->update($validate);
+
+         return redirect()->route('portfolios.index')->with('success', 'Data berhasil diubah');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal mengubah data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 
    /**
@@ -123,6 +175,12 @@ class PortfolioController extends Controller
     */
    public function destroy(Portfolio $portfolio)
    {
-      //
+      try {
+         $portfolio->delete();
+         Storage::delete($portfolio->photos);
+         return redirect()->route('portfolios.index')->with('success', 'Data berhasil dihapus');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menghapus data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 }

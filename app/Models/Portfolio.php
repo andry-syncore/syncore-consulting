@@ -33,7 +33,7 @@ class Portfolio extends Model
 
    public function setProblemAttribute($val)
    {
-      $this->attributes['problem'] = Str::replace(['<ol>', '<li>','&nbsp;'], ['<ol class="mt-2">', '<li class="small text-dark-5 mt-2">',''], $val);
+      $this->attributes['problem'] = Str::replace(['<div>','</div>','<ol>', '<li>','&nbsp;'], ['<p class="text-dark-5 small mt-3 mb-0">','</p>','<ol class="mt-2">', '<li class="small text-dark-5 mt-2">',''], $val);
    }
 
    public function setSolutiontAttribute($val)
@@ -43,6 +43,6 @@ class Portfolio extends Model
 
    public function setResultAttribute($val)
    {
-      $this->attributes['solution'] = Str::replace(['<div>','</div>','<ol>', '<li>','&nbsp;'], ['<p class="text-dark-5 small mt-3 mb-0">','</p>','<ol class="mt-2">', '<li class="small text-dark-5 mt-2">',''], $val);
+      $this->attributes['result'] = Str::replace(['<div>','</div>','<ol>', '<li>','&nbsp;'], ['<p class="text-dark-5 small mt-3 mb-0">','</p>','<ol class="mt-2">', '<li class="small text-dark-5 mt-2">',''], $val);
    }
 }
