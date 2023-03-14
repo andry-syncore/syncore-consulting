@@ -46,6 +46,55 @@ btnTabMitras.forEach((tab) => tab.addEventListener('click', function () {
    this.className += ` ${activeClass}`
 }))
 
+document.addEventListener('DOMContentLoaded', async () => {  
+   try {
+      const data = await showPortfolio('kemitraan-riset')
+      const tabContent = document.querySelector('#tab-content-portfolio')
+      tabContent.innerHTML = data.view
+   } catch (error) {
+      alert(error.message)
+   }
+   
+   // tab portfolios in homepage
+   const navLinkPortfolios = document.querySelectorAll('.nav-link-portfolios')
+   navLinkPortfolios.forEach(link => link.addEventListener('click', async function(e) {
+      e.preventDefault()
+
+      const activeClass = 'active-link'
+      const currentActive = document.querySelector(`.${activeClass}`)
+      currentActive.className = currentActive.className.replace(`${activeClass}`, '')
+      this.className += ` ${activeClass}`
+   
+      const url = this.dataset.category
+   
+      try {
+         const data = await showPortfolio(url)
+         const tabContent = document.querySelector('#tab-content-portfolio')
+         tabContent.innerHTML = data.view
+      } catch (error) {
+         alert(error.message)
+      }
+   }))
+})
+
+const showPortfolio = async url => {
+   return fetch(`portfolio/?category=${url}`, {
+      headers: {
+         'X-Requested-With': 'XMLHttpRequest',
+      },
+      method: 'GET'
+   })
+   .then(res => res.json())
+   .then(data => {
+      if (data.status != 200) {
+         throw data
+      }
+
+      return data
+   })
+}
+
+
 // init lazy loading image
 const elImg = document.querySelectorAll('img')
 const observer = lozad(elImg)

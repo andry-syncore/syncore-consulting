@@ -252,149 +252,18 @@
             <h2 class="text-orange fw-600">Portofolio</h2>
             <p class="text-dark-5">Mengembangkan bisnis melalui Project yang dikembangkan dan dieksekusi dengan baik</p>
          </div>
-         <div class="row justify-content-lg-between mt-5">
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio bg-orange-active px-lg-5 mb-md-0 mb-2 px-3 py-2" data-target="tab-Pelatihan">Pelatihan</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-Pendampingan">Pendampingan</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-Scale">Scale Up & Inkubasi Bisnis</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-Kemitraan">Kemitraan Riset</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-shrm">SHRM</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-            <div class="col-12 col-md mb-lg-0 text-lg-center mb-1">
-               <button class="btn btn-tab-portfolio py-2" data-target="tab-Keuangan">Pendampingan Keuangan</button>
-               <hr class="d-block d-md-none my-0">
-            </div>
-         </div>
+
+         <ul class="nav nav-tabs tab-porfolio d-flex justify-content-center mt-5" id="myTab" role="tablist">
+            @foreach ($categories as $category)
+               <li class="nav-item px-5" role="presentation">
+                  <a class="nav-link nav-link-portfolios {{ $loop->index == 0 ? 'active-link' : '' }}" href="" data-category="{{ $category->slug }}">{{ Str::upper($category->name) }}</a>
+               </li>
+            @endforeach
+         </ul>
          <hr class="d-none d-md-block my-3">
 
-         <div class="tab-content-portfolio" id="tab-Pelatihan">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Konsultasi Digital Marketing Pelaku Usaha di Kalimantan Tengah</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Pandemi covid 19 mengakibatkan kondisi ekonomi Indonesia menurun terkhusus di Kalimantan tengah. Apalagi di industry
-                     pariwisata dan sejenisnya. Selain itu, pelaku usaha di Kalimantan tengah.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-pelatihan-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
-         </div>
-
-         <div class="tab-content-portfolio d-none" id="tab-Pendampingan">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program Desa Brilian 2020 Dan Desa Brilian 2021 Bekerjasama Dengan Pt. Bank Rakyat Indonesia Tbk.</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting bekerjasama dengan bumdes.id dan PT. Bank Rakyat Indonesia Tbk membuat program Desa Brilian di tahun
-                     2020 dan 2021.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-inovasi-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
-         </div>
-
-         <div class="tab-content-portfolio d-none" id="tab-Scale">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program Revitalisasi Kelembagaan Bum Desa Umbara Desa Sanggrahan Dan Bum Desa Kemudo Makmur Desa Kemudo Bekerjasama Dengan Csr PT.
-                     Sarihusada Generasi Mahardika</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Pada tahun 2020 - 2021 syncore consulting bekerjasama dengan PT. Sarihusada Generasi Mahardika (SGM) dan Bumdes.id. PT.
-                     SGM memiliki pabrik yang berada di wilayah Desa Kemudo.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-governance-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
-         </div>
-
-         <div class="tab-content-portfolio d-none" id="tab-Kemitraan">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program Pendampingan Tata Kelola Keuangan Menggunakan Sistem Aplikasi Keuangan</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Syncore Consulting mengembangkan sistem aplikasi akuntansi bumdes (SAAB) yang telah disesuaikan dengan SAK ETAP dan
-                     Peraturan Menteri Desa PDTT No 3 tahun 2021.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-akuntability-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
-         </div>
-
-         <div class="tab-content-portfolio d-none" id="tab-shrm">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun
-                     Pasar Minggu Pagi (Sunmor Kerto)</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Sejak masa pandemi covid 19 tahun 2021 hingga 2022 PT. SGM pun consen pada peningkatan pendapatan UMKM yang terdampak
-                     pandemi covid 19 di RW 9 dan RW 8 Kalurahan Muja Muju Umbulharjo.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-sustainability-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
-         </div>
-
-         <div class="tab-content-portfolio d-none" id="tab-Keuangan">
-            <div class="row justify-content-between align-items-center my-4">
-               <div class="col-lg-6 mb-lg-0 mb-3">
-                  <h2 class="fw-600 mb-lg-4">Program CSR PT. Sarihusada Generasi Mahardika (Sgm) Peningkatan Ekonomi Warga Kalurahan Muja Muju Umbulharjo Yogyakarta Dengan Membangun
-                     Pasar Minggu Pagi (Sunmor Kerto)</h2>
-                  <p class="text-dark-5 fw-400 mb-lg-4 mb-2">Sejak masa pandemi covid 19 tahun 2021 hingga 2022 PT. SGM pun consen pada peningkatan pendapatan UMKM yang terdampak
-                     pandemi covid 19 di RW 9 dan RW 8 Kalurahan Muja Muju Umbulharjo.</p>
-                  <a class="text-orange text-decoration-none fw-600" href="">Selengkapnya <i class="fa-solid fa-arrow-right"></i></a>
-               </div>
-               <div class="col-lg-6">
-                  <div class="rounded-4 overflow-hidden">
-                     <img class="img-fluid" src="{{ asset('storage/img/homepage/image-portfolio-sustainability-1.png') }}" alt="" loading="lazy">
-                  </div>
-               </div>
-            </div>
-            <div class="mt-5 text-center">
-               <a class="btn btn-outline-dark" href="">Lihat semua Portfolios</a>
-            </div>
+         <div class="tab-content-portfolio" id="tab-content-portfolio">
+            
          </div>
 
       </div>

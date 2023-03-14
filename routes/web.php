@@ -5,6 +5,7 @@ use App\Http\Controllers\Dashboard\CategoryPortfolioController;
 use App\Http\Controllers\Dashboard\DocumentController as DashboardDocumentController;
 use App\Http\Controllers\Dashboard\PortfolioController;
 use App\Http\Controllers\Home\DocumentController;
+use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\PortfolioController as HomePortfolioController;
 use App\Models\Document;
 use Illuminate\Support\Facades\Route;
@@ -37,54 +38,18 @@ Route::middleware(['auth'])->group(function () {
    Route::resource('documents', DashboardDocumentController::class)->except('show');
 });
 
-// route beranda
-Route::get('/', function () {
-   $response = Http::get('https://blog.syncoreconsulting.com/wp-json/wp/v2/posts', [
-      'per_page' => 6
-   ]);
-   $articles = json_decode($response, true);
-   return view('home.index', [
-      'title' => 'Beranda'
-   ])->with([
-      'articles' => $articles,
-   ]);
-})->name('home');
-
-Route::get('about', function () {
-   return view('home.about.index', [
-      'title' => 'Tentang Kami'
-   ]);
-})->name('about');
-
-Route::get('faq', function () {
-   return view('home.faq.index', [
-      'title' => 'Tentang Kami'
-   ]);
-})->name('faq');
+Route::controller(HomeController::class)->group(function() {
+   Route::get('/', 'index')->name('home');
+   Route::get('about', 'about')->name('about');
+   Route::get('faq', 'faq')->name('faq');
+   Route::get('media', 'media')->name('media');
+   Route::get('mitra', 'mitra')->name('mitra');
+});
 
 Route::prefix('portfolio')->controller(HomePortfolioController::class)->group(function() {
    Route::get('/', 'index')->name('portfolio');
    Route::get('/{portfolio}/detail', 'detail')->name('portfolio.detail');
 });
-
-
-Route::get('portfolio/{portfolio}', function () {
-   return view('home.portfolio.detail', [
-      'title' => 'Detail Portfolio'
-   ]);
-})->name('portfolio.show');
-
-Route::get('media', function () {
-   return view('home.media.index', [
-      'title' => 'Media'
-   ]);
-})->name('media');
-
-Route::get('mitra', function () {
-   return view('home.mitra.index', [
-      'title' => 'Mitra'
-   ]);
-})->name('mitra');
 
 Route::get('document', [DocumentController::class, 'index'])->name('document.index');
 Route::get('document/{document}', [DocumentController::class, 'download'])->name('document.download');
