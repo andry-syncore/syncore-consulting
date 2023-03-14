@@ -78,9 +78,10 @@ class PortfolioController extends Controller
          'result' => 'Hasil',
          'photos' => 'Foto dokumentasi'
       ];
+      
+      $validate = $request->validate($rules, $messages, $aliases);
 
       try {
-         $validate = $request->validate($rules, $messages, $aliases);
          $validate['slug'] = Str::slug($request->title);
          $validate['photos'] = $request->file('photos')->store('img/portfolio');
 
