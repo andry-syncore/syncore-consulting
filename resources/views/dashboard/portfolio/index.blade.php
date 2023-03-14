@@ -39,7 +39,7 @@
                      <td>
                         <div class="d-flex justify-content-between">
                            <a class="btn btn-primary btn-sm mr-2" href="{{ route('portfolios.edit', $portfolio) }}">Edit</a>
-                           {{-- <button class="btn btn-danger btn-sm btn-delete" data-url="{{ route('portfolios.destroy', $portfolio) }}" data-toggle="modal" data-target="#deleteModal">Hapus</button> --}}
+                           <button class="btn btn-danger btn-sm btn-delete" data-url="{{ route('portfolios.destroy', $portfolio) }}" data-toggle="modal" data-target="#deleteModal">Hapus</button>
                         </div>
                      </td>
                   </tr>
