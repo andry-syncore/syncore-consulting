@@ -351,6 +351,24 @@ ul.pagination li.page-item a.page-link {
    color: #555;
 }
 
+/* Tab portfolio style */
+ul.nav.nav-tabs.tab-porfolio,
+ul.nav.nav-tabs.tab-porfolio li.nav-item a.nav-link {
+   border: none;
+   border-radius: 5px;
+}
+
+ul.nav.nav-tabs.tab-porfolio li.nav-item a.nav-link  {
+   padding: 5px 15px;
+   color: #333;
+}
+
+ul.nav.nav-tabs.tab-porfolio li.nav-item a.nav-link.active {
+   background: rgba(249, 115, 22, 0.2);
+   color: #f46a35;
+   font-weight: 600;
+}
+
 /* breakpoints responsive */
 @media (min-width: 576px) {
    #list-reason .row div.text-end {
