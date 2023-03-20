@@ -100,12 +100,14 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Program Pendampingan</h6>
                <div class="small mt-4">
-                  <a class="nav-link text-dark-8 my-3" href="#">Dokumen SOP</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Feasibility Study</a>
+                  @foreach ($programs as $program)
+                     <a class="nav-link text-dark-8 my-3" href="{{ route('program-pendampingan.show', $program) }}">{{ $program->name }}</a>
+                     {{-- <a class="nav-link text-dark-8 my-3" href="#">Feasibility Study</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Master Plan</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Keuangan dan Pajak</a>
                   <a class="nav-link text-dark-8 my-3" href="#">Rencana Strategi</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Narasumber Pendampingan</a>
+                  <a class="nav-link text-dark-8 my-3" href="#">Narasumber Pendampingan</a> --}}
+                  @endforeach
                </div>
             </div>
 

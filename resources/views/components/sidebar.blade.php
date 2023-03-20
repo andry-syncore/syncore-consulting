@@ -1,4 +1,4 @@
-<ul class="navbar-nav bg-orange sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-orange sidebar sidebar-dark accordion" id="sidebarConsulting">
 
    <!-- Sidebar - Brand -->
    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('dashboard') }}">
@@ -42,6 +42,12 @@
       <a class="nav-link" href="{{ route('documents.index') }}">
          <i class="fa-solid fa-file-lines"></i>
          <span>Dokumen</span></a>
+   </li>
+
+   <li class="nav-item {{ Route::is('program-pendampingan*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('program-pendampingan.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Program Pendampingan</span></a>
    </li>
 
    <!-- Divider -->

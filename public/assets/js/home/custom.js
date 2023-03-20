@@ -48,9 +48,11 @@ btnTabMitras.forEach((tab) => tab.addEventListener('click', function () {
 
 document.addEventListener('DOMContentLoaded', async () => {  
    try {
-      const data = await showPortfolio('kemitraan-riset')
       const tabContent = document.querySelector('#tab-content-portfolio')
-      tabContent.innerHTML = data.view
+      if (tabContent) {
+         const data = await showPortfolio('kemitraan-riset')
+         tabContent.innerHTML = data.view
+      }
    } catch (error) {
       alert(error.message)
    }

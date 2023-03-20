@@ -23,7 +23,7 @@
                   <th>Lokasi</th>
                   <th>Klien</th>
                   <th>Tahun</th>
-                  <th>Latar Belakanag</th>
+                  <th>Latar Belakang</th>
                   <th style="widows: 1%; white-space: nowrap">Aksi</th>
                </tr>
             </thead>
