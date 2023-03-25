@@ -50,6 +50,12 @@
          <span>Program Pendampingan</span></a>
    </li>
 
+   <li class="nav-item {{ Route::is('program-pelatihan*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('program-pelatihan.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Program Pelatihan</span></a>
+   </li>
+
    <!-- Divider -->
    <hr class="sidebar-divider d-none d-md-block">
 

@@ -100,13 +100,8 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Program Pendampingan</h6>
                <div class="small mt-4">
-                  @foreach ($programs as $program)
-                     <a class="nav-link text-dark-8 my-3" href="{{ route('program-pendampingan.show', $program) }}">{{ $program->name }}</a>
-                     {{-- <a class="nav-link text-dark-8 my-3" href="#">Feasibility Study</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Master Plan</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Keuangan dan Pajak</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Rencana Strategi</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Narasumber Pendampingan</a> --}}
+                  @foreach ($pendampingans as $pendampingan)
+                     <a class="nav-link text-dark-8 my-3" href="{{ route('program-pendampingan.show', $pendampingan) }}">{{ $pendampingan->name }}</a>
                   @endforeach
                </div>
             </div>
@@ -114,13 +109,9 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Program Pelatihan</h6>
                <div class="small mt-4">
-                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan e-SPI</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Manajemen Bisnis</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pelatihan Tata Kelola Keuangan Bisnis</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Digital Marketing</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Kemitraan Narasumber Pelatihan</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Kemitraan Event</a>
+                  @foreach ($pelatihans as $pelatihan)
+                     <a class="nav-link text-dark-8 my-3" href="{{ route('program-pelatihan.show', $pelatihan) }}">{{ $pelatihan->name }}</a>
+                  @endforeach
                </div>
             </div>
 

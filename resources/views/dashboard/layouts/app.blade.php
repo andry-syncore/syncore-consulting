@@ -69,6 +69,7 @@
    <script src="{{ asset('assets/js/dashboard/sb-admin-2.min.js') }}"></script>
    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
    <script src="{{ asset('assets/js/dashboard/global.js') }}"></script>
+   @stack('js')
 </body>
 
 </html>

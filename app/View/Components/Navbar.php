@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\ProgramPelatihan;
 use App\Models\ProgramPendampingan;
 use Illuminate\View\Component;
 
@@ -24,9 +25,12 @@ class Navbar extends Component
     */
    public function render()
    {
-      $programs = ProgramPendampingan::all();
+      $pendampingan = ProgramPendampingan::all();
+      $pelatihan = ProgramPelatihan::all();
+
       return view('components.navbar', [
-         'programs' => $programs,
+         'pendampingans' => $pendampingan,
+         'pelatihans' => $pelatihan,
       ]);
    }
 }
