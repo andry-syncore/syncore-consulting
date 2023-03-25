@@ -153,6 +153,11 @@ class ProgramPelatihanController extends Controller
     */
    public function destroy(ProgramPelatihan $programPelatihan)
    {
-      //
+      try {
+         $programPelatihan->delete();
+         return redirect()->route('program-pelatihan.index')->with('success', 'Data berhasil dihapus');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menghapus data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 }
