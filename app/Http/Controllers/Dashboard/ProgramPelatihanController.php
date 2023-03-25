@@ -76,15 +76,15 @@ class ProgramPelatihanController extends Controller
       $validate = $request->validate($rules, $messages, $aliases);
 
       try {
-         $sesi = explode(',', $validate['sesi']);
+         $sesi = explode("\r\n", $validate['sesi']);
          $sesi = collect($sesi)->map(fn ($val) => trim($val));
          $sesi = json_encode($sesi);
 
-         $waktu = explode(',', $validate['waktu']);
+         $waktu = explode("\r\n", $validate['waktu']);
          $waktu = collect($waktu)->map(fn ($val) => trim($val));
          $waktu = json_encode($waktu);
 
-         $materi = explode(',', $validate['materi']);
+         $materi = explode("\r\n", $validate['materi']);
          $materi = collect($materi)->map(fn ($val) => trim($val));
          $materi = json_encode($materi);
 

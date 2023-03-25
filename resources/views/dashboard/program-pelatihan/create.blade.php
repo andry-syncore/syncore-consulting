@@ -13,7 +13,7 @@
          <div class="col-md-12">
             <div class="mb-3">
                <label class="form-label" for="name">Nama Program Pelatihan</label>
-               <input class="form-control @error('name') is-invalid @enderror" id="name" name="name" type="text" placeholder="contoh: Pelatihan e-SPI">
+               <input class="form-control @error('name') is-invalid @enderror" id="name" name="name" type="text" placeholder="contoh: Pelatihan e-SPI" value="{{ old('name') }}">
                @error('name')
                   <div class="invalid-feedback">{{ $message }}</div>
                @enderror
@@ -21,7 +21,7 @@
 
             <div class="mb-3">
                <label class="form-label" for="objective">Tujuan</label>
-               <input id="objective" name="objective" type="hidden">
+               <input id="objective" name="objective" type="hidden" value="{{ old('objective') }}">
                <trix-editor class="@error('objective') is-invalid @enderror" input="objective"></trix-editor>
                @error('objective')
                   <div class="invalid-feedback">{{ $message }}</div>
@@ -29,11 +29,11 @@
             </div>
 
             <div class="mb-3">
-               <label class="form-label">Agenda <span class="text-danger">*(Pisahkan dengan kome (,) jika lebih dari satu)</span></label>
+               <label class="form-label">Agenda <span class="text-danger">*(Pisahkan dengan 'enter' jika lebih dari satu)</span></label>
 
                <div class="mb-3">
                   <label class="form-label small">Sesi</label>
-                  <input class="form-control @error('sesi') is-invalid @enderror" name="sesi" type="text" placeholder="Contoh: Sesi 1, Sesi 2, Sesi 3, dst...">
+                  <textarea class="form-control @error('sesi') is-invalid @enderror" name="sesi" rows="5">{{ old('sesi') }}</textarea>
                   @error('sesi')
                      <div class="invalid-feedback">{{ $message }}</div>
                   @enderror
@@ -41,7 +41,7 @@
 
                <div class="mb-3">
                   <label class="small form-label">Waktu</label>
-                  <input class="form-control @error('waktu') is-invalid @enderror" name="waktu" type="text" placeholder="Contoh: 09.00 - 10.30, 10.30 - 12.00, 13.00 - 14.30">
+                  <textarea class="form-control @error('waktu') is-invalid @enderror" name="waktu" rows="5">{{ old('waktu') }}</textarea>
                   @error('waktu')
                      <div class="invalid-feedback">{{ $message }}</div>
                   @enderror
@@ -49,7 +49,7 @@
 
                <div class="mb-3">
                   <label class="form-label small">Materi</label>
-                  <input class="form-control @error('materi') is-invalid @enderror" name="materi" type="text" placeholder="Contoh: Materi 1, Materi 2, Materi 3, dst...">
+                  <textarea class="form-control @error('materi') is-invalid @enderror" name="materi" rows="5">{{ old('materi') }}</textarea>
                   @error('materi')
                      <div class="invalid-feedback">{{ $message }}</div>
                   @enderror
@@ -58,7 +58,7 @@
 
             <div class="mb-3">
                <label class="form-label" for="note">Catatan</label>
-               <input class="form-control" name="note" type="text" placeholder="Contoh: Pelatihan berjalan selama 2 hari">
+               <input class="form-control" name="note" type="text" placeholder="Contoh: Pelatihan berjalan selama 2 hari" value="{{ old('note') }}">
             </div>
 
             <div class="mb-3">
@@ -66,7 +66,7 @@
                <div class="row align-items-end">
                   <div class="col-md-4">
                      <label class="form-label small">Biaya</label>
-                     <input class="form-control @error('biaya') is-invalid @enderror" name="biaya" type="text" placeholder="Contoh: Rp. 3.000.000">
+                     <input class="form-control @error('biaya') is-invalid @enderror" name="biaya" type="text" placeholder="Contoh: Rp. 3.000.000" value="{{ old('biaya') }}">
                      @error('biaya')
                         <div class="invalid-feedback">{{ $message }}</div>
                      @enderror
@@ -74,14 +74,14 @@
                   <div class="col-md-4">
                      <label class="small form-label">Waktu</label>
                      <input class="form-control @error('waktu_pelatihan') is-invalid @enderror" name="waktu_pelatihan" type="text"
-                        placeholder="Contoh: 2 Hari (Pukul 09.00 - 10.30)">
+                        placeholder="Contoh: 2 Hari (Pukul 09.00 - 10.30)" value="{{ old('waktu_pelatihan') }}">
                      @error('waktu_pelatihan')
                         <div class="invalid-feedback">{{ $message }}</div>
                      @enderror
                   </div>
                   <div class="col-md-4">
                      <label class="form-label small">Lokasi</label>
-                     <input class="form-control @error('lokasi') is-invalid @enderror" name="lokasi" type="text" placeholder="Masukan lokasi">
+                     <input class="form-control @error('lokasi') is-invalid @enderror" name="lokasi" type="text" placeholder="Masukan lokasi" value="{{ old('lokasi') }}">
                      @error('lokasi')
                         <div class="invalid-feedback">{{ $message }}</div>
                      @enderror
@@ -90,7 +90,7 @@
 
                <div class="my-3">
                   <label class="form-label" for="fasilitas">Fasilitas</label>
-                  <input id="fasilitas" name="fasilitas" type="hidden">
+                  <input id="fasilitas" name="fasilitas" type="hidden" value="{{ old('fasilitas') }}">
                   <trix-editor class="@error('fasilitas') is-invalid @enderror" input="fasilitas"></trix-editor>
                   @error('fasilitas')
                      <div class="invalid-feedback">{{ $message }}</div>
@@ -99,7 +99,7 @@
 
                <label class="form-label" for="note_pelatihan">Catatan</label>
                <input class="form-control" id="note_pelatihan" name="note_pelatihan" type="text"
-                  placeholder="Contoh: Biaya diatas diluar biaya penginapan, Minimal peserta 10 Orang">
+                  placeholder="Contoh: Biaya diatas diluar biaya penginapan, Minimal peserta 10 Orang" value="{{ old('note_pelatihan') }}">
             </div>
 
          </div>
