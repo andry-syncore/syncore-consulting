@@ -37,15 +37,15 @@
                <div class="card card-body mt-4">
                   <p class="fw-600 m-0" id="agenda">Agenda</p>
                   <p class="small text-dark-5">Susuan acara adalah sebagai berikut :</p>
-                  <table class="table table-bordered">
-                     <thead>
+                  <table class="table table-bordered table-sm">
+                     <thead class="small">
                         <tr>
                            <th>SESI</th>
                            <th>WAKTU</th>
                            <th>MATERI</th>
                         </tr>
                      </thead>
-                     <tbody>
+                     <tbody class="small">
                         @foreach ($program->agenda->sesi as $i => $sesi)
                            <tr>
                               <td>{{ $sesi }}</td>
