@@ -130,7 +130,17 @@ class ProgramPelatihanController extends Controller
     */
    public function edit(ProgramPelatihan $programPelatihan)
    {
-      //
+      $programPelatihan->agenda = json_decode($programPelatihan->agenda);
+      $programPelatihan->cost = json_decode($programPelatihan->cost);
+
+      $programPelatihan->agenda->sesi = implode("\r\n", json_decode($programPelatihan->agenda->sesi));
+      $programPelatihan->agenda->waktu = implode("\r\n", json_decode($programPelatihan->agenda->waktu));
+      $programPelatihan->agenda->materi = implode("\r\n", json_decode($programPelatihan->agenda->materi));
+      
+      return view('dashboard.program-pelatihan.edit', [
+         'title' => 'Edit Program Pelatihan',
+         'program' => $programPelatihan
+      ]);
    }
 
    /**
@@ -142,7 +152,83 @@ class ProgramPelatihanController extends Controller
     */
    public function update(Request $request, ProgramPelatihan $programPelatihan)
    {
-      //
+      $rules = [
+         'name' => "required|unique:program_pelatihans,name,$programPelatihan->id",
+         'objective' => 'required',
+         'sesi' => 'required',
+         'waktu' => 'required',
+         'materi' => 'required',
+         'note' => 'nullable',
+         'biaya' => 'required',
+         'waktu_pelatihan' => 'required',
+         'lokasi' => 'required',
+         'fasilitas' => 'required',
+         'note_pelatihan' => 'nullable',
+      ];
+      $messages = [
+         'required' => ':attribute pelatihan wajib diisi.',
+         'unique' => ':attribute pelatihan sudah digunakan di database.'
+      ];
+      $aliases = [
+         'name' => 'Nama',
+         'objective' => 'Tujuan',
+         'sesi' => 'Sesi',
+         'waktu' => 'Waktu sesi',
+         'materi' => 'Materi sesi',
+         'note' => 'Catatan Agenda',
+         'biaya' => 'Biaya',
+         'waktu_pelatihan' => 'Waktu',
+         'lokasi' => 'Lokasi',
+         'fasilitas' => 'Fasilitas',
+         'note_pelatihan' => 'Catatan',
+      ];
+
+      $validate = $request->validate($rules, $messages, $aliases);
+
+      try {
+         $sesi = explode("\r\n", $validate['sesi']);
+         $sesi = collect($sesi)->map(fn ($val) => trim($val));
+         $sesi = json_encode($sesi);
+
+         $waktu = explode("\r\n", $validate['waktu']);
+         $waktu = collect($waktu)->map(fn ($val) => trim($val));
+         $waktu = json_encode($waktu);
+
+         $materi = explode("\r\n", $validate['materi']);
+         $materi = collect($materi)->map(fn ($val) => trim($val));
+         $materi = json_encode($materi);
+
+         $validate['fasilitas'] = Str::replace(['<ul>', '<li>', '&nbsp;'], ['<ul class="mt-2">', '<li class="small text-dark-5 mt-2">', ''], $validate['fasilitas']);
+
+         $agenda = [
+            'sesi' => $sesi,
+            'waktu' => $waktu,
+            'materi' => $materi,
+            'note' => $validate['note']
+         ];
+
+         $cost = [
+            'biaya' => $validate['biaya'],
+            'waktu' => $validate['waktu_pelatihan'],
+            'lokasi' => $validate['lokasi'],
+            'fasilitas' => $validate['fasilitas'],
+            'note' => $validate['note_pelatihan'],
+         ];
+
+         $data = [
+            'name' => $validate['name'],
+            'slug' => Str::slug($validate['name']),
+            'objective' => $validate['objective'],
+            'agenda' => json_encode($agenda),
+            'cost' => json_encode($cost),
+         ];
+
+         $programPelatihan->update($data);
+
+         return redirect()->route('program-pelatihan.index')->with('success', 'Data berhasil diubah');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menyimpan data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 
    /**
