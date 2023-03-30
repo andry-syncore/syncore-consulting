@@ -5,6 +5,7 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="csrf-token" content="{{ csrf_token() }}">
    <title>{{ $title }}</title>
 
    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"
@@ -68,7 +69,8 @@
    <script src="{{ asset('assets/js/dashboard/jquery.easing.min.js') }}"></script>
    <script src="{{ asset('assets/js/dashboard/sb-admin-2.min.js') }}"></script>
    <script type="text/javascript" src="https://unpkg.com/trix@2.0.0/dist/trix.umd.min.js"></script>
-   <script src="{{ asset('assets/js/dashboard/global.js') }}"></script>
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   <script src="{{ asset('assets/js/dashboard/global.js') }}" type="module" ></script>
    @stack('js')
 </body>
 

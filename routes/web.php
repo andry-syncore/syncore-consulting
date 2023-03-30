@@ -3,11 +3,13 @@
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Dashboard\CategoryPortfolioController;
 use App\Http\Controllers\Dashboard\DocumentController as DashboardDocumentController;
+use App\Http\Controllers\Dashboard\PendampinganSaabController;
 use App\Http\Controllers\Dashboard\PortfolioController;
 use App\Http\Controllers\Dashboard\ProgramPelatihanController;
 use App\Http\Controllers\Dashboard\ProgramPendampinganController;
 use App\Http\Controllers\Home\DocumentController;
 use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\Home\PendampinganSaabController as HomePendampinganSaabController;
 use App\Http\Controllers\Home\PortfolioController as HomePortfolioController;
 use App\Http\Controllers\Home\ProgramPelatihanController as HomeProgramPelatihanController;
 use App\Http\Controllers\Home\ProgramPendampinganController as HomeProgramPendampinganController;
@@ -43,6 +45,7 @@ Route::middleware(['auth'])->group(function () {
    Route::resource('documents', DashboardDocumentController::class)->except('show');
    Route::resource('program-pendampingan', ProgramPendampinganController::class)->except('show');
    Route::resource('program-pelatihan', ProgramPelatihanController::class)->except('show');
+   Route::resource('pendampingan-saab', PendampinganSaabController::class)->except('show');
 });
 
 Route::controller(HomeController::class)->group(function() {
@@ -63,3 +66,4 @@ Route::get('document/{document}', [DocumentController::class, 'download'])->name
 
 Route::get('program-pendampingan/{program}', [HomeProgramPendampinganController::class, 'show'])->name('program-pendampingan.show');
 Route::get('program-pelatihan/{program}', [HomeProgramPelatihanController::class, 'show'])->name('program-pelatihan.show');
+Route::get('pendampingan-saab/{pendampingan}', [HomePendampinganSaabController::class, 'show'])->name('pendampingan-saab.show');

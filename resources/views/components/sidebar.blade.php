@@ -56,6 +56,12 @@
          <span>Program Pelatihan</span></a>
    </li>
 
+   <li class="nav-item {{ Route::is('pendampingan-saab*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('pendampingan-saab.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Pendampingan SAAB</span></a>
+   </li>
+
    <!-- Divider -->
    <hr class="sidebar-divider d-none d-md-block">
 

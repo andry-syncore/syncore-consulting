@@ -55,3 +55,12 @@ trix-editor {
 trix-editor.is-invalid {
    border: 1px solid #e74a3b;
 }
+
+.table-padding-none td {
+   padding-left: 0;
+   padding-right: 0;
+}
+
+.w-content {
+   white-space: nowrap;
+}

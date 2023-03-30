@@ -118,12 +118,10 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</h6>
                <div class="small mt-4">
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Rumah Sakit</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Perguruan Tinggi</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Perusahaan</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB Yayasan</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB BUMDes</a>
-                  <a class="nav-link text-dark-8 my-3" href="#">Pendampingan SAAB UMKM</a>
+                  @foreach ($keuangan as $saab)
+                     <a class="nav-link text-dark-8 my-3" href="{{ route('pendampingan-saab.show', $saab) }}">{{ $saab->name }}</a>
+                  @endforeach
+
                </div>
             </div>
 
