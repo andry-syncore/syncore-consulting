@@ -62,6 +62,12 @@
          <span>Pendampingan SAAB</span></a>
    </li>
 
+   <li class="nav-item {{ Route::is('pendampingan-shrm*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('pendampingan-shrm.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Pendampingan SHRM</span></a>
+   </li>
+
    <!-- Divider -->
    <hr class="sidebar-divider d-none d-md-block">
 
