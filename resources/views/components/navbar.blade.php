@@ -26,48 +26,36 @@
                         <li>
                            <p class="m-0">Program Pendampingan</p>
                         </li>
-                        <li><a class="dropdown-item" href="#">Dokumen SOP</a></li>
-                        <li><a class="dropdown-item" href="#">Feasibility Study</a></li>
-                        <li><a class="dropdown-item" href="#">Master Plan</a></li>
-                        <li><a class="dropdown-item" href="#">Keuangan dan Pajak</a></li>
-                        <li><a class="dropdown-item" href="#">Rencana Strategi</a></li>
-                        <li><a class="dropdown-item" href="#">Narasumber Pendampingan</a></li>
+                        @foreach ($pendampingans as $pendampingan)
+                           <li><a class="dropdown-item" href="{{ route('program-pendampingan.show', $pendampingan) }}">{{ $pendampingan->name }}</a></li>
+                        @endforeach
 
                         <div class="dropdown-divider"></div>
 
                         <li>
                            <p class="m-0">Program Pelatihan</p>
                         </li>
-                        <li><a class="dropdown-item" href="#">Pelatihan e-SPI</a></li>
-                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Kelembagaan dan Inovasi Usaha</a></li>
-                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Manajemen Bisnis</a></li>
-                        <li><a class="dropdown-item" href="#">Pelatihan Tata Kelola Keuangan Bisnis</a></li>
-                        <li><a class="dropdown-item" href="#">Digital Marketing</a></li>
-                        <li><a class="dropdown-item" href="#">Kemitraan Narasumber Pelatihan</a></li>
-                        <li><a class="dropdown-item" href="#">Kemitraan Event</a></li>
+                        @foreach ($pelatihans as $pelatihan)
+                           <li><a class="dropdown-item" href="{{ route('program-pelatihan.show', $pelatihan) }}">{{ $pelatihan->name }}</a></li>
+                        @endforeach
 
                         <div class="dropdown-divider"></div>
 
                         <li>
                            <p class="m-0">Pendampingan Keuangan Menggunakan Sistem Akuntansi Analisis Bisnis</p>
                         </li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Rumah Sakit</a></li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Perguruan Tinggi</a></li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Perusahaan</a></li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB Yayasan</a></li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB BUMDes</a></li>
-                        <li><a class="dropdown-item" href="#">Pendampingan SAAB UMKM</a></li>
+                        @foreach ($keuangan as $saab)
+                           <li><a class="dropdown-item" href="{{ route('pendampingan-saab.show', $saab) }}">{{ $saab->name }}</a></li>
+                        @endforeach
 
                         <div class="dropdown-divider"></div>
 
                         <li>
                            <p class="m-0">Pendampingan SHRM</p>
                         </li>
-                        <li><a class="dropdown-item" href="#">Rekrutmen</a></li>
-                        <li><a class="dropdown-item" href="#">Penempatan Kerja dan Outsourcing</a></li>
-                        <li><a class="dropdown-item" href="#">Pengembangan SDM</a></li>
-                        <li><a class="dropdown-item" href="#">Evaluasi Kinerja</a></li>
-                        <li><a class="dropdown-item" href="#">Remunerasi Karyawan</a></li>
+                        @foreach ($resources as $resource)
+                           <li><a class="dropdown-item" href="{{ route('pendampingan-shrm.show', $resource) }}">{{ $resource->name }}</a></li>
+                        @endforeach
 
                         <div class="dropdown-divider"></div>
 
@@ -121,7 +109,6 @@
                   @foreach ($keuangan as $saab)
                      <a class="nav-link text-dark-8 my-3" href="{{ route('pendampingan-saab.show', $saab) }}">{{ $saab->name }}</a>
                   @endforeach
-
                </div>
             </div>
 
