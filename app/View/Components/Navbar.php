@@ -2,6 +2,7 @@
 
 namespace App\View\Components;
 
+use App\Models\InkubasiBisnis;
 use App\Models\PendampinganSaab;
 use App\Models\PendampinganShrm;
 use App\Models\ProgramPelatihan;
@@ -31,12 +32,14 @@ class Navbar extends Component
       $pelatihan = ProgramPelatihan::all();
       $saab = PendampinganSaab::all();
       $shrm = PendampinganShrm::all();
+      $inkubasi = InkubasiBisnis::all();
 
       return view('components.navbar', [
          'pendampingans' => $pendampingan,
          'pelatihans' => $pelatihan,
          'keuangan' => $saab,
          'resources' => $shrm,
+         'inkubasi' => $inkubasi,
       ]);
    }
 }

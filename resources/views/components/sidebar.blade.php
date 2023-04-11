@@ -68,6 +68,12 @@
          <span>Pendampingan SHRM</span></a>
    </li>
 
+   <li class="nav-item {{ Route::is('inkubasi-bisnis*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('inkubasi-bisnis.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Inkubasi Bisnis</span></a>
+   </li>
+
    <!-- Divider -->
    <hr class="sidebar-divider d-none d-md-block">
 

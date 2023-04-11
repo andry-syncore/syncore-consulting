@@ -62,8 +62,10 @@
                         <li>
                            <p class="m-0">Program Scale Up & Inkubasi Bisnis</p>
                         </li>
-                        <li><a class="dropdown-item" href="#">Riset, Development, and Engineering Business (Setup Bisnis)</a></li>
-                        <li><a class="dropdown-item" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a></li>
+                        @foreach ($inkubasi as $item)
+                           <li><a class="dropdown-item" href="{{ route('inkubasi-bisnis.show', $item) }}">{{ $item->name }}</a></li>
+                        @endforeach
+                        {{-- <li><a class="dropdown-item" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a></li> --}}
                      </ul>
                   </li>
                   <a class="nav-link px-lg-3 {{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>
@@ -124,8 +126,10 @@
             <div class="col-lg-3">
                <h6 class="mb-4">Program Scale Up & Inkubasi Bisnis</h6>
                <div class="small mt-4">
-                  <a class="nav-link text-dark-8 my-3" href="#">Riset, Development, and Engineering Business (Setup Bisnis)</a>
-                  <a class="nav-link text-dark-8 my-3" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a>
+                  @foreach ($inkubasi as $item)
+                     <a class="nav-link text-dark-8 my-3"href="{{ route('inkubasi-bisnis.show', $item) }}">{{ $item->name }}</a></a>
+                  @endforeach
+                  {{-- <a class="nav-link text-dark-8 my-3" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a> --}}
                </div>
             </div>
          </div>
