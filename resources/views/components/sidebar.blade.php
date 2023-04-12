@@ -73,6 +73,12 @@
          <i class="fa-solid fa-file-lines"></i>
          <span>Inkubasi Bisnis</span></a>
    </li>
+   
+   <li class="nav-item {{ Route::is('riset-kajian*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('riset-kajian.index') }}">
+         <i class="fa-solid fa-file-lines"></i>
+         <span>Riset dan Kajian Akademis</span></a>
+   </li>
 
    <!-- Divider -->
    <hr class="sidebar-divider d-none d-md-block">

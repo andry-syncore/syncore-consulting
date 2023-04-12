@@ -9,6 +9,7 @@ use App\Http\Controllers\Dashboard\PendampinganShrmController;
 use App\Http\Controllers\Dashboard\PortfolioController;
 use App\Http\Controllers\Dashboard\ProgramPelatihanController;
 use App\Http\Controllers\Dashboard\ProgramPendampinganController;
+use App\Http\Controllers\Dashboard\RisetKajianControlller;
 use App\Http\Controllers\Home\DocumentController;
 use App\Http\Controllers\Home\HomeController;
 use App\Http\Controllers\Home\InkubasiBisnisController as HomeInkubasiBisnisController;
@@ -17,6 +18,7 @@ use App\Http\Controllers\Home\PendampinganShrmController as HomePendampinganShrm
 use App\Http\Controllers\Home\PortfolioController as HomePortfolioController;
 use App\Http\Controllers\Home\ProgramPelatihanController as HomeProgramPelatihanController;
 use App\Http\Controllers\Home\ProgramPendampinganController as HomeProgramPendampinganController;
+use App\Http\Controllers\Home\RisetKajianController;
 use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
@@ -52,6 +54,7 @@ Route::middleware(['auth'])->group(function () {
    Route::resource('pendampingan-saab', PendampinganSaabController::class)->except('show');
    Route::resource('pendampingan-shrm', PendampinganShrmController::class)->except('show');
    Route::resource('inkubasi-bisnis', InkubasiBisnisController::class)->except('show');
+   Route::resource('riset-kajian', RisetKajianControlller::class)->except('show');
 });
 
 Route::controller(HomeController::class)->group(function() {
@@ -75,3 +78,4 @@ Route::get('program-pelatihan/{program}', [HomeProgramPelatihanController::class
 Route::get('pendampingan-saab/{pendampingan}', [HomePendampinganSaabController::class, 'show'])->name('pendampingan-saab.show');
 Route::get('pendampingan-shrm/{pendampingan}', [HomePendampinganShrmController::class, 'show'])->name('pendampingan-shrm.show');
 Route::get('inkubasi-bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, 'show'])->name('inkubasi-bisnis.show');
+Route::get('riset-kajian/{riset}', [RisetKajianController::class, 'show'])->name('riset-kajian.show');

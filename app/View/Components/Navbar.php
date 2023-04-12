@@ -7,6 +7,7 @@ use App\Models\PendampinganSaab;
 use App\Models\PendampinganShrm;
 use App\Models\ProgramPelatihan;
 use App\Models\ProgramPendampingan;
+use App\Models\RisetKajian;
 use Illuminate\View\Component;
 
 class Navbar extends Component
@@ -33,6 +34,7 @@ class Navbar extends Component
       $saab = PendampinganSaab::all();
       $shrm = PendampinganShrm::all();
       $inkubasi = InkubasiBisnis::all();
+      $riset = RisetKajian::all();
 
       return view('components.navbar', [
          'pendampingans' => $pendampingan,
@@ -40,6 +42,7 @@ class Navbar extends Component
          'keuangan' => $saab,
          'resources' => $shrm,
          'inkubasi' => $inkubasi,
+         'riset' => $riset,
       ]);
    }
 }

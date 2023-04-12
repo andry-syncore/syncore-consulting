@@ -65,7 +65,10 @@
                         @foreach ($inkubasi as $item)
                            <li><a class="dropdown-item" href="{{ route('inkubasi-bisnis.show', $item) }}">{{ $item->name }}</a></li>
                         @endforeach
-                        {{-- <li><a class="dropdown-item" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a></li> --}}
+
+                        @foreach ($riset as $item)
+                           <li><a class="dropdown-item" href="{{ route('riset-kajian.show', $item) }}">{{ $item->name }}</a></li>
+                        @endforeach
                      </ul>
                   </li>
                   <a class="nav-link px-lg-3 {{ request()->is('portfolio') ? 'active' : '' }}" href="{{ route('portfolio') }}">Portfolio</a>
@@ -129,7 +132,10 @@
                   @foreach ($inkubasi as $item)
                      <a class="nav-link text-dark-8 my-3"href="{{ route('inkubasi-bisnis.show', $item) }}">{{ $item->name }}</a></a>
                   @endforeach
-                  {{-- <a class="nav-link text-dark-8 my-3" href="#"> Kemitraan Digital Marketing (Perluasan Pasar dan Peningkatan Penjualan)</a> --}}
+
+                  @foreach ($riset as $item)
+                     <a class="nav-link text-dark-8 my-3" href="{{ route('riset-kajian.show', $item) }}">{{ $item->name }}</a>
+                  @endforeach
                </div>
             </div>
          </div>
