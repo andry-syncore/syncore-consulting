@@ -9,7 +9,7 @@
    <section id="detail-program-pendampingan">
       <div class="container">
          <div class="title-program">
-            <h2 class="text-orange mb-1">Pendampingan Keuangan</h2>
+            <h2 class="text-orange mb-1">Riset dan Kajian Akademis</h2>
             <h3 class="text-light">{{ $data->name }}</h3>
          </div>
       </div>

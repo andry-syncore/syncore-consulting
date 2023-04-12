@@ -126,7 +126,7 @@
                </div>
             </div>
 
-            <div class="col-lg-3">
+            <div class="col-lg-3 mt-5">
                <h6 class="mb-4">Program Scale Up & Inkubasi Bisnis</h6>
                <div class="small mt-4">
                   @foreach ($inkubasi as $item)
