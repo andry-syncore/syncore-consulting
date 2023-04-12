@@ -27,18 +27,18 @@
                </tr>
             </thead>
             <tbody>
-               @foreach ($data as $item)
+               @foreach ($data as $inkubasi)
                   <tr>
                      <td>{{ $loop->iteration }}</td>
-                     <td><p class="m-0 small">{{ $item->name }}</p></td>
-                     <td><p class="m-0 small">{{ Str::limit($item->background, 100, '...') }}</p></td>
-                     <td>{!! $item->objective !!}</td>
-                     <td>{!! $item->scope !!}</td>
-                     <td>{!! $item->result !!}</td>
+                     <td><p class="m-0 small">{{ $inkubasi->name }}</p></td>
+                     <td><p class="m-0 small">{{ Str::limit($inkubasi->background, 100, '...') }}</p></td>
+                     <td><p class="m-0 small">{{ $inkubasi->objective }}</p></td>
+                     <td>{!! $inkubasi->scope !!}</td>
+                     <td>{!! $inkubasi->result !!}</td>
                      <td>
                         <div class="d-flex justify-content-between">
-                           <a class="btn btn-primary btn-sm mr-2" href="{{ route('inkubasi-bisnis.edit', $item) }}">Edit</a>
-                           <button class="btn btn-danger btn-sm btn-delete" data-url="{{ route('inkubasi-bisnis.destroy', $item) }}" data-toggle="modal" data-target="#deleteModal">Hapus</button>
+                           <a class="btn btn-primary btn-sm mr-2" href="{{ route('inkubasi-bisnis.edit', $inkubasi) }}">Edit</a>
+                           <button class="btn btn-danger btn-sm btn-delete" data-url="{{ route('inkubasi-bisnis.destroy', $inkubasi) }}" data-toggle="modal" data-target="#deleteModal">Hapus</button>
                         </div>
                      </td>
                   </tr>

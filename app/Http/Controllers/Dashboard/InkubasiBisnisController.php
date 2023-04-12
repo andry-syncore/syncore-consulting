@@ -7,6 +7,7 @@ use App\Models\InkubasiBisnis;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Storage;
 
 class InkubasiBisnisController extends Controller
 {
@@ -91,9 +92,12 @@ class InkubasiBisnisController extends Controller
     * @param  \App\Models\InkubasiBisnis  $inkubasiBisnis
     * @return \Illuminate\Http\Response
     */
-   public function edit(InkubasiBisnis $inkubasiBisnis)
+   public function edit(InkubasiBisnis $inkubasiBisni)
    {
-      //
+      return view('dashboard.inkubasi-bisnis.edit', [
+         'title' => 'Edit Data Inkubasi Bisnis',
+         'data' => $inkubasiBisni,
+      ]);
    }
 
    /**
@@ -103,9 +107,55 @@ class InkubasiBisnisController extends Controller
     * @param  \App\Models\InkubasiBisnis  $inkubasiBisnis
     * @return \Illuminate\Http\Response
     */
-   public function update(Request $request, InkubasiBisnis $inkubasiBisnis)
+   public function update(Request $request, InkubasiBisnis $inkubasiBisni)
    {
-      //
+      $rules = [
+         'name' => "required|unique:inkubasi_bisnis,name,$inkubasiBisni->id",
+         'objective' => 'required',
+         'scope' => 'required',
+         'background' => 'required',
+         'result' => 'required',
+         'methodology' => 'nullable',
+         'execution_time' => 'nullable',
+      ];
+
+      $messages = [
+         'required' => ':attribute wajib diisi.',
+         'unique' => ':attribute sudah digunakan di database.'
+      ];
+
+      $alisases = [
+         'name' => 'Nama dokumen',
+         'objective' => 'Tujuan',
+         'scope' => 'Ruang lingkup',
+         'background' => 'Latar belakang',
+         'result' => 'Hasil inkubasi',
+         'methodology' => 'Metodologi',
+         'execution_time' => 'Waktu pelaksanaan',
+      ];
+
+      $validate = $request->validate($rules, $messages, $alisases);
+
+      try {
+         DB::transaction(function () use ($validate, $request, $inkubasiBisni) {
+            $validate['slug'] = Str::slug($request->name);
+            if ($request->file('methodology')) {
+               Storage::delete($inkubasiBisni->methodology);
+               $validate['methodology'] = $request->file('methodology')->store('img/inkubasi-bisnis');
+            }
+
+            if ($request->file('execution_time')) {
+               Storage::delete($inkubasiBisni->execution_time);
+               $validate['execution_time'] = $request->file('execution_time')->store('img/inkubasi-bisnis');
+            }
+
+            $inkubasiBisni->update($validate);
+         });
+
+         return redirect()->route('inkubasi-bisnis.index')->with('success', 'Data berhasil diubah');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menyimpan data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 
    /**
@@ -114,8 +164,15 @@ class InkubasiBisnisController extends Controller
     * @param  \App\Models\InkubasiBisnis  $inkubasiBisnis
     * @return \Illuminate\Http\Response
     */
-   public function destroy(InkubasiBisnis $inkubasiBisnis)
+   public function destroy(InkubasiBisnis $inkubasiBisni)
    {
-      //
+      try {
+         $inkubasiBisni->delete();
+         Storage::delete($inkubasiBisni->methodology);
+         Storage::delete($inkubasiBisni->execution_time);
+         return redirect()->route('inkubasi-bisnis.index')->with('success', 'Data berhasil dihapus');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menghapus data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 }

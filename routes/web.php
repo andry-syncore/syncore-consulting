@@ -74,4 +74,4 @@ Route::get('program-pendampingan/{program}', [HomeProgramPendampinganController:
 Route::get('program-pelatihan/{program}', [HomeProgramPelatihanController::class, 'show'])->name('program-pelatihan.show');
 Route::get('pendampingan-saab/{pendampingan}', [HomePendampinganSaabController::class, 'show'])->name('pendampingan-saab.show');
 Route::get('pendampingan-shrm/{pendampingan}', [HomePendampinganShrmController::class, 'show'])->name('pendampingan-shrm.show');
-Route::get('inkubasi0bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, 'show'])->name('inkubasi-bisnis.show');
+Route::get('inkubasi-bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, 'show'])->name('inkubasi-bisnis.show');

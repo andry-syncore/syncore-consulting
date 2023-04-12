@@ -7,13 +7,14 @@
          </div>
       @endif
 
-      <form class="row" id="form-feature" action="{{ route('inkubasi-bisnis.store') }}" method="post" enctype="multipart/form-data">
+      <form class="row" id="form-feature" action="{{ route('inkubasi-bisnis.update', $data) }}" method="post" enctype="multipart/form-data">
          @csrf
+         @method('PUT')
 
          <div class="col-md-6">
             <div class="mb-3">
                <label class="form-label" for="name">Nama Dokumen</label>
-               <input class="form-control @error('name') is-invalid @enderror" id="name" name="name" type="text" placeholder="Contoh: Pendampingan Inkubasi Bisnis" value="{{ old('name') }}">
+               <input class="form-control @error('name') is-invalid @enderror" id="name" name="name" type="text" placeholder="Contoh: Pendampingan Inkubasi Bisnis" value="{{ old('name', $data->name) }}">
                @error('name')
                   <div class="invalid-feedback">{{ $message }}</div>
                @enderror
@@ -35,7 +36,7 @@
          <div class="col-md-6">
             <div class="mb-3">
                <label class="form-label" for="objective">Tujuan</label>
-               <input class="form-control @error('objective') is-invalid @enderror" id="objective" name="objective" type="text" placeholder="Masukan tujuan" value="{{ old('objective') }}">
+               <input class="form-control @error('objective') is-invalid @enderror" id="objective" name="objective" type="text" placeholder="Masukan tujuan" value="{{ old('objective', $data->objective) }}">
                @error('objective')
                   <div class="invalid-feedback">{{ $message }}</div>
                @enderror
@@ -57,7 +58,7 @@
          <div class="col-12">
             <div class="mb-3">
                <label class="form-label" for="background">Latar Belakang</label>
-               <input id="background" name="background" type="hidden" value="{{ old('background') }}">
+               <input id="background" name="background" type="hidden" value="{{ old('background', $data->background) }}">
                <trix-editor class="@error('background') is-invalid @enderror" input="background"></trix-editor>
                @error('background')
                   <div class="invalid-feedback">{{ $message }}</div>
@@ -68,7 +69,7 @@
          <div class="col-12">
             <div class="mb-3">
                <label class="form-label" for="scope">Ruang Lingkup</label>
-               <input id="scope" name="scope" type="hidden" value="{{ old('scope') }}">
+               <input id="scope" name="scope" type="hidden" value="{{ old('scope', $data->scope) }}">
                <trix-editor class="@error('scope') is-invalid @enderror" input="scope"></trix-editor>
                @error('scope')
                   <div class="invalid-feedback">{{ $message }}</div>
@@ -79,7 +80,7 @@
          <div class="col-12">
             <div class="mb-3">
                <label class="form-label" for="result">Hasil Inkubasi</label>
-               <input id="result" name="result" type="hidden" value="{{ old('result') }}">
+               <input id="result" name="result" type="hidden" value="{{ old('result', $data->result) }}">
                <trix-editor class="@error('result') is-invalid @enderror" input="result"></trix-editor>
                @error('result')
                   <div class="invalid-feedback">{{ $message }}</div>
