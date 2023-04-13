@@ -99,7 +99,11 @@ class RisetKajianControlller extends Controller
     */
    public function edit(RisetKajian $risetKajian)
    {
-      //
+      $risetKajian->agenda = json_decode($risetKajian->agenda);
+      return view('dashboard.riset-kajian.edit', [
+         'title' => 'Edit Riset dan Kajian Akademis',
+         'data' => $risetKajian,
+      ]);
    }
 
    /**
@@ -111,7 +115,51 @@ class RisetKajianControlller extends Controller
     */
    public function update(Request $request, RisetKajian $risetKajian)
    {
-      //
+      $rules = [
+         'name' => "required|unique:riset_kajians,name,$risetKajian->id",
+         'objective' => 'required',
+         'cost' => 'required',
+         'agenda.*' => 'required',
+         'agenda_content.*' => 'required',
+      ];
+
+      $messages = [
+         'required' => ':attribute wajib diisi.',
+         'unique' => ':attribute sudah digunakan di database.'
+      ];
+
+      $aliases = [
+         'name' => 'Nama',
+         'objective' => 'Tujuan',
+         'cost' => 'Biaya',
+         'agenda.*' => 'Agenda',
+         'agenda_content.*' => 'Detail agenda',
+      ];
+
+      $validator = Validator::make($request->all(), $rules, $messages, $aliases);
+
+      if ($validator->fails()) {
+         return ['code' => 422, 'validation' => $validator->getMessageBag()];
+      }
+
+      try {
+         $validated = $validator->validated();
+         $agenda = [];
+
+         foreach ($request->agenda as $i => $val) {
+            $agenda['name'][] = $val;
+            $agenda['detail'][] = $request->agenda_content[$i];
+         }
+
+         $validated['slug'] = Str::slug($validated['name']);
+         $validated['agenda'] = json_encode($agenda);
+         
+         $risetKajian->update($validated);
+
+         return ['code' => 200, 'message' => 'Data berhasil diubah.'];
+      } catch (\Throwable $th) {
+         return ['code' => 500, 'message' => 'Terjadi kesalahaan, silahkan coba lagi.'];
+      }
    }
 
    /**
@@ -122,6 +170,11 @@ class RisetKajianControlller extends Controller
     */
    public function destroy(RisetKajian $risetKajian)
    {
-      //
+      try {
+         $risetKajian->delete();
+         return redirect()->route('riset-kajian.index')->with('success', 'Data berhasil dihapus');
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal menghapus data, silahkan coba lagi. Apabila masalah berlanjut hubungi Admin');
+      }
    }
 }

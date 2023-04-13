@@ -6,13 +6,14 @@
             {{ session()->get('error') }}
          </div>
       @endif
-      <form class="row" action="{{ route('riset-kajian.store') }}" method="post" id="form-riset">
+      <form class="row" id="form-riset" action="{{ route('riset-kajian.update', $data) }}" method="post">
          @csrf
+         @method('PUT')
 
          <div class="col-md-6">
             <div class="mb-3">
                <label class="form-label" for="name">Nama Dokumen</label>
-               <input class="form-control form-riset" id="name" name="name" type="text" value="{{ old('name') }}" placeholder="contoh: Riset Kajian Policy">
+               <input class="form-control form-riset" id="name" name="name" type="text" value="{{ $data->name }}" placeholder="contoh: Riset Kajian Policy">
                <div class="invalid-feedback"></div>
             </div>
          </div>
@@ -20,7 +21,7 @@
          <div class="col-md-6">
             <div class="mb-3">
                <label class="form-label" for="cost">Biaya</label>
-               <input class="form-control form-riset" id="cost" name="cost" type="text" value="{{ old('cost') }}" placeholder="contoh: Rp 3.000.000,00 Per Instansi">
+               <input class="form-control form-riset" id="cost" name="cost" type="text" value="{{ $data->cost }}" placeholder="contoh: Rp 3.000.000,00 Per Instansi">
                <div class="invalid-feedback"></div>
             </div>
          </div>
@@ -30,22 +31,28 @@
                <label class="form-label mb-0">Agenda</label>
 
                <table class="table-borderless w-100 table-padding-none table" id="agenda-table">
-                  <tr>
-                     <td>
-                        <div class="row mb-3">
-                           <div class="col-md-6">
-                              <input class="form-control form-riset form-saab" name="agenda[]" type="text" placeholder="Masukan nama agenda">
-                              <div class="invalid-feedback"></div>
+                  @foreach ($data->agenda->name as $agenda)
+                     <tr>
+                        <td>
+                           <div class="row mb-3">
+                              <div class="col-md-6">
+                                 <input class="form-control form-riset form-saab" name="agenda[]" type="text" value="{{ $agenda }}" placeholder="Masukan nama agenda">
+                                 <div class="invalid-feedback"></div>
+                              </div>
+                              <div class="col-md-4">
+                                 @if ($loop->index == 0)
+                                    <button class="btn btn-success" id="add-row" type="button">Tambah Agenda</button>
+                                 @else
+                                    <button class="btn btn-outline-dark delete-row" type="button">Hapus agenda</button>
+                                 @endif
+                              </div>
                            </div>
-                           <div class="col-md-4">
-                              <button class="btn btn-success" id="add-row" type="button">Tambah Agenda</button>
-                           </div>
-                        </div>
 
-                        <textarea name="agenda_content[]" cols="3" class="form-control form-riset"></textarea>
-                        <div class="invalid-feedback"></div>
-                     </td>
-                  </tr>
+                           <textarea class="form-control form-riset" name="agenda_content[]" cols="3">{{ $data->agenda->detail[$loop->index] }}</textarea>
+                           <div class="invalid-feedback"></div>
+                        </td>
+                     </tr>
+                  @endforeach
                </table>
 
             </div>
@@ -54,7 +61,7 @@
          <div class="col-md-12">
             <div class="mb-3">
                <label class="form-label" for="objective">Tujuan</label>
-               <input id="objective" name="objective" type="hidden" value="{{ old('objective') }}">
+               <input id="objective" name="objective" type="hidden" value="{{ $data->objective }}">
                <trix-editor class="form-riset" input="objective"></trix-editor>
                <div class="invalid-feedback"></div>
             </div>
@@ -84,10 +91,11 @@
          formRiset.addEventListener('submit', async function(e) {
             e.preventDefault()
 
+            const url = this.action
             const formData = new FormData(this)
 
             try {
-               const data = await submitForm(formData)
+               const data = await submitForm(url, formData)
                notif('success', data.message)
                setTimeout(() => {
                   window.location.href = '/riset-kajian'
@@ -127,8 +135,8 @@
             <div class="invalid-feedback"></div>`
       }
 
-      const submitForm = data => {
-         return fetch('/riset-kajian', {
+      const submitForm = (url, data) => {
+         return fetch(url, {
                headers: {
                   'X-Requested-With': 'XMLHttpRequest',
                   'X-CSRF-TOKEN': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
