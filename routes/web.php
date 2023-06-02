@@ -82,7 +82,7 @@ Route::get('inkubasi-bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, '
 Route::get('riset-kajian/{riset}', [RisetKajianController::class, 'show'])->name('riset-kajian.show');
 
 
-// DONT DELETE
+// DONT DELETE (Download dan Preview method in cpanel)
 // public function download(Document $document)
 //    {
 //       try {
