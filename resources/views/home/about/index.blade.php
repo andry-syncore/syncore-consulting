@@ -26,14 +26,14 @@
                   <div class="row mt-5 py-4">
                      <h1 class="fw-600 text-orange mb-4 text-center">Visi & Misi</h1>
                      <div class="col-md-6 mt-md-3">
-                        <div class="card card-body rounded-4 border-0 shadow-sm">
+                        <div class="card card-body rounded-4 border-0 shadow-sm mt-md-5">
                            <h4 class="text-orange fw-500 m-0 mb-2">Visi :</h4>
                            <p class="small text-dark m-0">Menjadi penyedia layanan yang Terus Bergerak dan Senantiasa Memberi Manfaat bagi Organisasi dan Masyarakat dalam membantu
                               dalam kajian kebijakan, menumbuhkan Kewirausahaan, menguatkan Tata Kelola dan Mengembankan Kinerja untuk Memberi Kontribuasi Nyata bagi Indonesia.</p>
                         </div>
                      </div>
                      <div class="col-md-6 mt-md-3">
-                        <div class="card card-body rounded-4 border-0 shadow-sm">
+                        <div class="card card-body rounded-4 border-0 shadow-sm mt-md-5">
                            <h4 class="text-orange fw-500 m-0 mb-2">Misi :</h4>
                            <ul>
                               <li class="text-dark small">Menyelenggarakan Layanan Konsultasi yang berkualitas dengan harga terjangkau.</li>
