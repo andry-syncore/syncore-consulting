@@ -80,3 +80,25 @@ Route::get('pendampingan-saab/{pendampingan}', [HomePendampinganSaabController::
 Route::get('pendampingan-shrm/{pendampingan}', [HomePendampinganShrmController::class, 'show'])->name('pendampingan-shrm.show');
 Route::get('inkubasi-bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, 'show'])->name('inkubasi-bisnis.show');
 Route::get('riset-kajian/{riset}', [RisetKajianController::class, 'show'])->name('riset-kajian.show');
+
+
+// DONT DELETE
+// public function download(Document $document)
+//    {
+//       try {
+//          $path = storage_path('app/public/' . $document->file_path);
+//          return response()->download($path);
+//       } catch (\Throwable $th) {
+//          return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
+//       }
+//    }
+
+//    public function preview(Document $document)
+//    {
+//       try {
+//          $path = storage_path('app/public/' . $document->file_path);
+//          return response()->file($path);
+//       } catch (\Throwable $th) {
+//          return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
+//       }
+//    }
