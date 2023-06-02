@@ -72,6 +72,7 @@ Route::prefix('portfolio')->controller(HomePortfolioController::class)->group(fu
 
 Route::get('document', [DocumentController::class, 'index'])->name('document.index');
 Route::get('document/{document}', [DocumentController::class, 'download'])->name('document.download');
+Route::get('document/preview/{document}', [DocumentController::class, 'preview'])->name('document.preview');
 
 Route::get('program-pendampingan/{program}', [HomeProgramPendampinganController::class, 'show'])->name('program-pendampingan.show');
 Route::get('program-pelatihan/{program}', [HomeProgramPelatihanController::class, 'show'])->name('program-pelatihan.show');

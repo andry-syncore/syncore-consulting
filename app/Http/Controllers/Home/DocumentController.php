@@ -25,5 +25,15 @@ class DocumentController extends Controller
          return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
       }
    }
+
+   public function preview(Document $document)
+   {
+      try {
+         $path = public_path("storage/$document->file_path");
+         return response()->file($path);
+      } catch (\Throwable $th) {
+         return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
+      }
+   }
 }
 

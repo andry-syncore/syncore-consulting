@@ -63,7 +63,12 @@
                               <td>{{ $loop->iteration }}</td>
                               <td>{{ $document->name }}</td>
                               <td>{{ \Carbon\Carbon::parse($document->created_at)->isoFormat('DD MMMM YYYY') }}</td>
-                              <td><a class="btn btn-orange btn-sm rounded-3 px-3" href="{{ route('document.download', $document->slug) }}">Unduh</a></td>
+                              <td>
+                                 <div class="d-flex align-items-center">
+                                    <a class="btn btn-warning btn-sm rounded-3 px-3 me-2" href="{{ route('document.preview', $document->slug) }}" target="_blank">Preview</a>
+                                    <a class="btn btn-orange btn-sm rounded-3 px-3" href="{{ route('document.download', $document->slug) }}">Unduh</a>
+                                 </div>
+                              </td>
                            </tr>
                         @endforeach
                      </tbody>
