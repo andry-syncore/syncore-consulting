@@ -26,4 +26,9 @@ class Document extends Model
    {
       $this->attributes['name'] = Str::title($val);
    }
+
+   public function category()
+   {
+      return $this->belongsTo(CategoryDocument::class, 'category_document_id', 'id', 'id');
+   }
 }

@@ -9,7 +9,22 @@
       <form class="row" action="{{ route('documents.update', $document) }}" method="post" enctype="multipart/form-data">
          @method('PUT')
          @csrf
-         <div class="col-md-6">
+         <div class="col-md-4">
+            <div class="mb-3">
+               <label for="category_document_id" class="form-label">Kategori</label>
+               <select class="custom-select @error('category_document_id') is-invalid @enderror" id="category_document_id" name="category_document_id">
+                  <option value="">:: Pilih Kategori ::</option>
+                  @foreach ($categories as $category)
+                     <option value="{{ $category->id }}" {{ old('category_document_id', $document->category_document_id) == $category->id ? 'selected' : '' }}>{{ $category->name }}</option>
+                  @endforeach
+               </select>
+               @error('category_document_id')
+                  <div class="invalid-feedback">{{ $message }}</div>
+               @enderror
+            </div>
+         </div>
+
+         <div class="col-md-4">
             <div class="mb-3">
                <label class="form-label" for="name">Nama Dokumen</label>
                <input class="form-control text-capitalize @error('name') is-invalid @enderror" id="name" name="name" type="text" value="{{ old('name', $document->name) }}"
@@ -22,7 +37,7 @@
             </div>
          </div>
 
-         <div class="col-md-6">
+         <div class="col-md-4">
             <div class="mb-3">
                <label class="form-label">Upload Dokumen</label>
                <div class="custom-file">

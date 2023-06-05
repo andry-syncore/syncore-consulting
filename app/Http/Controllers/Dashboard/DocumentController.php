@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\CategoryDocument;
 use App\Models\Document;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
@@ -19,7 +20,7 @@ class DocumentController extends Controller
    {
       return view('dashboard.document.index', [
          'title' => 'Dokumen Consulting',
-         'documents' => Document::paginate(10)
+         'documents' => Document::with('category')->paginate(10)
       ]);
    }
 
@@ -31,7 +32,8 @@ class DocumentController extends Controller
    public function create()
    {
       return view('dashboard.document.create', [
-         'title' => 'Tambah Dokumen'
+         'title' => 'Tambah Dokumen',
+         'categories' => CategoryDocument::all(),
       ]);
    }
 
@@ -46,12 +48,14 @@ class DocumentController extends Controller
       $validate = $request->validate([
          'name' => ['required', 'unique:documents'],
          'file_path' => ['required'],
+         'category_document_id' => ['required'],
       ], [
          'required' => ':attribute wajib diisi',
          'unique' => ':attribute sudah digunakan di database',
       ], [
          'name' => 'Nama dokumen',
-         'file_path' => 'File dokumen'
+         'file_path' => 'File dokumen',
+         'category_document_id' => 'Kategori Dokumen'
       ]);
 
       try {
@@ -80,6 +84,7 @@ class DocumentController extends Controller
    {
       return view('dashboard.document.edit', [
          'title' => 'Edit Dokumen',
+         'categories' => CategoryDocument::all(),
          'document' => $document
       ]);
    }
@@ -95,11 +100,13 @@ class DocumentController extends Controller
    {
       $validate = $request->validate([
          'name' => ['required', 'unique:documents,name,' . $document->id],
+         'category_document_id' => ['required'],
       ], [
          'required' => ':attribute wajib diisi',
          'unique' => ':attribute sudah digunakan di database',
       ], [
          'name' => 'Nama dokumen',
+         'category_document_id' => 'Kategori Dokumen',
       ]);
 
       try {

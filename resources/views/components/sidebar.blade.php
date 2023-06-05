@@ -38,6 +38,12 @@
          <span>Portfolio</span></a>
    </li>
 
+   <li class="nav-item {{ Route::is('category_documents*') ? 'active' : '' }}">
+      <a class="nav-link" href="{{ route('category_documents.index') }}">
+         <i class="fa-solid fa-newspaper"></i>
+         <span>Kategori Dokumen</span></a>
+   </li>
+
    <li class="nav-item {{ Route::is('documents*') ? 'active' : '' }}">
       <a class="nav-link" href="{{ route('documents.index') }}">
          <i class="fa-solid fa-file-lines"></i>

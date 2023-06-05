@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Dashboard\CategoryDocumentController;
 use App\Http\Controllers\Dashboard\CategoryPortfolioController;
 use App\Http\Controllers\Dashboard\DocumentController as DashboardDocumentController;
 use App\Http\Controllers\Dashboard\InkubasiBisnisController;
@@ -19,7 +20,6 @@ use App\Http\Controllers\Home\PortfolioController as HomePortfolioController;
 use App\Http\Controllers\Home\ProgramPelatihanController as HomeProgramPelatihanController;
 use App\Http\Controllers\Home\ProgramPendampinganController as HomeProgramPendampinganController;
 use App\Http\Controllers\Home\RisetKajianController;
-use Illuminate\Support\Facades\Artisan;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -48,6 +48,7 @@ Route::middleware(['auth'])->group(function () {
 
    Route::resource('portfolios', PortfolioController::class)->except('show');
    Route::resource('category_portfolios', CategoryPortfolioController::class)->except('create', 'show');
+   Route::resource('category_documents', CategoryDocumentController::class)->except('create', 'show');
    Route::resource('documents', DashboardDocumentController::class)->except('show');
    Route::resource('program-pendampingan', ProgramPendampinganController::class)->except('show');
    Route::resource('program-pelatihan', ProgramPelatihanController::class)->except('show');
@@ -80,25 +81,3 @@ Route::get('pendampingan-saab/{pendampingan}', [HomePendampinganSaabController::
 Route::get('pendampingan-shrm/{pendampingan}', [HomePendampinganShrmController::class, 'show'])->name('pendampingan-shrm.show');
 Route::get('inkubasi-bisnis/{inkubasi}', [HomeInkubasiBisnisController::class, 'show'])->name('inkubasi-bisnis.show');
 Route::get('riset-kajian/{riset}', [RisetKajianController::class, 'show'])->name('riset-kajian.show');
-
-
-// DONT DELETE (Download dan Preview method in cpanel)
-// public function download(Document $document)
-//    {
-//       try {
-//          $path = storage_path('app/public/' . $document->file_path);
-//          return response()->download($path);
-//       } catch (\Throwable $th) {
-//          return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
-//       }
-//    }
-
-//    public function preview(Document $document)
-//    {
-//       try {
-//          $path = storage_path('app/public/' . $document->file_path);
-//          return response()->file($path);
-//       } catch (\Throwable $th) {
-//          return redirect()->back()->with('error', 'Gagal mengunduh, koneksi error atau file tidak ditemukan. Silahkan hubungi kami apabila masalah berlanjut');
-//       }
-//    }

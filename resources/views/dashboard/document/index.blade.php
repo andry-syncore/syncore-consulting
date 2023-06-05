@@ -18,6 +18,7 @@
             <thead class="bg-orange text-light">
                <tr>
                   <th>#</th>
+                  <th>Kategori</th>
                   <th>Nama Dokumen</th>
                   <th>Lokasi Dokumen</th>
                   <th>Tanggal Upload</th>
@@ -28,6 +29,7 @@
                @foreach ($documents as $document)
                   <tr>
                      <td>{{ $loop->iteration }}</td>
+                     <td>{{ $document->category->name }}</td>
                      <td>{{ $document->name }}</td>
                      <td>{{ $document->file_path }}</td>
                      <td>{{ \Carbon\Carbon::parse($document->created_at)->isoFormat('DD MMMM YYYY') }}</td>
