@@ -25,14 +25,14 @@
                <h5 class="mt-0 mb-4 p-0" style="font-weight: 600">Cari Dokumen Kebutuhan Anda</h5>
                <form action="" method="get">
                   <div class="row align-items-end">
-                     <div class="col-lg-4">
+                     <div class="col-lg-4 mb-2">
                         <label class="small mb-2" for="search" style="font-weight: 600">Kata kunci pencarian</label>
                         <div class="input-group">
                            <span class="input-group-text bg-transparent"><i class="fa-solid fa-magnifying-glass text-orange"></i></span>
-                           <input class="form-control border-start-0" id="search" name="search" type="text" placeholder="Cari dokumen..." value="{{ request()->search }}">
+                           <input class="form-control border-start-0" id="search" name="search" type="text" value="{{ request()->search }}" placeholder="Cari dokumen...">
                         </div>
                      </div>
-                     <div class="col-lg-2">
+                     <div class="col-lg-2 mb-2">
                         <button class="btn btn-orange text-light w-100" type="submit"><i class="fa-solid fa-magnifying-glass text-light"></i> Cari Sekarang</button>
                      </div>
                   </div>
@@ -47,37 +47,25 @@
                   </div>
                @endif
 
-               <div class="table-responsive">
-                  <table class="table-borderless table-sm m-0 table p-0" id="table-download">
-                     <thead class="table-light">
-                        <tr>
-                           <th>#</th>
-                           <th>Nama Dokumen</th>
-                           <th>Tanggal</th>
-                           <th style="width: 1%; white-space: nowrap;">Unduh</th>
-                        </tr>
-                     </thead>
-                     <tbody class="small">
-                        @foreach ($documents as $document)
-                           <tr>
-                              <td>{{ $loop->iteration }}</td>
-                              <td>{{ $document->name }}</td>
-                              <td>{{ \Carbon\Carbon::parse($document->created_at)->isoFormat('DD MMMM YYYY') }}</td>
-                              <td>
-                                 <div class="d-flex align-items-center">
-                                    <a class="btn btn-warning btn-sm rounded-3 px-3 me-2" href="{{ route('document.preview', $document->slug) }}" target="_blank">Preview</a>
-                                    <a class="btn btn-orange btn-sm rounded-3 px-3" href="{{ route('document.download', $document->slug) }}">Unduh</a>
-                                 </div>
-                              </td>
-                           </tr>
-                        @endforeach
-                     </tbody>
-                  </table>
+               <ol class="list-group list-group-numbered border-0">
+                  @foreach ($categories as $category)
+                     <li class="list-group-item d-flex justify-content-between align-items-start border-0">
+                        <div class="ms-2 me-auto">
+                           <div class="fw-bold mb-2">{{ $category->name }}</div>
+                           <ul>
+                              @foreach ($category->documents as $document)
+                                 <li><a class="text-decoration-none" href="{{ route('document.preview', $document->slug) }}">{{ $document->name }}</a></li>
+                              @endforeach
+                           </ul>
+                        </div>
+                     </li>
+                  @endforeach
+               </ol>
 
-                  <div class="d-flex justify-content-center">
-                     {{ $documents->links() }}
-                  </div>
+               <div class="d-flex justify-content-center mt-3">
+                  {{ $categories->links() }}
                </div>
+
             </div>
          </div>
       </div>

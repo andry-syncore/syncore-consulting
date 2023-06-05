@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Home;
 
 use App\Http\Controllers\Controller;
+use App\Models\CategoryDocument;
 use App\Models\Document;
 use Illuminate\Http\Request;
 
@@ -12,7 +13,9 @@ class DocumentController extends Controller
    {
       return view('home.download.index', [
          'title' => 'Download',
-         'documents' => Document::filter($request->search ?? '')->paginate(10)->withQueryString()
+         'categories' => CategoryDocument::has('documents')->with(['documents' => function($q) use($request) {
+            return $q->where('name', 'LIKE', "%$request->search%");
+         }])->paginate(10),
       ]);
    }
 
